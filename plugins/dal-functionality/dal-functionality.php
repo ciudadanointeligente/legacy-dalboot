@@ -83,6 +83,37 @@ function create_pais_taxonomy() {
        if (!term_exists( 'Puerto-Rico', 'pais')){
          wp_insert_term('Puerto-Rico', 'pais');
        }
+
+       //The Caribbean
+
+       if (!term_exists( 'Antigua & Barbuda', 'pais')){
+         wp_insert_term('Antigua-&-Barbuda', 'pais');
+       }
+       if (!term_exists( 'Belize', 'pais')){
+         wp_insert_term('Belize', 'pais');
+       }
+       if (!term_exists( 'Dominica', 'pais')){
+         wp_insert_term('Dominica', 'pais');
+       }
+       if (!term_exists( 'Grenada', 'pais')){
+         wp_insert_term('Grenada', 'pais');
+       }
+       if (!term_exists( 'Jamaica', 'pais')){
+         wp_insert_term('Jamaica', 'pais');
+       }
+       if (!term_exists( 'Saint Kitts and Nevis', 'pais')){
+         wp_insert_term('Saint-Kitts-and-Nevis', 'pais');
+       }
+       if (!term_exists( 'Sainte-Lucie', 'pais')){
+         wp_insert_term('Sainte-Lucie', 'pais');
+       }
+       if (!term_exists( 'Saint Vincent and the Grenadines', 'pais')){
+         wp_insert_term('Saint-Vincent-and-the-Grenadines', 'pais');
+       }
+        if (!term_exists( 'Trinidad and Tobago', 'pais')){
+         wp_insert_term('Trinidad-and-Tobago', 'pais');
+       }
+
    }
 }
 
