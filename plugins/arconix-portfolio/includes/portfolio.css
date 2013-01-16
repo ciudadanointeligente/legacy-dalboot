@@ -1,0 +1,201 @@
+/* premiopais Wrapper */
+.dal-portf-title{padding: 0px 20px 5px; border-bottom: 1px solid #DDD;}
+
+.dal-portfolio-filtro {
+    border-left: 1px solid #DDD;
+    list-style-type: none;
+    margin: 0 0 0 0 !important;
+    padding: 10px 0 10px 0 !important;
+    background: white;
+    border-right: 1px solid #DDD;
+}
+/* Each premiopais list item */
+.dal-portfolio-filtro li {
+    display: inline;
+    margin-left: 2%;
+}
+
+/* Each premiopais link */
+.dal-portfolio-filtro li a {
+    background: none repeat scroll 0 0 #eee;
+    border-radius: 3px;
+    color: #666;
+    font-size: 12px;;
+    line-height: 1.5em;
+    padding: 5px 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.dal-portfolio-filtro li a:hover,
+.dal-portfolio-filtro li.active a {
+    background: none repeat scroll 0 0 #888;
+    color: #fff;
+}
+
+/* The actual word "premiopais" to the left of the items */
+.arconix-portfolio-category-title { 
+    margin-left: 0;
+    font-weight: bold;
+}
+
+/* The portfolio item grid */
+.arconix-portfolio-grid {
+    margin-left: 0;
+    padding: 15px 0 15px 15px;
+    background: url(../images/paperr.jpeg)repeat black;
+    border: 1px solid #DDD;
+}
+
+/* Each portfolio list item */
+.arconix-portfolio-grid li {
+display: inline-block;
+position: relative;
+background-color: white;
+list-style: none;
+margin:0 15px 18px 0 !important;
+max-width: 100%;
+width: 235px;
+height: auto;
+vertical-align: top;
+overflow: hidden;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+-o-border-radius: 3px;
+box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.43);
+-moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.43);
+-webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.43);
+-o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.43);
+}
+
+/* Portfolio premiopaisd image */
+.arconix-portfolio-grid img {
+    border-radius: 0px;
+    margin: 0 5px;
+    
+}
+
+
+/* Portfolio post-title */
+.arconix-portfolio-title {
+    font-size: 17px;
+    text-align: center;
+    width: 100%;
+    margin-top: 7px;
+    color: #5F5F5F;
+    font-weight: normal;
+    line-height: 26px;
+
+}
+
+.dal-portfolio-datitos{
+    /*background-color: #f3f3f3; */
+    max-width: 280px; 
+    overflow: hidden;
+    display: block;
+    overflow: hidden;
+    padding: 5px;
+    }
+
+
+.dal-meta-item{float: right; margin: 8px 0px 5px 5px}
+.dal-fila-premios{}
+.dal-portfolio-tracks{float: right;}
+.dal-portfolio-tracks div{
+    font-size: 0.83em;
+    display: inline-block;
+    background-color: #DFDFDF;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    padding: 1px 7px;
+    margin-right: 5px;
+}
+.dal-portf-premio{ 
+    width: 30px;
+    height: 28px;
+    display: block;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 6px;
+}
+.dal-portf-1er-lugar{
+    background-image: url(../images/medal-32.png);
+}
+.dal-portf-2do-lugar{background-image: url(../images/medal-silver-32.png);
+}
+.dal-portf-3er-lugar{ background-image: url(../images/medal-bronze-32.png);
+}
+
+.premioNac{}
+.premioReg{background: url(../images/trophy-dal.png) no-repeat 0 0 transparent;}
+
+.dal-portf-ano{
+    position: absolute;
+    display: block;
+    background-color: #5FBD60;
+    width: 38px;
+    padding: 3px;
+    right: 0;
+    color: white;
+    text-shadow: 1px 1px 1px #0C9B4B;
+    top: 20px;
+    box-shadow: -6px 4px 14px rgba(0, 0, 0, 0.45);
+    border-right: 2px solid #45AD73;
+    right: 0px;
+    }
+    .dal-portf-ano:before, .dal-portf-ano:after  { 
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    width: 1px;
+    position: absolute;
+    height:1px;
+    }
+      .dal-portf-ano:before{border-left: 5px solid transparent;
+border-top: 12px solid #5FBD60;
+border-bottom: 11px solid #5FBD60;
+left: -6px;
+top: 0;}
+
+//FLAGS
+
+.dal-portfolio-flag {background-color: transparent;}
+
+.dal-portfolio-flag {
+    background-image: url(../images/flags-sprite.png);
+    width: 25px;
+    height: 18px;
+    display: block;
+    background-repeat: no-repeat;
+    text-indent: 10000;
+    overflow: hidden;
+
+
+}
+
+.flag-argentina{ background-position: 0 0;  } 
+.flag-bolivia{ background-position: 0 -78px;  } 
+.flag-brasil{ background-position: 0 -152px;  } 
+.flag-chile{ background-position: 0 -226px;  } 
+.flag-colombia{ background-position: 0 -300px;  } 
+.flag-costa-rica{ background-position: 0 -374px;  } 
+.flag-cuba{ background-position: 0 -448px;  } 
+.flag-republica-dominicana{ background-position: 0 -522px;  } 
+.flag-ecuador{ background-position: 0 -596px;  } 
+.flag-guatemala{ background-position: 0 -670px;  } 
+.flag-honduras{ background-position: 0 -744px;  } 
+.flag-haiti{ background-position: 0 -818px;  } 
+.flag-mexico{ background-position: 0 -892px;  } 
+.flag-nicaragua{ background-position: 0 -966px;  } 
+.flag-panama{ background-position: 0 -1040px;  } 
+.flag-peru{ background-position: 0 -1114px;  } 
+.flag-puerto-rico{ background-position: 0 -1188px;  } 
+.flag-paraguay{ background-position: 0 -1262px;  } 
+.flag-el-salvador{ background-position: 0 -1336px;  } 
+.flag-uruguay{ background-position: 0 -1410px;  } 
+.flag-venezuela{ background-position: 0 -1484px;  } 
