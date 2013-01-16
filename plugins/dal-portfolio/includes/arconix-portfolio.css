@@ -1,10 +1,10 @@
-.arconix-portfolio-list {
+.dal-portfolio-list {
     list-style-type: none;
     margin: 0 !important;
     padding: 0 !important;
 }
 
-.arconix-portfolio-list-item {
+.dal-portfolio-list-item {
     float: left;
     margin-right: 1.5% !important;
     margin-bottom: 15px !important;
@@ -12,24 +12,24 @@
     width: 275px;
 }
 
-.arconix-portfolio-excerpt p,
-.arconix-portfolio-content p {
+.dal-portfolio-excerpt p,
+.dal-portfolio-content p {
     margin-bottom: 0 !important;
 }
 
-.arconix-portfolio-tax-list {
+.dal-portfolio-tax-list {
     font-size: 11px;
     margin-bottom: 5px;
     text-transform: uppercase;
 }
 
 /* Twenty-Eleven styling */
-.twenty-eleven .arconix-portfolio-excerpt p,
-.twenty-eleven .arconix-portfolio-content p {
+.twenty-eleven .dal-portfolio-excerpt p,
+.twenty-eleven .dal-portfolio-content p {
     border-top: 1px solid #DDDDDD;
     padding-top: 3px;
 }
-.twenty-eleven h3.arconix-portfolio-title {
+.twenty-eleven h3.dal-portfolio-title {
     font-size: 16px !important;
     margin-bottom: 0 !important;
     text-align: center;
@@ -42,6 +42,6 @@
 }
 
 /* Twenty-Ten styling */
-.twenty-ten h3.arconix-portfolio-title {
+.twenty-ten h3.dal-portfolio-title {
     margin-bottom: 0 !important;
 }

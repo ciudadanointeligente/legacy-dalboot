@@ -34,13 +34,13 @@
 }
 
 /* The actual word "premiopais" to the left of the items */
-.arconix-portfolio-category-title { 
+.dal-portfolio-category-title { 
     margin-left: 0;
     font-weight: bold;
 }
 
 /* The portfolio item grid */
-.arconix-portfolio-grid {
+.dal-portfolio-grid {
     margin-left: 0;
     padding: 15px 0 15px 15px;
     background: url(../images/paperr.jpeg)repeat black;
@@ -48,7 +48,7 @@
 }
 
 /* Each portfolio list item */
-.arconix-portfolio-grid li {
+.dal-portfolio-grid li {
 display: inline-block;
 position: relative;
 background-color: white;
@@ -70,7 +70,7 @@ box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.43);
 }
 
 /* Portfolio premiopaisd image */
-.arconix-portfolio-grid img {
+.dal-portfolio-grid img {
     border-radius: 0px;
     margin: 0 5px;
     
@@ -78,7 +78,7 @@ box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.43);
 
 
 /* Portfolio post-title */
-.arconix-portfolio-title {
+.dal-portfolio-title {
     font-size: 17px;
     text-align: center;
     width: 100%;

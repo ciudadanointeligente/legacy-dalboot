@@ -1,12 +1,11 @@
 <?php
 /**
- * This file contains the Arconix_Portfolio class.
+ * This file contains the Dal_Portfolio class.
  *
  * This class handles the creation of the "Portfolio" post type, and creates a
  * UI to display the Portfolio-specific data on the admin screens.
  */
-
-class Arconix_Portfolio {
+class Dal_Portfolio {
 
     /**
      * Construct Method
@@ -63,7 +62,7 @@ class Arconix_Portfolio {
      */
     function create_post_type() {
 
-	$args = apply_filters( 'arconix_portfolio_post_type_args',
+	$args = apply_filters( 'dal_portfolio_post_type_args',
 	    array(
 		'labels' => array(
 		    'name' => __( 'Aplicaciones participantes', 'acp' ),
@@ -101,7 +100,7 @@ class Arconix_Portfolio {
      */
     function create_taxonomy() {
 
-	$args = apply_filters( 'arconix_portfolio_taxonomy_args',
+	$args = apply_filters( 'dal_portfolio_taxonomy_args',
 	    array(
 		'labels' => array(
 		    'name' => __( 'premiopais', 'acp' ),
@@ -506,7 +505,7 @@ class Arconix_Portfolio {
 	/** Load the javascript */
 	self::$load_js = true;
 	/** Shortcode defaults */
-	$defaults = apply_filters( 'arconix_portfolio_shortcode_args',
+	$defaults = apply_filters( 'dal_portfolio_shortcode_args',
 	    array(
 		'link' => 'page',
 		'thumb' => 'portfolio-thumb',
@@ -533,7 +532,7 @@ class Arconix_Portfolio {
         if( $title == "yes" ) $title == "above"; // For backwards compatibility
 
 	/** Default Query arguments -- can be overridden by filter */
-	$args = apply_filters( 'arconix_portfolio_shortcode_query_args',
+	$args = apply_filters( 'dal_portfolio_shortcode_query_args',
 	    array(
 		'post_type' => 'portfolio',
 		'posts_per_page' => -1, // show all
@@ -716,7 +715,7 @@ class Arconix_Portfolio {
                 if (!($premiados == 'nacional' || $premiados == 'regional' )){
                  
                   
-                    $return .= '<ul class="dal-portfolio-filtro '.$uid.' "><li class="arconix-portfolio-category-title">';
+                    $return .= '<ul class="dal-portfolio-filtro '.$uid.' "><li class="dal-portfolio-category-title">';
                     $return .= $heading;
                     $return .= '</li><li class="active"><a href="javascript:void(0)" class="all">all</a></li>';
 
@@ -743,11 +742,11 @@ class Arconix_Portfolio {
                 
             }
             if ($premiados == 'nacional' || $premiados == 'regional' ){
-                   $return .= '<ul class="arconix-portfolio-grid colorganador '.$uid.'">';
+                   $return .= '<ul class="dal-portfolio-grid colorganador '.$uid.'">';
                   } else {
                     
                   
-            $return .= '<ul class="arconix-portfolio-grid '.$uid.'">';
+            $return .= '<ul class="dal-portfolio-grid '.$uid.'">';
             }
 
             while( $portfolio_query->have_posts() ) : $portfolio_query->the_post();
@@ -779,7 +778,7 @@ class Arconix_Portfolio {
 
 
                 /** Above image Title output */
-                if( $title == "above" ) $return .= '<h2 class="arconix-portfolio-title">' . get_the_title() . '</h2>';
+                if( $title == "above" ) $return .= '<h2 class="dal-portfolio-title">' . get_the_title() . '</h2>';
                 if ( $countyear > 0 ){
                           
                                foreach ( $tyears as $tyear ) {
@@ -813,7 +812,7 @@ class Arconix_Portfolio {
                 }
 
 		            /** Below image Title output */
-                if( $title == "below" ) $return .= '<h2 class="arconix-portfolio-title">' . get_the_title() . '</h2>';
+                if( $title == "below" ) $return .= '<h2 class="dal-portfolio-title">' . get_the_title() . '</h2>';
                   
                 /*datitos*/
                   switch($datitos) {
@@ -879,11 +878,11 @@ class Arconix_Portfolio {
                 /** Display the content */
                 switch( $display ) {
                     case "content" :
-                        $return .= '<div class="arconix-portfolio-text">' . get_the_content() . '</div>';
+                        $return .= '<div class="dal-portfolio-text">' . get_the_content() . '</div>';
                         break;
 
                     case "excerpt" :
-                        $return .= '<div class="arconix-portfolio-text">' . get_the_excerpt() . '</div>';
+                        $return .= '<div class="dal-portfolio-text">' . get_the_excerpt() . '</div>';
                         break;
 
 
@@ -938,14 +937,14 @@ class Arconix_Portfolio {
         wp_register_script( 'jquery-quicksand', ACP_URL . 'includes/js/jquery.quicksand.js', array( 'jquery' ), '1.2.2', true );
         wp_register_script( 'jquery-easing', ACP_URL . 'includes/js/jquery.easing.1.3.js', array( 'jquery' ), '1.3', true );
 
-	if( file_exists( get_stylesheet_directory() . "/arconix-portfolio.js" ) ) {
-	    wp_register_script( 'arconix-portfolio-js', get_stylesheet_directory_uri() . '/arconix-portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), ACP_VERSION, true );
+	if( file_exists( get_stylesheet_directory() . "/dal-portfolio.js" ) ) {
+	    wp_register_script( 'dal-portfolio-js', get_stylesheet_directory_uri() . '/dal-portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), ACP_VERSION, true );
 	}
-	elseif( file_exists( get_template_directory() . "/arconix-portfolio.js" ) ) {
-	    wp_register_script( 'arconix-portfolio-js', get_template_directory_uri() . '/arconix-portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), ACP_VERSION, true );
+	elseif( file_exists( get_template_directory() . "/dal-portfolio.js" ) ) {
+	    wp_register_script( 'dal-portfolio-js', get_template_directory_uri() . '/dal-portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), ACP_VERSION, true );
 	}
 	else {
-        wp_register_script( 'arconix-portfolio-js', ACP_URL . 'includes/js/portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), ACP_VERSION, true );
+        wp_register_script( 'dal-portfolio-js', ACP_URL . 'includes/js/portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), ACP_VERSION, true );
 	}
     }
 
@@ -960,7 +959,7 @@ class Arconix_Portfolio {
 	if( ! self::$load_js )
 	    return;
 
-	wp_print_scripts( 'arconix-portfolio-js' );
+	wp_print_scripts( 'dal-portfolio-js' );
     }
 
 
@@ -973,14 +972,14 @@ class Arconix_Portfolio {
      */
     function enqueue_css() {
 
-	if( file_exists( get_stylesheet_directory() . "/arconix-portfolio.css" ) ) {
-	    wp_enqueue_style( 'arconix-portfolio', get_stylesheet_directory_uri() . '/arconix-portfolio.css', array(), ACP_VERSION );
+	if( file_exists( get_stylesheet_directory() . "/dal-portfolio.css" ) ) {
+	    wp_enqueue_style( 'dal-portfolio', get_stylesheet_directory_uri() . '/dal-portfolio.css', array(), ACP_VERSION );
 	}
-	elseif( file_exists( get_template_directory() . "/arconix-portfolio.css" ) ) {
-	    wp_enqueue_style( 'arconix-portfolio', get_template_directory_uri() . '/arconix-portfolio.css', array(), ACP_VERSION );
+	elseif( file_exists( get_template_directory() . "/dal-portfolio.css" ) ) {
+	    wp_enqueue_style( 'dal-portfolio', get_template_directory_uri() . '/dal-portfolio.css', array(), ACP_VERSION );
 	}
 	else {
-	    wp_enqueue_style( 'arconix-portfolio', plugins_url( '/portfolio.css', __FILE__), array(), ACP_VERSION );
+	    wp_enqueue_style( 'dal-portfolio', plugins_url( '/portfolio.css', __FILE__), array(), ACP_VERSION );
 	}
     }
 
@@ -991,7 +990,7 @@ class Arconix_Portfolio {
      * @since 0.9.1
      */
     function register_dashboard_widget() {
-        wp_add_dashboard_widget( 'ac-portfolio', 'Arconix Portfolio', array( $this, 'dashboard_widget_output' ) );
+        wp_add_dashboard_widget( 'ac-portfolio', 'Dal Portfolio', array( $this, 'dashboard_widget_output' ) );
     }
 
 
@@ -1006,8 +1005,8 @@ class Arconix_Portfolio {
         echo '<div class="rss-widget">';
 
         wp_widget_rss_output( array(
-            'url' => 'http://arconixpc.com/tag/arconix-portfolio/feed', // feed url
-            'title' => 'Arconix Portfolio Posts', // feed title
+            'url' => 'http://dalpc.com/tag/dal-portfolio/feed', // feed url
+            'title' => 'Dal Portfolio Posts', // feed title
             'items' => 3, //how many posts to show
             'show_summary' => 1, // display excerpt
             'show_author' => 0, // display author

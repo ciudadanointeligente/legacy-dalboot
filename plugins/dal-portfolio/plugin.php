@@ -1,59 +1,58 @@
 <?php
 /**
- * Plugin Name: Arconix Portfolio Gallery
- * Plugin URI: http://arconixpc.com/plugins/arconix-portfolio
+ * Plugin Name: DAL Portfolio Gallery
+ * Plugin URI: http://github.com/ciudadanointeligente/dalboot
  * Description: Portfolio Gallery provides an easy way to display your portfolio on your website
  *
- * Version: 1.1
+ * Version: 1.0
  *
- * Author: John Gardner
- * Author URI: http://arconixpc.com
+ * Author: Montse Lobos
+ * Author URI: http://ciudadanointeligente.org
  *
  * License: GNU General Public License v2.0
  * License URI: http://www.opensource.org/licenses/gpl-license.php
  */
 
 
-
-register_activation_hook( __FILE__, 'arconix_portfolio_activation' );
+register_activation_hook( __FILE__, 'dal_portfolio_activation' );
 /**
  * This function runs on plugin activation. It checks for the existence of the CPT
  * and creates it otherwise
  *
  * @since 0.9
  */
-function arconix_portfolio_activation() {
+function dal_portfolio_activation() {
 
     if( ! post_type_exists( 'portfolio' ) ) {
-	arconix_portfolio_init();
-	global $_arconix_portfolio;
-	$_arconix_portfolio->create_post_type();
-	$_arconix_portfolio->create_taxonomy();
+	dal_portfolio_init();
+	global $_dal_portfolio;
+	$_dal_portfolio->create_post_type();
+	$_dal_portfolio->create_taxonomy();
     }
     flush_rewrite_rules();
 }
 
-register_deactivation_hook( __FILE__, 'arconix_portfolio_deactivation' );
+register_deactivation_hook( __FILE__, 'dal_portfolio_deactivation' );
 /**
  * This function runs on deactivation and flushes the re-write rules so permalinks work properly
  * 
  * @since 1.0 
  */
-function arconix_portfolio_deactivation() {
+function dal_portfolio_deactivation() {
     
     flush_rewrite_rules();
 }
 
 
-add_action( 'after_setup_theme', 'arconix_portfolio_init' );
+add_action( 'after_setup_theme', 'dal_portfolio_init' );
 /**
  * Initializes the plugin
  * Includes the libraries, defines global variables, instantiates the class
  *
  * @since 0.9
  */
-function arconix_portfolio_init() {
-    global $_arconix_portfolio;
+function dal_portfolio_init() {
+    global $_dal_portfolio;
 
     define( 'ACP_URL', plugin_dir_url( __FILE__ ) );
     define( 'ACP_VERSION', '1.1' );
@@ -63,7 +62,7 @@ function arconix_portfolio_init() {
 
 
     /** Instantiate **/
-    $_arconix_portfolio = new Arconix_Portfolio;
+    $_dal_portfolio = new Dal_Portfolio;
 
 }
 
