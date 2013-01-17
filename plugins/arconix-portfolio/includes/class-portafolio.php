@@ -360,8 +360,8 @@ class Arconix_Portfolio {
       }
        //The Caribbean
 
-       if (!term_exists( 'Antigua & Barbuda', 'pais')){
-         wp_insert_term('Antigua-&-Barbuda', 'pais');
+       if (!term_exists( 'Antigua-and-Barbuda', 'pais')){
+         wp_insert_term('Antigua-and-Barbuda', 'pais');
        }
        if (!term_exists( 'Belize', 'pais')){
          wp_insert_term('Belize', 'pais');
@@ -375,16 +375,16 @@ class Arconix_Portfolio {
        if (!term_exists( 'Jamaica', 'pais')){
          wp_insert_term('Jamaica', 'pais');
        }
-       if (!term_exists( 'Saint Kitts and Nevis', 'pais')){
+       if (!term_exists( 'Saint-Kitts-and-Nevis', 'pais')){
          wp_insert_term('Saint-Kitts-and-Nevis', 'pais');
        }
-       if (!term_exists( 'Sainte-Lucie', 'pais')){
-         wp_insert_term('Sainte-Lucie', 'pais');
+       if (!term_exists('Saint-Lucia', 'pais')){
+         wp_insert_term('Saint-Lucia', 'pais');
        }
-       if (!term_exists( 'Saint Vincent and the Grenadines', 'pais')){
+       if (!term_exists( 'Saint-Vincent-and-the-Grenadines', 'pais')){
          wp_insert_term('Saint-Vincent-and-the-Grenadines', 'pais');
        }
-        if (!term_exists( 'Trinidad and Tobago', 'pais')){
+        if (!term_exists( 'Trinidad-and-Tobago', 'pais')){
          wp_insert_term('Trinidad-and-Tobago', 'pais');
        }
         };
