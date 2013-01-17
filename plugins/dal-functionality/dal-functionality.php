@@ -95,11 +95,11 @@ function add_pais_box() {
   remove_meta_box('tagsdiv-pais', 'dal_country_sponsor','core');
   remove_meta_box('tagsdiv-pais', 'dal_organizers','core');
   remove_meta_box('tagsdiv-pais', 'dal_country','core');
-  add_meta_box('pais_box_ID', __('Pais'), 'select_dal_country','page', 'advanced', 'core');
-  add_meta_box('pais_box_ID', __('Pais'), 'select_dal_country','post', 'advanced', 'core');
-  add_meta_box('pais_box_ID', __('Pais'), 'select_dal_country','dal_country_sponsor', 'advanced', 'core');
-  add_meta_box('pais_box_ID', __('Pais'), 'select_dal_country','dal_country', 'advanced', 'high');
-  add_meta_box('pais_box_ID', __('Pais'), 'select_dal_country','dal_organizers', 'advanced', 'high');
+  add_meta_box('pais_box_ID', __('Pais','dal-functionality'), 'select_dal_country','page', 'advanced', 'core');
+  add_meta_box('pais_box_ID', __('Pais','dal-functionality'), 'select_dal_country','post', 'advanced', 'core');
+  add_meta_box('pais_box_ID', __('Pais','dal-functionality'), 'select_dal_country','dal_country_sponsor', 'advanced', 'core');
+  add_meta_box('pais_box_ID', __('Pais','dal-functionality'), 'select_dal_country','dal_country', 'advanced', 'high');
+  add_meta_box('pais_box_ID', __('Pais','dal-functionality'), 'select_dal_country','dal_organizers', 'advanced', 'high');
 }	
  
 function add_pais_menus() {
@@ -131,7 +131,7 @@ function select_dal_country($post) {
         $names = wp_get_object_terms($post->ID, 'pais'); 
         ?>
         <option class='pais-option' value='' 
-        <?php if (!count($names)) echo "selected";?>>Ninguno</option>
+        <?php if (!count($names)) echo "selected";?>><?php _e("Ninguno",'dal-functionality'); ?></option>
         <?php
 	foreach ($paises as $pais) {
 		if (!is_wp_error($names) && !empty($names) && !strcmp($pais->slug, $names[0]->slug)) 
@@ -209,19 +209,19 @@ function create_organizer_pt(){
    register_post_type( 'dal_organizers',
     array(
       'labels' => array(
-        'name' => __( 'Organizers' ),
-        'singular_name' => __( 'Organizer' ),
-        'add_new' => __('Add New Organizer'),
-        'add_new_item' => __('Add New Organizer'),
-        'edit_item' => __('Edit Organizer'),
-        'new_item' => __('New Organizer'),
-        'all_items' => __('All Organizers'),
-        'view_item' => __('View Organizer'),
-        'search_items' => __('Search Organizer'),
-        'not_found' =>  __('No Organizer País found'),
-        'not_found_in_trash' => __('No Organizer found in Trash'), 
+        'name' => __( 'Organizers','dal-functionality' ),
+        'singular_name' => __( 'Organizer','dal-functionality' ),
+        'add_new' => __('Add New Organizer','dal-functionality'),
+        'add_new_item' => __('Add New Organizer','dal-functionality'),
+        'edit_item' => __('Edit Organizer','dal-functionality'),
+        'new_item' => __('New Organizer','dal-functionality'),
+        'all_items' => __('All Organizers','dal-functionality'),
+        'view_item' => __('View Organizer','dal-functionality'),
+        'search_items' => __('Search Organizer','dal-functionality'),
+        'not_found' =>  __('No Organizer País found','dal-functionality'),
+        'not_found_in_trash' => __('No Organizer found in Trash','dal-functionality'), 
         'parent_item_colon' => '',
-        'menu_name' => __('Organizers')
+        'menu_name' => __('Organizers','dal-functionality')
       ),
     'public' => true,
     'has_archive' => true,
@@ -236,19 +236,19 @@ function create_dal_post_type() {
   register_post_type( 'dal_country',
     array(
       'labels' => array(
-        'name' => __( 'Ficha base paises en competencia' ),
-        'singular_name' => __( 'Ficha base país en competencia' ),
-        'add_new' => _x('Add New Ficha país', 'Ficha país'),
-        'add_new_item' => __('Add New ficha país'),
-        'edit_item' => __('Edit Ficha país'),
-        'new_item' => __('New Ficha país'),
-        'all_items' => __('All Fichas país'),
-        'view_item' => __('View Ficha país'),
-        'search_items' => __('Search Ficha país'),
-        'not_found' =>  __('No Ficha país found'),
-        'not_found_in_trash' => __('No Ficha país found in Trash'), 
+        'name' => __( 'Ficha base paises en competencia' ,'dal-functionality'),
+        'singular_name' => __( 'Ficha base país en competencia' ,'dal-functionality'),
+        'add_new' => _x('Add New Ficha país', 'Ficha país','dal-functionality'),
+        'add_new_item' => __('Add New ficha país','dal-functionality'),
+        'edit_item' => __('Edit Ficha país','dal-functionality'),
+        'new_item' => __('New Ficha país','dal-functionality'),
+        'all_items' => __('All Fichas país','dal-functionality'),
+        'view_item' => __('View Ficha país','dal-functionality'),
+        'search_items' => __('Search Ficha país','dal-functionality'),
+        'not_found' =>  __('No Ficha país found','dal-functionality'),
+        'not_found_in_trash' => __('No Ficha país found in Trash','dal-functionality'), 
         'parent_item_colon' => '',
-        'menu_name' => __('Ficha base país'),
+        'menu_name' => __('Ficha base país','dal-functionality'),
       ),
     'public' => true,
     'has_archive' => true,
@@ -262,19 +262,19 @@ function create_dal_post_type() {
   register_post_type( 'dal_country_sponsor',
     array(
       'labels' => array(
-        'name' => __( 'Sponsors' ),
-        'singular_name' => __( 'Sponsor' ),
+        'name' => __( 'Sponsors','dal-functionality' ),
+        'singular_name' => __( 'Sponsor' ,'dal-functionality'),
         'add_new' => _x('Add New', 'Sponsor'),
-        'add_new_item' => __('Add New Sponsor'),
-        'edit_item' => __('Edit Sponsor'),
-        'new_item' => __('New Sponsor'),
-        'all_items' => __('All Sponsors'),
-        'view_item' => __('View Sponsor'),
-        'search_items' => __('Search Sponsors'),
-        'not_found' =>  __('No Sponsors found'),
-        'not_found_in_trash' => __('No Sponsors found in Trash'), 
+        'add_new_item' => __('Add New Sponsor','dal-functionality'),
+        'edit_item' => __('Edit Sponsor','dal-functionality'),
+        'new_item' => __('New Sponsor','dal-functionality'),
+        'all_items' => __('All Sponsors','dal-functionality'),
+        'view_item' => __('View Sponsor','dal-functionality'),
+        'search_items' => __('Search Sponsors','dal-functionality'),
+        'not_found' =>  __('No Sponsors found','dal-functionality'),
+        'not_found_in_trash' => __('No Sponsors found in Trash','dal-functionality'), 
         'parent_item_colon' => '',
-        'menu_name' => __('Sponsors')
+        'menu_name' => __('Sponsors','dal-functionality')
       ),
     'public' => true,
     'has_archive' => false,
@@ -286,19 +286,19 @@ function create_dal_post_type() {
   register_post_type( 'dal_regional_sponsor',
     array(
       'labels' => array(
-        'name' => __( 'Sponsors Regionales' ),
-        'singular_name' => __( 'Sponsor Regional' ),
-        'add_new' => _x('Add New', 'Sponsor Regional'),
-        'add_new_item' => __('Add New Regional Sponsor'),
-        'edit_item' => __('Edit Regional Sponsor'),
-        'new_item' => __('New Regional Sponsor'),
-        'all_items' => __('All Regional Sponsors'),
-        'view_item' => __('View Regional Sponsor'),
-        'search_items' => __('Search Regional Sponsors'),
-        'not_found' =>  __('No Regional Sponsors found'),
-        'not_found_in_trash' => __('No Regional Sponsors found in Trash'), 
+        'name' => __( 'Sponsors Regionales','dal-functionality' ),
+        'singular_name' => __( 'Sponsor Regional','dal-functionality' ),
+        'add_new' => _x('Add New', 'Sponsor Regional','dal-functionality'),
+        'add_new_item' => __('Add New Regional Sponsor','dal-functionality'),
+        'edit_item' => __('Edit Regional Sponsor','dal-functionality'),
+        'new_item' => __('New Regional Sponsor','dal-functionality'),
+        'all_items' => __('All Regional Sponsors','dal-functionality'),
+        'view_item' => __('View Regional Sponsor','dal-functionality'),
+        'search_items' => __('Search Regional Sponsors','dal-functionality'),
+        'not_found' =>  __('No Regional Sponsors found','dal-functionality'),
+        'not_found_in_trash' => __('No Regional Sponsors found in Trash','dal-functionality'), 
         'parent_item_colon' => '',
-        'menu_name' => __('Regional Sponsors')
+        'menu_name' => __('Regional Sponsors','dal-functionality')
       ),
     'public' => true,
     'has_archive' => false,
@@ -354,7 +354,7 @@ function apppais_styling_function($post) {
         $names = wp_get_object_terms($post->ID, 'apppais'); 
         ?>
         <option class='apppais-option' value='' 
-        <?php if (!count($names)) echo "selected";?>>Ninguno</option>
+        <?php if (!count($names)) echo "selected";?>><?php _e("Ninguno",'dal-functionality'); ?></option>
         <?php
   foreach ($apppaises as $apppais) {
     if (!is_wp_error($names) && !empty($names) && !strcmp($apppais->slug, $names[0]->slug)) 
