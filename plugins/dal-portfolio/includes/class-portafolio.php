@@ -65,24 +65,24 @@ class Dal_Portfolio {
 	$args = apply_filters( 'dal_portfolio_post_type_args',
 	    array(
 		'labels' => array(
-		    'name' => __( 'Aplicaciones participantes', 'acp' ),
-		    'singular_name' => __( 'Aplicación', 'acp' ),
-		    'add_new' => __( 'Add New', 'acp' ),
-		    'add_new_item' => __( 'Add New Aplicación', 'acp' ),
-		    'edit' => __( 'Edit', 'acp' ),
-		    'edit_item' => __( 'Edit Aplicación', 'acp' ),
-		    'new_item' => __( 'New Aplicación', 'acp' ),
-		    'view' => __( 'View Aplicaciones', 'acp' ),
-		    'view_item' => __( 'View Aplicación', 'acp' ),
-		    'search_items' => __( 'Search Aplicaciones', 'acp' ),
-		    'not_found' => __( 'No Aplicaciones found', 'acp' ),
-		    'not_found_in_trash' => __( 'No Aplicaciones found in Trash', 'acp' ),
+		    'name' => __( 'Aplicaciones participantes', 'dal-portfolio' ),
+		    'singular_name' => __( 'Aplicación', 'dal-portfolio' ),
+		    'add_new' => __( 'Add New', 'dal-portfolio' ),
+		    'add_new_item' => __( 'Add New Aplicación', 'dal-portfolio' ),
+		    'edit' => __( 'Edit', 'dal-portfolio' ),
+		    'edit_item' => __( 'Edit Aplicación', 'dal-portfolio' ),
+		    'new_item' => __( 'New Aplicación', 'dal-portfolio' ),
+		    'view' => __( 'View Aplicaciones', 'dal-portfolio' ),
+		    'view_item' => __( 'View Aplicación', 'dal-portfolio' ),
+		    'search_items' => __( 'Search Aplicaciones', 'dal-portfolio' ),
+		    'not_found' => __( 'No Aplicaciones found', 'dal-portfolio' ),
+		    'not_found_in_trash' => __( 'No Aplicaciones found in Trash', 'dal-portfolio' ),
 
 		),
 		'public' => true,
 		'query_var' => true,
 		'menu_position' => 20,
-		'menu_icon' => ACP_URL . 'images/portfolio-icon-16x16.png',
+		'menu_icon' => dal-portfolio_URL . 'images/portfolio-icon-16x16.png',
 		'has_archive' => true,
 		'supports' => array( 'title', 'thumbnail' ),
 		'rewrite' => array( 'slug' => 'portfolio', 'with_front' => false ),
@@ -103,21 +103,21 @@ class Dal_Portfolio {
 	$args = apply_filters( 'dal_portfolio_taxonomy_args',
 	    array(
 		'labels' => array(
-		    'name' => __( 'premiopais', 'acp' ),
-		    'singular_name' => __( 'Premio nacional', 'acp' ),
-		    'search_items' =>  __( 'Buscar premios nacionales', 'acp' ),
-		    'popular_items' => __( 'premios populares', 'acp' ),
-		    'all_items' => __( 'todos los premios nacionales', 'acp' ),
+		    'name' => __( 'premiopais', 'dal-portfolio' ),
+		    'singular_name' => __( 'Premio nacional', 'dal-portfolio' ),
+		    'search_items' =>  __( 'Buscar premios nacionales', 'dal-portfolio' ),
+		    'popular_items' => __( 'premios populares', 'dal-portfolio' ),
+		    'all_items' => __( 'todos los premios nacionales', 'dal-portfolio' ),
 		    'parent_item' => null,
 		    'parent_item_colon' => null,
-		    'edit_item' => __( 'editar premio' , 'acp' ),
-		    'update_item' => __( 'actualizar premio', 'acp' ),
-		    'add_new_item' => __( 'Agregar nuevo premio', 'acp' ),
-		    'new_item_name' => __( 'Nuevo premio', 'acp' ),
-		    'separate_items_with_commas' => __( 'separados por comas', 'acp' ),
-		    'add_or_remove_items' => __( 'agregar o remover premio', 'acp' ),
-		    'choose_from_most_used' => __( 'elige de lso premios más usados', 'acp' ),
-		    'menu_name' => __( 'Premios Nacionales', 'acp' ),
+		    'edit_item' => __( 'editar premio' , 'dal-portfolio' ),
+		    'update_item' => __( 'actualizar premio', 'dal-portfolio' ),
+		    'add_new_item' => __( 'Agregar nuevo premio', 'dal-portfolio' ),
+		    'new_item_name' => __( 'Nuevo premio', 'dal-portfolio' ),
+		    'separate_items_with_commas' => __( 'separados por comas', 'dal-portfolio' ),
+		    'add_or_remove_items' => __( 'agregar o remover premio', 'dal-portfolio' ),
+		    'choose_from_most_used' => __( 'elige de lso premios más usados', 'dal-portfolio' ),
+		    'menu_name' => __( 'Premios Nacionales', 'dal-portfolio' ),
 		),
 		'hierarchical' => true,
 		'show_ui' => true,
@@ -172,21 +172,21 @@ class Dal_Portfolio {
 
          array(
           'labels' => array(
-              'name' => __( 'premioregional', 'acp' ),
-              'singular_name' => __( 'Premio Regional', 'acp' ),
-              'search_items' =>  __( 'Buscar premios regionales', 'acp' ),
-              'popular_items' => __( 'populares', 'acp' ),
-              'all_items' => __( 'todos los premios regionales', 'acp' ),
+              'name' => __( 'premioregional', 'dal-portfolio' ),
+              'singular_name' => __( 'Premio Regional', 'dal-portfolio' ),
+              'search_items' =>  __( 'Buscar premios regionales', 'dal-portfolio' ),
+              'popular_items' => __( 'populares', 'dal-portfolio' ),
+              'all_items' => __( 'todos los premios regionales', 'dal-portfolio' ),
               'parent_item' => null,
               'parent_item_colon' => null,
-              'edit_item' => __( 'editar premio' , 'acp' ),
-              'update_item' => __( 'actualizar premio', 'acp' ),
-              'add_new_item' => __( 'Agregar nuevo premio', 'acp' ),
-              'new_item_name' => __( 'Nuevo premio', 'acp' ),
-              'separate_items_with_commas' => __( 'Separa los premios con comas', 'acp' ),
-              'add_or_remove_items' => __( 'agregar o remover premio', 'acp' ),
-              'choose_from_most_used' => __( 'Elige de los más usados', 'acp' ),
-              'menu_name' => __( 'Premios Regionales', 'acp' ),
+              'edit_item' => __( 'editar premio' , 'dal-portfolio' ),
+              'update_item' => __( 'actualizar premio', 'dal-portfolio' ),
+              'add_new_item' => __( 'Agregar nuevo premio', 'dal-portfolio' ),
+              'new_item_name' => __( 'Nuevo premio', 'dal-portfolio' ),
+              'separate_items_with_commas' => __( 'Separa los premios con comas', 'dal-portfolio' ),
+              'add_or_remove_items' => __( 'agregar o remover premio', 'dal-portfolio' ),
+              'choose_from_most_used' => __( 'Elige de los más usados', 'dal-portfolio' ),
+              'menu_name' => __( 'Premios Regionales', 'dal-portfolio' ),
           ),
           'hierarchical' => true,
           'show_ui' => true,
@@ -406,10 +406,10 @@ class Dal_Portfolio {
 
 	$columns = array(
 	    'cb' => '<input type="checkbox" />',
-	    'portfolio_thumbnail' => __( 'Image', 'acp' ),
-	    'title' => __( 'Title', 'acp' ),
-	    'portfolio_description' => __( 'Description', 'acp' ),
-	    'portfolio_premiopaises' => __( 'premiopaises', 'acp' )
+	    'portfolio_thumbnail' => __( 'Image', 'dal-portfolio' ),
+	    'title' => __( 'Title', 'dal-portfolio' ),
+	    'portfolio_description' => __( 'Description', 'dal-portfolio' ),
+	    'portfolio_premiopaises' => __( 'premiopaises', 'dal-portfolio' )
 	);
 
 	return $columns;
@@ -921,7 +921,7 @@ class Dal_Portfolio {
      * @since 0.9
      */
     function admin_style() {
-	printf( '<style type="text/css" media="screen">.icon32-posts-portfolio { background: transparent url(%s) no-repeat !important; }</style>', ACP_URL . 'images/portfolio-icon-32x32.png' );
+	printf( '<style type="text/css" media="screen">.icon32-posts-portfolio { background: transparent url(%s) no-repeat !important; }</style>', dal-portfolio_URL . 'images/portfolio-icon-32x32.png' );
     }
 
 
@@ -934,17 +934,17 @@ class Dal_Portfolio {
      */
     function register_script() {
 
-        wp_register_script( 'jquery-quicksand', ACP_URL . 'includes/js/jquery.quicksand.js', array( 'jquery' ), '1.2.2', true );
-        wp_register_script( 'jquery-easing', ACP_URL . 'includes/js/jquery.easing.1.3.js', array( 'jquery' ), '1.3', true );
+        wp_register_script( 'jquery-quicksand', dal-portfolio_URL . 'includes/js/jquery.quicksand.js', array( 'jquery' ), '1.2.2', true );
+        wp_register_script( 'jquery-easing', dal-portfolio_URL . 'includes/js/jquery.easing.1.3.js', array( 'jquery' ), '1.3', true );
 
 	if( file_exists( get_stylesheet_directory() . "/dal-portfolio.js" ) ) {
-	    wp_register_script( 'dal-portfolio-js', get_stylesheet_directory_uri() . '/dal-portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), ACP_VERSION, true );
+	    wp_register_script( 'dal-portfolio-js', get_stylesheet_directory_uri() . '/dal-portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), dal-portfolio_VERSION, true );
 	}
 	elseif( file_exists( get_template_directory() . "/dal-portfolio.js" ) ) {
-	    wp_register_script( 'dal-portfolio-js', get_template_directory_uri() . '/dal-portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), ACP_VERSION, true );
+	    wp_register_script( 'dal-portfolio-js', get_template_directory_uri() . '/dal-portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), dal-portfolio_VERSION, true );
 	}
 	else {
-        wp_register_script( 'dal-portfolio-js', ACP_URL . 'includes/js/portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), ACP_VERSION, true );
+        wp_register_script( 'dal-portfolio-js', dal-portfolio_URL . 'includes/js/portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), dal-portfolio_VERSION, true );
 	}
     }
 
@@ -973,13 +973,13 @@ class Dal_Portfolio {
     function enqueue_css() {
 
 	if( file_exists( get_stylesheet_directory() . "/dal-portfolio.css" ) ) {
-	    wp_enqueue_style( 'dal-portfolio', get_stylesheet_directory_uri() . '/dal-portfolio.css', array(), ACP_VERSION );
+	    wp_enqueue_style( 'dal-portfolio', get_stylesheet_directory_uri() . '/dal-portfolio.css', array(), dal-portfolio_VERSION );
 	}
 	elseif( file_exists( get_template_directory() . "/dal-portfolio.css" ) ) {
-	    wp_enqueue_style( 'dal-portfolio', get_template_directory_uri() . '/dal-portfolio.css', array(), ACP_VERSION );
+	    wp_enqueue_style( 'dal-portfolio', get_template_directory_uri() . '/dal-portfolio.css', array(), dal-portfolio_VERSION );
 	}
 	else {
-	    wp_enqueue_style( 'dal-portfolio', plugins_url( '/portfolio.css', __FILE__), array(), ACP_VERSION );
+	    wp_enqueue_style( 'dal-portfolio', plugins_url( '/portfolio.css', __FILE__), array(), dal-portfolio_VERSION );
 	}
     }
 
@@ -1013,20 +1013,20 @@ class Dal_Portfolio {
             'show_date' => 1 // display post date
         ) );
 
-        echo '<div class="acp-widget-bottom"><ul>'; ?>
-            <li><a href="http://arcnx.co/apwiki"><img src="<?php echo ACP_URL . 'images/page-16x16.png'?>">Wiki Page</a></li>
-            <li><a href="http://arcnx.co/aphelp"><img src="<?php echo ACP_URL . 'images/help-16x16.png'?>">Support Forum</a></li>
-            <li><a href="http://arcnx.co/aptrello"><img src="<?php echo ACP_URL . 'images/trello-16x16.png'?>">Dev Board</a></li>
+        echo '<div class="dal-portfolio-widget-bottom"><ul>'; ?>
+            <li><a href="http://arcnx.co/apwiki"><img src="<?php echo dal-portfolio_URL . 'images/page-16x16.png'?>">Wiki Page</a></li>
+            <li><a href="http://arcnx.co/aphelp"><img src="<?php echo dal-portfolio_URL . 'images/help-16x16.png'?>">Support Forum</a></li>
+            <li><a href="http://arcnx.co/aptrello"><img src="<?php echo dal-portfolio_URL . 'images/trello-16x16.png'?>">Dev Board</a></li>
         <?php echo '</ul></div>';
         echo "</div>";
 
         // handle the styling
         echo '<style type="text/css">
             #ac-portfolio .rsssummary { display: block; }
-            #ac-portfolio .acp-widget-bottom { border-top: 1px solid #ddd; padding-top: 10px; text-align: center; }
-            #ac-portfolio .acp-widget-bottom ul { list-style: none; }
-            #ac-portfolio .acp-widget-bottom ul li { display: inline; padding-right: 9%; }
-            #ac-portfolio .acp-widget-bottom img { padding-right: 3px; vertical-align: top; }
+            #ac-portfolio .dal-portfolio-widget-bottom { border-top: 1px solid #ddd; padding-top: 10px; text-align: center; }
+            #ac-portfolio .dal-portfolio-widget-bottom ul { list-style: none; }
+            #ac-portfolio .dal-portfolio-widget-bottom ul li { display: inline; padding-right: 9%; }
+            #ac-portfolio .dal-portfolio-widget-bottom img { padding-right: 3px; vertical-align: top; }
         </style>';
     }
 

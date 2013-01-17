@@ -13,6 +13,8 @@
  * License URI: http://www.opensource.org/licenses/gpl-license.php
  */
 
+// Plugin localization support
+load_plugin_textdomain('dal-portfolio', false, basename( dirname( __FILE__ ) ) . '/languages' );
 
 register_activation_hook( __FILE__, 'dal_portfolio_activation' );
 /**

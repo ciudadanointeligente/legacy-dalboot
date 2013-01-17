@@ -8,6 +8,9 @@ Author: Montserrat Lobos for Ciudadano Inteligente
 Author URI: http://ciudadanointeligente.org
 	*/
 
+// Plugin localization support
+load_plugin_textdomain('dal-functionality', false, basename( dirname( __FILE__ ) ) . '/languages' );
+
 define( 'DAL_FUCT_URL', plugin_dir_url( __FILE__ ) );
 //
 // 1- Agrega taxonomía "paises" con dropdown para pages.
