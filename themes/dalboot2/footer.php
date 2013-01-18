@@ -27,7 +27,7 @@
 		</div> <!-- /container -->
 		<div class="fullwidhtRow">
 			<div class="container">
-				<h4>Con el apoyo de</h4>
+				<h4><?php _e( 'With the support of', 'bootstrapwp' ); ?></h4>
 				
 					<div class="sponsorFooter nolist row">
 
