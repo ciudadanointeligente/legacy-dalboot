@@ -74,7 +74,7 @@
 
 							
 		</div>	
-			<div class="container fullcentered opacity">Sitio desarrollado por: <a class="fci-link" href="http://ciudadanointeligente.org"></a></p>
+			<div class="container fullcentered opacity"><?php _e( 'Site developed by:', 'bootstrapwp' ); ?> <a class="fci-link" href="http://ciudadanointeligente.org"></a></p>
 	 </footer>
 		<?php wp_footer(); ?>
 
