@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bootstrapwp\n"
-"POT-Creation-Date: 2013-01-18 16:20-0300\n"
+"POT-Creation-Date: 2013-01-18 17:02-0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: J. Pablo Pérez Trabucco <jpperez@ciudadanointeligente.org>\n"
 "Language-Team: Fundación Ciudadano Inteligente <devteam@ciudadanointeligente."
@@ -142,6 +142,10 @@ msgstr ""
 
 #: 404.php:44
 msgid "Most Used Categories"
+msgstr ""
+
+#: footer.php:30
+msgid "With the support of"
 msgstr ""
 
 #: footer.php:77
