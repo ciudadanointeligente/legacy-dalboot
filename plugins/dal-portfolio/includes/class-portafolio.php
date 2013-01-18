@@ -67,16 +67,16 @@ class Dal_Portfolio {
 		'labels' => array(
 		    'name' => __( 'Aplicaciones participantes', 'dal-portfolio' ),
 		    'singular_name' => __( 'Aplicación', 'dal-portfolio' ),
-		    'add_new' => __( 'Add New', 'dal-portfolio' ),
-		    'add_new_item' => __( 'Add New Aplicación', 'dal-portfolio' ),
-		    'edit' => __( 'Edit', 'dal-portfolio' ),
-		    'edit_item' => __( 'Edit Aplicación', 'dal-portfolio' ),
-		    'new_item' => __( 'New Aplicación', 'dal-portfolio' ),
-		    'view' => __( 'View Aplicaciones', 'dal-portfolio' ),
-		    'view_item' => __( 'View Aplicación', 'dal-portfolio' ),
-		    'search_items' => __( 'Search Aplicaciones', 'dal-portfolio' ),
-		    'not_found' => __( 'No Aplicaciones found', 'dal-portfolio' ),
-		    'not_found_in_trash' => __( 'No Aplicaciones found in Trash', 'dal-portfolio' ),
+		    'add_new' => __( 'Agregar nuevo', 'dal-portfolio' ),
+		    'add_new_item' => __( 'Agregar nueva aplicación', 'dal-portfolio' ),
+		    'edit' => __( 'Editar', 'dal-portfolio' ),
+		    'edit_item' => __( 'Editar aplicación', 'dal-portfolio' ),
+		    'new_item' => __( 'Nueva aplicación', 'dal-portfolio' ),
+		    'view' => __( 'Ver aplicaciones', 'dal-portfolio' ),
+		    'view_item' => __( 'Ver aplicación', 'dal-portfolio' ),
+		    'search_items' => __( 'Buscar aplicaciones', 'dal-portfolio' ),
+		    'not_found' => __( 'No se encontraron aplicaciones', 'dal-portfolio' ),
+		    'not_found_in_trash' => __( 'No se encontraron aplicaciones en la papelera', 'dal-portfolio' ),
 
 		),
 		'public' => true,
@@ -106,18 +106,18 @@ class Dal_Portfolio {
 		    'name' => __( 'premiopais', 'dal-portfolio' ),
 		    'singular_name' => __( 'Premio nacional', 'dal-portfolio' ),
 		    'search_items' =>  __( 'Buscar premios nacionales', 'dal-portfolio' ),
-		    'popular_items' => __( 'premios populares', 'dal-portfolio' ),
-		    'all_items' => __( 'todos los premios nacionales', 'dal-portfolio' ),
+		    'popular_items' => __( 'Premios populares', 'dal-portfolio' ),
+		    'all_items' => __( 'Todos los premios nacionales', 'dal-portfolio' ),
 		    'parent_item' => null,
 		    'parent_item_colon' => null,
-		    'edit_item' => __( 'editar premio' , 'dal-portfolio' ),
-		    'update_item' => __( 'actualizar premio', 'dal-portfolio' ),
+		    'edit_item' => __( 'Editar premio' , 'dal-portfolio' ),
+		    'update_item' => __( 'Actualizar premio', 'dal-portfolio' ),
 		    'add_new_item' => __( 'Agregar nuevo premio', 'dal-portfolio' ),
 		    'new_item_name' => __( 'Nuevo premio', 'dal-portfolio' ),
 		    'separate_items_with_commas' => __( 'separados por comas', 'dal-portfolio' ),
-		    'add_or_remove_items' => __( 'agregar o remover premio', 'dal-portfolio' ),
-		    'choose_from_most_used' => __( 'elige de lso premios más usados', 'dal-portfolio' ),
-		    'menu_name' => __( 'Premios Nacionales', 'dal-portfolio' ),
+		    'add_or_remove_items' => __( 'Agregar o remover premio', 'dal-portfolio' ),
+		    'choose_from_most_used' => __( 'Elige de los premios más usados', 'dal-portfolio' ),
+		    'menu_name' => __( 'Premios nacionales', 'dal-portfolio' ),
 		),
 		'hierarchical' => true,
 		'show_ui' => true,
@@ -173,20 +173,20 @@ class Dal_Portfolio {
          array(
           'labels' => array(
               'name' => __( 'premioregional', 'dal-portfolio' ),
-              'singular_name' => __( 'Premio Regional', 'dal-portfolio' ),
+              'singular_name' => __( 'Premio regional', 'dal-portfolio' ),
               'search_items' =>  __( 'Buscar premios regionales', 'dal-portfolio' ),
-              'popular_items' => __( 'populares', 'dal-portfolio' ),
-              'all_items' => __( 'todos los premios regionales', 'dal-portfolio' ),
+              'popular_items' => __( 'Populares', 'dal-portfolio' ),
+              'all_items' => __( 'Todos los premios regionales', 'dal-portfolio' ),
               'parent_item' => null,
               'parent_item_colon' => null,
-              'edit_item' => __( 'editar premio' , 'dal-portfolio' ),
-              'update_item' => __( 'actualizar premio', 'dal-portfolio' ),
+              'edit_item' => __( 'Editar premio' , 'dal-portfolio' ),
+              'update_item' => __( 'Actualizar premio', 'dal-portfolio' ),
               'add_new_item' => __( 'Agregar nuevo premio', 'dal-portfolio' ),
               'new_item_name' => __( 'Nuevo premio', 'dal-portfolio' ),
               'separate_items_with_commas' => __( 'Separa los premios con comas', 'dal-portfolio' ),
-              'add_or_remove_items' => __( 'agregar o remover premio', 'dal-portfolio' ),
+              'add_or_remove_items' => __( 'Agregar o remover premio', 'dal-portfolio' ),
               'choose_from_most_used' => __( 'Elige de los más usados', 'dal-portfolio' ),
-              'menu_name' => __( 'Premios Regionales', 'dal-portfolio' ),
+              'menu_name' => __( 'Premios regionales', 'dal-portfolio' ),
           ),
           'hierarchical' => true,
           'show_ui' => true,
@@ -222,21 +222,21 @@ class Dal_Portfolio {
 
     if (!taxonomy_exists('apps_tags')) {
        
-        register_taxonomy( 'apps_tags', 'portfolio', array( 'hierarchical' => false, 'label' => __('apps_tags'), 'query_var' => 'apps_tags', 'rewrite' => array( 'slug' => 'apps_tags' ) ) );
+        register_taxonomy( 'apps_tags', 'portfolio', array( 'hierarchical' => false, 'label' => __('Tags de las aplicaciones', 'dal-portfolio' ), 'query_var' => 'apps_tags', 'rewrite' => array( 'slug' => 'apps_tags' ) ) );
     };
 
     $labels = array(
-        'name' => _x( 'Tracks', 'taxonomy general name' ),
-        'singular_name' => _x( 'track', 'taxonomy singular name' ),
-        'search_items' =>  __( 'Search tracks' ),
-        'all_items' => __( 'All tracks' ),
-        'parent_item' => __( 'Parent track' ),
-        'parent_item_colon' => __( 'Parent track:' ),
-        'edit_item' => __( 'Edit track' ), 
-        'update_item' => __( 'Update track' ),
-        'add_new_item' => __( 'Add New track' ),
-        'new_item_name' => __( 'New track' ),
-        'menu_name' => __( 'Temas (tracks)' ),
+        'name' => _x( 'Tracks', 'taxonomy general name', 'dal-portfolio' ),
+        'singular_name' => _x( 'Track', 'taxonomy singular name', 'dal-portfolio' ),
+        'search_items' =>  __( 'Buscar tracks', 'dal-portfolio' ),
+        'all_items' => __( 'Todos los tracks', 'dal-portfolio' ),
+        'parent_item' => __( 'Track padre', 'dal-portfolio' ),
+        'parent_item_colon' => __( 'Track padre:', 'dal-portfolio' ),
+        'edit_item' => __( 'Editar track', 'dal-portfolio' ), 
+        'update_item' => __( 'Actualizar track', 'dal-portfolio' ),
+        'add_new_item' => __( 'Agregar nuevo track', 'dal-portfolio' ),
+        'new_item_name' => __( 'Nuevo track', 'dal-portfolio' ),
+        'menu_name' => __( 'Temas (tracks)', 'dal-portfolio' ),
       );    
  
 
@@ -252,17 +252,17 @@ class Dal_Portfolio {
     };
 
     $labelsano = array(
-        'name' => _x( 'Año', 'taxonomy general name' ),
-        'singular_name' => _x( 'Año', 'taxonomy singular name' ),
-        'search_items' =>  __( 'Search Año' ),
-        'all_items' => __( 'All Año' ),
-        'parent_item' => __( 'Parent Año' ),
-        'parent_item_colon' => __( 'Parent Año:' ),
-        'edit_item' => __( 'Edit Año' ), 
-        'update_item' => __( 'Update Año' ),
-        'add_new_item' => __( 'Add New Año' ),
-        'new_item_name' => __( 'New Año' ),
-        'menu_name' => __( 'Año de la app' ),
+        'name' => _x( 'Año', 'taxonomy general name', 'dal-portfolio' ),
+        'singular_name' => _x( 'Año', 'taxonomy singular name', 'dal-portfolio' ),
+        'search_items' =>  __( 'Buscar por año', 'dal-portfolio' ),
+        'all_items' => __( 'Todos los años', 'dal-portfolio' ),
+        'parent_item' => __( 'Año padre', 'dal-portfolio' ),
+        'parent_item_colon' => __( 'Año padre:', 'dal-portfolio' ),
+        'edit_item' => __( 'Editar año', 'dal-portfolio' ), 
+        'update_item' => __( 'Actualizar año', 'dal-portfolio' ),
+        'add_new_item' => __( 'Agregar nuevo año', 'dal-portfolio' ),
+        'new_item_name' => __( 'Nuevo año', 'dal-portfolio' ),
+        'menu_name' => __( 'Año de la aplicación', 'dal-portfolio' ),
       );   
        if (!taxonomy_exists('apps_ano')) {
 
@@ -290,7 +290,7 @@ class Dal_Portfolio {
     };
 
      if (!taxonomy_exists('apppais')) {
-        register_taxonomy( 'apppais', 'portfolio', array( 'hierarchical' => false, 'label' => __('país de la app'), 'query_var' => 'apppais', 'rewrite' => array( 'slug' => 'apppais' ) ) );
+        register_taxonomy( 'apppais', 'portfolio', array( 'hierarchical' => false, 'label' => __('País de la aplicación', 'dal-portfolio' ), 'query_var' => 'apppais', 'rewrite' => array( 'slug' => 'apppais' ) ) );
         
       if (!term_exists( 'Argentina', 'apppais')){
          wp_insert_term('Argentina', 'apppais');
@@ -377,19 +377,19 @@ class Dal_Portfolio {
 
 	$messages['portfolio'] = array(
 	    0 => '', // Unused. Messages start at index 1.
-	    1 => sprintf( __('DAL Portfolio Item updated. <a href="%s">View app</a>'), esc_url( get_permalink($post_ID) ) ),
-	    2 => __('Custom field updated.'),
-	    3 => __('Custom field deleted.'),
-	    4 => __('DAL Portfolio item updated.'),
+	    1 => sprintf( __('Ítem de DAL Portfolio actualizado. <a href="%s">View app</a>', 'dal-portfolio' ), esc_url( get_permalink($post_ID) ) ),
+	    2 => __('Campo personalizado actualizado.', 'dal-portfolio' ),
+	    3 => __('Campo personalizado eliminado.', 'dal-portfolio' ),
+	    4 => __('Ítem de DAL Portfolio actualizado.', 'dal-portfolio' ),
 	    /* translators: %s: date and time of the revision */
 	    5 => isset($_GET['revision']) ? sprintf( __('DAL Portfolio item restored to revision from %s'), wp_post_revision_title( (int) $_GET['revision'], false ) ) : false,
-	    6 => sprintf( __('DAL Portfolio item published. <a href="%s">View app </a>'), esc_url( get_permalink($post_ID) ) ),
-	    7 => __('DAL Portfolio item saved.'),
-	    8 => sprintf( __('DAL Portfolio item submitted. <a target="_blank" href="%s">Preview portfolio item</a>'), esc_url( add_query_arg( 'preview', 'true', get_permalink($post_ID) ) ) ),
-	    9 => sprintf( __('DAL Portfolio item scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview DAL portfolio item</a>'),
+	    6 => sprintf( __('Ítem de DAL Portfolio publicado. <a href="%s">View app </a>', 'dal-portfolio' ), esc_url( get_permalink($post_ID) ) ),
+	    7 => __('Ítem de DAL Portfolio guardado.', 'dal-portfolio' ),
+	    8 => sprintf( __('Ítem de DAL Portfolio enviado. <a target="_blank" href="%s">Previsualizar ítem de portfolio</a>', 'dal-portfolio' ), esc_url( add_query_arg( 'preview', 'true', get_permalink($post_ID) ) ) ),
+	    9 => sprintf( __('Ítem de DAL Portfolio programado por: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Previsualizar ítem de DAL portfolio</a>', 'dal-portfolio' ),
 	      // translators: Publish box date format, see http://php.net/date
 	      date_i18n( __( 'M j, Y @ G:i' ), strtotime( $post->post_date ) ), esc_url( get_permalink($post_ID) ) ),
-	    10 => sprintf( __('DAL Portfolio item draft updated. <a target="_blank" href="%s">Preview app</a>'), esc_url( add_query_arg( 'preview', 'true', get_permalink($post_ID) ) ) ),
+	    10 => sprintf( __('Borrador de ítem DAL Portfolio actualizado. <a target="_blank" href="%s">Previsualizar aplicación</a>', 'dal-portfolio' ), esc_url( add_query_arg( 'preview', 'true', get_permalink($post_ID) ) ) ),
 	);
 
       return $messages;
@@ -406,9 +406,9 @@ class Dal_Portfolio {
 
 	$columns = array(
 	    'cb' => '<input type="checkbox" />',
-	    'portfolio_thumbnail' => __( 'Image', 'dal-portfolio' ),
-	    'title' => __( 'Title', 'dal-portfolio' ),
-	    'portfolio_description' => __( 'Description', 'dal-portfolio' ),
+	    'portfolio_thumbnail' => __( 'Imagen', 'dal-portfolio' ),
+	    'title' => __( 'Título', 'dal-portfolio' ),
+	    'portfolio_description' => __( 'Descripción', 'dal-portfolio' ),
 	    'portfolio_premiopaises' => __( 'premiopaises', 'dal-portfolio' )
 	);
 
@@ -507,20 +507,20 @@ class Dal_Portfolio {
 	/** Shortcode defaults */
 	$defaults = apply_filters( 'dal_portfolio_shortcode_args',
 	    array(
-		'link' => 'page',
-		'thumb' => 'portfolio-thumb',
-		'full'     => 'portfolio-large',
-    'title' => 'above',
+		'link' => __( 'page', 'dal-portfolio' ),
+		'thumb' => __( 'portfolio-thumb', 'dal-portfolio' ),
+		'full'     => __( 'portfolio-large', 'dal-portfolio' ),
+    'title' => __( 'above', 'dal-portfolio' ),
 		'display' => '',
-    'heading' => 'Display',
-		'orderby' => 'date',
-		'order' => 'desc',
-    'datitos'=> 'info',
+    'heading' => __( 'Display', 'dal-portfolio' ),
+		'orderby' => __( 'date', 'dal-portfolio' ),
+		'order' => __( 'desc', 'dal-portfolio' ),
+    'datitos'=> __( 'info', 'dal-portfolio' ),
     'terms' => '',
-    'operator' => 'IN',
-    'apppais'=>$apppais,
+    'operator' => __( 'IN', 'dal-portfolio' ),
+    'apppais'=> $apppais,
     'apps_ano'=> $apps_ano,
-    'premiados'=> 'nacional',
+    'premiados'=> __( 'nacional', 'dal-portfolio' ),
     
     
     

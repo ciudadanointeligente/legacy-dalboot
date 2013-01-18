@@ -7,7 +7,7 @@
  * Version: 1.0
  *
  * Author: Montse Lobos
- * Author URI: http://ciudadanointeligente.org
+ * Author URI: http://www.ciudadanointeligente.org
  *
  * License: GNU General Public License v2.0
  * License URI: http://www.opensource.org/licenses/gpl-license.php
