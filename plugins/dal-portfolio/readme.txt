@@ -1,11 +1,11 @@
 === Plugin Name ===
 Contributors: jgardner03
-Tags: arconix, portfolio
+Tags: dal, portfolio
 Requires at least: 3.2
 Tested up to: 3.4.1
 Stable tag: 1.1
 
-Arconix Portfolio allows you to easily display your portfolio on your website.
+Dal Portfolio allows you to easily display your portfolio on your website.
 
 == Description ==
 
@@ -18,8 +18,8 @@ With this plugin you can easily showcase your portfolio on your WordPress websit
 
 == Installation ==
 
-1. Download and install Arconix Portfolio using the built in WordPress plugin installer, or if you download the plugin manually, make sure the files are uploaded to `/wp-content/plugins/arconix-portfolio/`.
-1. Activate Arconix-Portfolio in the "Plugins" admin panel using the "Activate" link.
+1. Download and install Dal Portfolio using the built in WordPress plugin installer, or if you download the plugin manually, make sure the files are uploaded to `/wp-content/plugins/dal-portfolio/`.
+1. Activate Dal-Portfolio in the "Plugins" admin panel using the "Activate" link.
 1. Create your portfolio items from the WordPress admin section
 1. Use the shortcode `[portfolio]` on a post, page or widget to display your items
 
@@ -32,12 +32,12 @@ Added support for displaying or hiding a user-specified taxonomy when displaying
 
 = How do I display my created portfolio items =
 
-* Create a WordPress Page and use the `[portfolio]` shortcode. See the [Documentation](http://http;//arcnx.co/apwiki "Arconix Portfolio Wiki") for more details and available options
+* Create a WordPress Page and use the `[portfolio]` shortcode. See the [Documentation](http://http;//arcnx.co/apwiki "Dal Portfolio Wiki") for more details and available options
 
 = Where can I find more information on how to use the plugin?  =
 
-* Visit the plugin's [Wiki Page](http://arcnx.co/apwiki "Arconix Portfolio Wiki") for documentation
-* Tutorials on advanced plugin usage can be found at [Arconix Computers](http://arconixpc.com/tag/arconix-portfolio)
+* Visit the plugin's [Wiki Page](http://arcnx.co/apwiki "Dal Portfolio Wiki") for documentation
+* Tutorials on advanced plugin usage can be found at [Dal Computers](http://dalpc.com/tag/dal-portfolio)
 
 = I need help =
 
@@ -45,7 +45,7 @@ Added support for displaying or hiding a user-specified taxonomy when displaying
 
 = Can you add this or that option? =
 
-I can certainly look into it. Contact me through [Twitter](http://arcnx.co/twitter), [Facebook](http://arcnx.co/facebook) or my [Website](http://arcnx.co/1 "Arconix Computers"). Be sure to check out the [dev board](http://arcnx.co/aptrello) to see what's in the pipeline.
+I can certainly look into it. Contact me through [Twitter](http://arcnx.co/twitter), [Facebook](http://arcnx.co/facebook) or my [Website](http://arcnx.co/1 "Dal Computers"). Be sure to check out the [dev board](http://arcnx.co/aptrello) to see what's in the pipeline.
 
 == Screenshots ==
 1. Portfolio Custom Post Type listed on the WP backend

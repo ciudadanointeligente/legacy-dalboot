@@ -11,7 +11,7 @@ get_header();
 if (have_posts() ) ;?>
 <div class="row">
 	<div class="container breadcrumb">
-		Archivo
+		_e( 'Archive', 'bootstrapwp' );
 	</div><!--/.container -->
 </div><!--/.row -->
 <div class="container">
@@ -50,7 +50,7 @@ if (have_posts() ) ;?>
 								<?php //get cats
 								$category = get_the_category(); 
 								if($category[0]){
-								echo '<a href="'.get_category_link($category[0]->term_id ).'">Ver todas las '.$category[0]->cat_name.'</a>';
+								echo '<a href="'.get_category_link($category[0]->term_id ).'">View all the '.$category[0]->cat_name.'</a>';
 								}
 								?>
 							</div>

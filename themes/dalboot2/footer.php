@@ -27,7 +27,7 @@
 		</div> <!-- /container -->
 		<div class="fullwidhtRow">
 			<div class="container">
-				<h4>Con el apoyo de</h4>
+				<h4><?php _e( 'With the support of', 'bootstrapwp' ); ?></h4>
 				
 					<div class="sponsorFooter nolist row">
 
@@ -74,7 +74,7 @@
 
 							
 		</div>	
-			<div class="container fullcentered opacity">Sitio desarrollado por: <a class="fci-link" href="http://ciudadanointeligente.org"></a></p>
+			<div class="container fullcentered opacity"><?php _e( 'Site developed by:', 'bootstrapwp' ); ?> <a class="fci-link" href="http://ciudadanointeligente.org"></a></p>
 	 </footer>
 		<?php wp_footer(); ?>
 
