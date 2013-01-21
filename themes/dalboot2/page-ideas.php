@@ -45,7 +45,7 @@ get_header(); ?>
 					?>
 
 					<!-- Print a link to this category -->
-					<a class="btn btn-danger span4 btn-xlarge" href="<?php echo esc_url( $category_link ); ?>" title="Ideas">Ver todas las ideas</a>
+					<a class="btn btn-danger span4 btn-xlarge" href="<?php echo esc_url( $category_link ); ?>" title="Ideas"><?php _e( 'View all ideas', 'bootstrapwp' ); ?></a>
 				
 
 							

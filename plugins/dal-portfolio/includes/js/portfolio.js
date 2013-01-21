@@ -22,7 +22,7 @@
         
 		
         // Set Our Container
-        $container = jQuery('ul.arconix-portfolio-grid.'+class_apppais+'');
+        $container = jQuery('ul.dal-portfolio-grid.'+class_apppais+'');
 		
         // Clone Our Container
         $containerClone = $container.clone();

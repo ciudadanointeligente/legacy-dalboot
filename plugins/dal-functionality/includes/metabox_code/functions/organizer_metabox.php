@@ -25,20 +25,20 @@ $prefix = 'org_';
 $org_meta_fields = array(
     
     array(
-        'label' => 'logo',
-        'desc'  => 'logo de la organizacion',
+        'label' => __('logo','dal-functionality'),
+        'desc'  => __('logo de la organizacion','dal-functionality'),
         'id'    => $prefix.'logo',
         'type'  => 'image'
     ),
      array(
-        'label' => 'link organización',
-        'desc'  => 'url organización, debes anteponer http://',
+        'label' => __('link organización','dal-functionality'),
+        'desc'  => __('url organización, debes anteponer http://','dal-functionality'),
         'id'    => $prefix.'link',
         'type'  => 'link'
     ),
      array(
-        'label' => 'Descripción organización',
-        'desc'  => '',
+        'label' => __('Descripción organización','dal-functionality'),
+        'desc'  => __('Descripción de la organización','dal-functionality'),
         'id'    => $prefix.'desc_org',
         'type'  => 'textarea'
     ),
@@ -67,8 +67,8 @@ function show_org_m_box() {
                         if ($meta) { $image = wp_get_attachment_image_src($meta, 'medium'); $image = $image[0]; }               
                         echo    '<input name="'.$field['id'].'" type="hidden" class="custom_upload_image" value="'.$meta.'" />
                                     <img src="'.$image.'" class="custom_preview_image" alt="" /><br />
-                                        <input class="custom_upload_image_button button" type="button" value="Elegir imagen" />
-                                        <small>&nbsp;<a href="#" class="custom_clear_image_button">Remove Image</a></small>
+                                        <input class="custom_upload_image_button button" type="button" value="'.__("Select Image",'dal-functionality').'" />
+                                        <small>&nbsp;<a href="#" class="custom_clear_image_button">'.__("Remove Image",'dal-functionality').'</a></small>
                                         <br clear="all" /><span class="description">'.$field['desc'].'</span>';
                     break;
                     //link

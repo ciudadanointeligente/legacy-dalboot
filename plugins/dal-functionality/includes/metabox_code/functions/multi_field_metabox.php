@@ -20,15 +20,15 @@
          'priority' => 'high',
          'fields' => array(
             array(
-                'name' => 'Add ',
-                'desc' => 'This meta box is under development',
+                'name' => __('Add ','dal-functionality'),
+                'desc' => __('This meta box is under development','dal-functionality'),
                 'id' => $prefix . 'organizers',
                 'type' => 'text',
                 'std' => ''
             ),   
             array(
-            'label' => 'Logo organizer',
-            'desc'  => 'Agrega el logo de los organizadores locales',
+            'label' => __('Logo organizer','dal-functionality'),
+            'desc'  => __('Agrega el logo de los organizadores locales','dal-functionality'),
             'id'    => $prefix.'orglogo',
             'type'  => 'image'
             ),                     
@@ -85,8 +85,8 @@
                     $singleorg .= '<input name="orgs[%1$s][orglogo]" type="hidden" class="custom_upload_image" value="%5$s" />
                                     <img src="'.$image.'" class="custom_preview_image" alt="" />
                                     <br />
-                                    <input class="custom_upload_image_button button" type="button" value="Choose Image" />
-                                    <small>&nbsp;<a href="#" class="custom_clear_image_button">Remove Image</a></small>';
+                                    <input class="custom_upload_image_button button" type="button" value="'.__("Choose Image",'dal-functionality').'" />
+                                    <small>&nbsp;<a href="#" class="custom_clear_image_button">'.__("Remove Image",'dal-functionality').'</a></small>';
                     $singleorg .='<br clear="all" /><span class="description">'.$org['desc'].'</span>';
                     $singleorg .= '<span class="remove">%4$s</span></p>';
                     printf( $singleorg, $c, $org['title'], $org['orglink'], __( 'Remove org' ), $org['orglogo'] );
@@ -100,7 +100,7 @@
         ?>
         <div class="custom_upload_image_button button"> hola</div>
         <span id="here"></span>
-        <span class="add"><?php _e('Add organizer'); ?></span>
+        <span class="add"><?php _e('Add organizer','dal-functionality'); ?></span>
         <script>
         var $ =jQuery.noConflict();
         $(document).ready(function() {
