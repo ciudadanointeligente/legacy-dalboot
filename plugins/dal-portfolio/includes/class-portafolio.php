@@ -1,12 +1,11 @@
 <?php
 /**
- * This file contains the Arconix_Portfolio class.
+ * This file contains the Dal_Portfolio class.
  *
  * This class handles the creation of the "Portfolio" post type, and creates a
  * UI to display the Portfolio-specific data on the admin screens.
  */
-
-class Arconix_Portfolio {
+class Dal_Portfolio {
 
     /**
      * Construct Method
@@ -63,27 +62,27 @@ class Arconix_Portfolio {
      */
     function create_post_type() {
 
-	$args = apply_filters( 'arconix_portfolio_post_type_args',
+	$args = apply_filters( 'dal_portfolio_post_type_args',
 	    array(
 		'labels' => array(
-		    'name' => __( 'Aplicaciones participantes', 'acp' ),
-		    'singular_name' => __( 'Aplicación', 'acp' ),
-		    'add_new' => __( 'Add New', 'acp' ),
-		    'add_new_item' => __( 'Add New Aplicación', 'acp' ),
-		    'edit' => __( 'Edit', 'acp' ),
-		    'edit_item' => __( 'Edit Aplicación', 'acp' ),
-		    'new_item' => __( 'New Aplicación', 'acp' ),
-		    'view' => __( 'View Aplicaciones', 'acp' ),
-		    'view_item' => __( 'View Aplicación', 'acp' ),
-		    'search_items' => __( 'Search Aplicaciones', 'acp' ),
-		    'not_found' => __( 'No Aplicaciones found', 'acp' ),
-		    'not_found_in_trash' => __( 'No Aplicaciones found in Trash', 'acp' ),
+		    'name' => __( 'Aplicaciones participantes', 'dal-portfolio' ),
+		    'singular_name' => __( 'Aplicación', 'dal-portfolio' ),
+		    'add_new' => __( 'Agregar nuevo', 'dal-portfolio' ),
+		    'add_new_item' => __( 'Agregar nueva aplicación', 'dal-portfolio' ),
+		    'edit' => __( 'Editar', 'dal-portfolio' ),
+		    'edit_item' => __( 'Editar aplicación', 'dal-portfolio' ),
+		    'new_item' => __( 'Nueva aplicación', 'dal-portfolio' ),
+		    'view' => __( 'Ver aplicaciones', 'dal-portfolio' ),
+		    'view_item' => __( 'Ver aplicación', 'dal-portfolio' ),
+		    'search_items' => __( 'Buscar aplicaciones', 'dal-portfolio' ),
+		    'not_found' => __( 'No se encontraron aplicaciones', 'dal-portfolio' ),
+		    'not_found_in_trash' => __( 'No se encontraron aplicaciones en la papelera', 'dal-portfolio' ),
 
 		),
 		'public' => true,
 		'query_var' => true,
 		'menu_position' => 20,
-		'menu_icon' => ACP_URL . 'images/portfolio-icon-16x16.png',
+		'menu_icon' => dal-portfolio_URL . 'images/portfolio-icon-16x16.png',
 		'has_archive' => true,
 		'supports' => array( 'title', 'thumbnail' ),
 		'rewrite' => array( 'slug' => 'portfolio', 'with_front' => false ),
@@ -101,24 +100,24 @@ class Arconix_Portfolio {
      */
     function create_taxonomy() {
 
-	$args = apply_filters( 'arconix_portfolio_taxonomy_args',
+	$args = apply_filters( 'dal_portfolio_taxonomy_args',
 	    array(
 		'labels' => array(
-		    'name' => __( 'premiopais', 'acp' ),
-		    'singular_name' => __( 'Premio nacional', 'acp' ),
-		    'search_items' =>  __( 'Buscar premios nacionales', 'acp' ),
-		    'popular_items' => __( 'premios populares', 'acp' ),
-		    'all_items' => __( 'todos los premios nacionales', 'acp' ),
+		    'name' => __( 'premiopais', 'dal-portfolio' ),
+		    'singular_name' => __( 'Premio nacional', 'dal-portfolio' ),
+		    'search_items' =>  __( 'Buscar premios nacionales', 'dal-portfolio' ),
+		    'popular_items' => __( 'Premios populares', 'dal-portfolio' ),
+		    'all_items' => __( 'Todos los premios nacionales', 'dal-portfolio' ),
 		    'parent_item' => null,
 		    'parent_item_colon' => null,
-		    'edit_item' => __( 'editar premio' , 'acp' ),
-		    'update_item' => __( 'actualizar premio', 'acp' ),
-		    'add_new_item' => __( 'Agregar nuevo premio', 'acp' ),
-		    'new_item_name' => __( 'Nuevo premio', 'acp' ),
-		    'separate_items_with_commas' => __( 'separados por comas', 'acp' ),
-		    'add_or_remove_items' => __( 'agregar o remover premio', 'acp' ),
-		    'choose_from_most_used' => __( 'elige de lso premios más usados', 'acp' ),
-		    'menu_name' => __( 'Premios Nacionales', 'acp' ),
+		    'edit_item' => __( 'Editar premio' , 'dal-portfolio' ),
+		    'update_item' => __( 'Actualizar premio', 'dal-portfolio' ),
+		    'add_new_item' => __( 'Agregar nuevo premio', 'dal-portfolio' ),
+		    'new_item_name' => __( 'Nuevo premio', 'dal-portfolio' ),
+		    'separate_items_with_commas' => __( 'separados por comas', 'dal-portfolio' ),
+		    'add_or_remove_items' => __( 'Agregar o remover premio', 'dal-portfolio' ),
+		    'choose_from_most_used' => __( 'Elige de los premios más usados', 'dal-portfolio' ),
+		    'menu_name' => __( 'Premios nacionales', 'dal-portfolio' ),
 		),
 		'hierarchical' => true,
 		'show_ui' => true,
@@ -173,21 +172,21 @@ class Arconix_Portfolio {
 
          array(
           'labels' => array(
-              'name' => __( 'premioregional', 'acp' ),
-              'singular_name' => __( 'Premio Regional', 'acp' ),
-              'search_items' =>  __( 'Buscar premios regionales', 'acp' ),
-              'popular_items' => __( 'populares', 'acp' ),
-              'all_items' => __( 'todos los premios regionales', 'acp' ),
+              'name' => __( 'premioregional', 'dal-portfolio' ),
+              'singular_name' => __( 'Premio regional', 'dal-portfolio' ),
+              'search_items' =>  __( 'Buscar premios regionales', 'dal-portfolio' ),
+              'popular_items' => __( 'Populares', 'dal-portfolio' ),
+              'all_items' => __( 'Todos los premios regionales', 'dal-portfolio' ),
               'parent_item' => null,
               'parent_item_colon' => null,
-              'edit_item' => __( 'editar premio' , 'acp' ),
-              'update_item' => __( 'actualizar premio', 'acp' ),
-              'add_new_item' => __( 'Agregar nuevo premio', 'acp' ),
-              'new_item_name' => __( 'Nuevo premio', 'acp' ),
-              'separate_items_with_commas' => __( 'Separa los premios con comas', 'acp' ),
-              'add_or_remove_items' => __( 'agregar o remover premio', 'acp' ),
-              'choose_from_most_used' => __( 'Elige de los más usados', 'acp' ),
-              'menu_name' => __( 'Premios Regionales', 'acp' ),
+              'edit_item' => __( 'Editar premio' , 'dal-portfolio' ),
+              'update_item' => __( 'Actualizar premio', 'dal-portfolio' ),
+              'add_new_item' => __( 'Agregar nuevo premio', 'dal-portfolio' ),
+              'new_item_name' => __( 'Nuevo premio', 'dal-portfolio' ),
+              'separate_items_with_commas' => __( 'Separa los premios con comas', 'dal-portfolio' ),
+              'add_or_remove_items' => __( 'Agregar o remover premio', 'dal-portfolio' ),
+              'choose_from_most_used' => __( 'Elige de los más usados', 'dal-portfolio' ),
+              'menu_name' => __( 'Premios regionales', 'dal-portfolio' ),
           ),
           'hierarchical' => true,
           'show_ui' => true,
@@ -223,21 +222,21 @@ class Arconix_Portfolio {
 
     if (!taxonomy_exists('apps_tags')) {
        
-        register_taxonomy( 'apps_tags', 'portfolio', array( 'hierarchical' => false, 'label' => __('apps_tags'), 'query_var' => 'apps_tags', 'rewrite' => array( 'slug' => 'apps_tags' ) ) );
+        register_taxonomy( 'apps_tags', 'portfolio', array( 'hierarchical' => false, 'label' => __('Tags de las aplicaciones', 'dal-portfolio' ), 'query_var' => 'apps_tags', 'rewrite' => array( 'slug' => 'apps_tags' ) ) );
     };
 
     $labels = array(
-        'name' => _x( 'Tracks', 'taxonomy general name' ),
-        'singular_name' => _x( 'track', 'taxonomy singular name' ),
-        'search_items' =>  __( 'Search tracks' ),
-        'all_items' => __( 'All tracks' ),
-        'parent_item' => __( 'Parent track' ),
-        'parent_item_colon' => __( 'Parent track:' ),
-        'edit_item' => __( 'Edit track' ), 
-        'update_item' => __( 'Update track' ),
-        'add_new_item' => __( 'Add New track' ),
-        'new_item_name' => __( 'New track' ),
-        'menu_name' => __( 'Temas (tracks)' ),
+        'name' => _x( 'Tracks', 'taxonomy general name', 'dal-portfolio' ),
+        'singular_name' => _x( 'Track', 'taxonomy singular name', 'dal-portfolio' ),
+        'search_items' =>  __( 'Buscar tracks', 'dal-portfolio' ),
+        'all_items' => __( 'Todos los tracks', 'dal-portfolio' ),
+        'parent_item' => __( 'Track padre', 'dal-portfolio' ),
+        'parent_item_colon' => __( 'Track padre:', 'dal-portfolio' ),
+        'edit_item' => __( 'Editar track', 'dal-portfolio' ), 
+        'update_item' => __( 'Actualizar track', 'dal-portfolio' ),
+        'add_new_item' => __( 'Agregar nuevo track', 'dal-portfolio' ),
+        'new_item_name' => __( 'Nuevo track', 'dal-portfolio' ),
+        'menu_name' => __( 'Temas (tracks)', 'dal-portfolio' ),
       );    
  
 
@@ -253,17 +252,17 @@ class Arconix_Portfolio {
     };
 
     $labelsano = array(
-        'name' => _x( 'Año', 'taxonomy general name' ),
-        'singular_name' => _x( 'Año', 'taxonomy singular name' ),
-        'search_items' =>  __( 'Search Año' ),
-        'all_items' => __( 'All Año' ),
-        'parent_item' => __( 'Parent Año' ),
-        'parent_item_colon' => __( 'Parent Año:' ),
-        'edit_item' => __( 'Edit Año' ), 
-        'update_item' => __( 'Update Año' ),
-        'add_new_item' => __( 'Add New Año' ),
-        'new_item_name' => __( 'New Año' ),
-        'menu_name' => __( 'Año de la app' ),
+        'name' => _x( 'Año', 'taxonomy general name', 'dal-portfolio' ),
+        'singular_name' => _x( 'Año', 'taxonomy singular name', 'dal-portfolio' ),
+        'search_items' =>  __( 'Buscar por año', 'dal-portfolio' ),
+        'all_items' => __( 'Todos los años', 'dal-portfolio' ),
+        'parent_item' => __( 'Año padre', 'dal-portfolio' ),
+        'parent_item_colon' => __( 'Año padre:', 'dal-portfolio' ),
+        'edit_item' => __( 'Editar año', 'dal-portfolio' ), 
+        'update_item' => __( 'Actualizar año', 'dal-portfolio' ),
+        'add_new_item' => __( 'Agregar nuevo año', 'dal-portfolio' ),
+        'new_item_name' => __( 'Nuevo año', 'dal-portfolio' ),
+        'menu_name' => __( 'Año de la aplicación', 'dal-portfolio' ),
       );   
        if (!taxonomy_exists('apps_ano')) {
 
@@ -291,7 +290,7 @@ class Arconix_Portfolio {
     };
 
      if (!taxonomy_exists('apppais')) {
-        register_taxonomy( 'apppais', 'portfolio', array( 'hierarchical' => false, 'label' => __('país de la app'), 'query_var' => 'apppais', 'rewrite' => array( 'slug' => 'apppais' ) ) );
+        register_taxonomy( 'apppais', 'portfolio', array( 'hierarchical' => false, 'label' => __('País de la aplicación', 'dal-portfolio' ), 'query_var' => 'apppais', 'rewrite' => array( 'slug' => 'apppais' ) ) );
         
       if (!term_exists( 'Argentina', 'apppais')){
          wp_insert_term('Argentina', 'apppais');
@@ -378,19 +377,19 @@ class Arconix_Portfolio {
 
 	$messages['portfolio'] = array(
 	    0 => '', // Unused. Messages start at index 1.
-	    1 => sprintf( __('DAL Portfolio Item updated. <a href="%s">View app</a>'), esc_url( get_permalink($post_ID) ) ),
-	    2 => __('Custom field updated.'),
-	    3 => __('Custom field deleted.'),
-	    4 => __('DAL Portfolio item updated.'),
+	    1 => sprintf( __('Ítem de DAL Portfolio actualizado. <a href="%s">View app</a>', 'dal-portfolio' ), esc_url( get_permalink($post_ID) ) ),
+	    2 => __('Campo personalizado actualizado.', 'dal-portfolio' ),
+	    3 => __('Campo personalizado eliminado.', 'dal-portfolio' ),
+	    4 => __('Ítem de DAL Portfolio actualizado.', 'dal-portfolio' ),
 	    /* translators: %s: date and time of the revision */
 	    5 => isset($_GET['revision']) ? sprintf( __('DAL Portfolio item restored to revision from %s'), wp_post_revision_title( (int) $_GET['revision'], false ) ) : false,
-	    6 => sprintf( __('DAL Portfolio item published. <a href="%s">View app </a>'), esc_url( get_permalink($post_ID) ) ),
-	    7 => __('DAL Portfolio item saved.'),
-	    8 => sprintf( __('DAL Portfolio item submitted. <a target="_blank" href="%s">Preview portfolio item</a>'), esc_url( add_query_arg( 'preview', 'true', get_permalink($post_ID) ) ) ),
-	    9 => sprintf( __('DAL Portfolio item scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview DAL portfolio item</a>'),
+	    6 => sprintf( __('Ítem de DAL Portfolio publicado. <a href="%s">View app </a>', 'dal-portfolio' ), esc_url( get_permalink($post_ID) ) ),
+	    7 => __('Ítem de DAL Portfolio guardado.', 'dal-portfolio' ),
+	    8 => sprintf( __('Ítem de DAL Portfolio enviado. <a target="_blank" href="%s">Previsualizar ítem de portfolio</a>', 'dal-portfolio' ), esc_url( add_query_arg( 'preview', 'true', get_permalink($post_ID) ) ) ),
+	    9 => sprintf( __('Ítem de DAL Portfolio programado por: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Previsualizar ítem de DAL portfolio</a>', 'dal-portfolio' ),
 	      // translators: Publish box date format, see http://php.net/date
 	      date_i18n( __( 'M j, Y @ G:i' ), strtotime( $post->post_date ) ), esc_url( get_permalink($post_ID) ) ),
-	    10 => sprintf( __('DAL Portfolio item draft updated. <a target="_blank" href="%s">Preview app</a>'), esc_url( add_query_arg( 'preview', 'true', get_permalink($post_ID) ) ) ),
+	    10 => sprintf( __('Borrador de ítem DAL Portfolio actualizado. <a target="_blank" href="%s">Previsualizar aplicación</a>', 'dal-portfolio' ), esc_url( add_query_arg( 'preview', 'true', get_permalink($post_ID) ) ) ),
 	);
 
       return $messages;
@@ -407,10 +406,10 @@ class Arconix_Portfolio {
 
 	$columns = array(
 	    'cb' => '<input type="checkbox" />',
-	    'portfolio_thumbnail' => __( 'Image', 'acp' ),
-	    'title' => __( 'Title', 'acp' ),
-	    'portfolio_description' => __( 'Description', 'acp' ),
-	    'portfolio_premiopaises' => __( 'premiopaises', 'acp' )
+	    'portfolio_thumbnail' => __( 'Imagen', 'dal-portfolio' ),
+	    'title' => __( 'Título', 'dal-portfolio' ),
+	    'portfolio_description' => __( 'Descripción', 'dal-portfolio' ),
+	    'portfolio_premiopaises' => __( 'premiopaises', 'dal-portfolio' )
 	);
 
 	return $columns;
@@ -506,22 +505,22 @@ class Arconix_Portfolio {
 	/** Load the javascript */
 	self::$load_js = true;
 	/** Shortcode defaults */
-	$defaults = apply_filters( 'arconix_portfolio_shortcode_args',
+	$defaults = apply_filters( 'dal_portfolio_shortcode_args',
 	    array(
-		'link' => 'page',
-		'thumb' => 'portfolio-thumb',
-		'full'     => 'portfolio-large',
-    'title' => 'above',
+		'link' => __( 'page', 'dal-portfolio' ),
+		'thumb' => __( 'portfolio-thumb', 'dal-portfolio' ),
+		'full'     => __( 'portfolio-large', 'dal-portfolio' ),
+    'title' => __( 'above', 'dal-portfolio' ),
 		'display' => '',
-    'heading' => 'Display',
-		'orderby' => 'date',
-		'order' => 'desc',
-    'datitos'=> 'info',
+    'heading' => __( 'Display', 'dal-portfolio' ),
+		'orderby' => __( 'date', 'dal-portfolio' ),
+		'order' => __( 'desc', 'dal-portfolio' ),
+    'datitos'=> __( 'info', 'dal-portfolio' ),
     'terms' => '',
-    'operator' => 'IN',
-    'apppais'=>$apppais,
+    'operator' => __( 'IN', 'dal-portfolio' ),
+    'apppais'=> $apppais,
     'apps_ano'=> $apps_ano,
-    'premiados'=> 'nacional',
+    'premiados'=> __( 'nacional', 'dal-portfolio' ),
     
     
     
@@ -533,7 +532,7 @@ class Arconix_Portfolio {
         if( $title == "yes" ) $title == "above"; // For backwards compatibility
 
 	/** Default Query arguments -- can be overridden by filter */
-	$args = apply_filters( 'arconix_portfolio_shortcode_query_args',
+	$args = apply_filters( 'dal_portfolio_shortcode_query_args',
 	    array(
 		'post_type' => 'portfolio',
 		'posts_per_page' => -1, // show all
@@ -716,7 +715,7 @@ class Arconix_Portfolio {
                 if (!($premiados == 'nacional' || $premiados == 'regional' )){
                  
                   
-                    $return .= '<ul class="dal-portfolio-filtro '.$uid.' "><li class="arconix-portfolio-category-title">';
+                    $return .= '<ul class="dal-portfolio-filtro '.$uid.' "><li class="dal-portfolio-category-title">';
                     $return .= $heading;
                     $return .= '</li><li class="active"><a href="javascript:void(0)" class="all">all</a></li>';
 
@@ -743,11 +742,11 @@ class Arconix_Portfolio {
                 
             }
             if ($premiados == 'nacional' || $premiados == 'regional' ){
-                   $return .= '<ul class="arconix-portfolio-grid colorganador '.$uid.'">';
+                   $return .= '<ul class="dal-portfolio-grid colorganador '.$uid.'">';
                   } else {
                     
                   
-            $return .= '<ul class="arconix-portfolio-grid '.$uid.'">';
+            $return .= '<ul class="dal-portfolio-grid '.$uid.'">';
             }
 
             while( $portfolio_query->have_posts() ) : $portfolio_query->the_post();
@@ -779,7 +778,7 @@ class Arconix_Portfolio {
 
 
                 /** Above image Title output */
-                if( $title == "above" ) $return .= '<h2 class="arconix-portfolio-title">' . get_the_title() . '</h2>';
+                if( $title == "above" ) $return .= '<h2 class="dal-portfolio-title">' . get_the_title() . '</h2>';
                 if ( $countyear > 0 ){
                           
                                foreach ( $tyears as $tyear ) {
@@ -813,7 +812,7 @@ class Arconix_Portfolio {
                 }
 
 		            /** Below image Title output */
-                if( $title == "below" ) $return .= '<h2 class="arconix-portfolio-title">' . get_the_title() . '</h2>';
+                if( $title == "below" ) $return .= '<h2 class="dal-portfolio-title">' . get_the_title() . '</h2>';
                   
                 /*datitos*/
                   switch($datitos) {
@@ -879,11 +878,11 @@ class Arconix_Portfolio {
                 /** Display the content */
                 switch( $display ) {
                     case "content" :
-                        $return .= '<div class="arconix-portfolio-text">' . get_the_content() . '</div>';
+                        $return .= '<div class="dal-portfolio-text">' . get_the_content() . '</div>';
                         break;
 
                     case "excerpt" :
-                        $return .= '<div class="arconix-portfolio-text">' . get_the_excerpt() . '</div>';
+                        $return .= '<div class="dal-portfolio-text">' . get_the_excerpt() . '</div>';
                         break;
 
 
@@ -922,7 +921,7 @@ class Arconix_Portfolio {
      * @since 0.9
      */
     function admin_style() {
-	printf( '<style type="text/css" media="screen">.icon32-posts-portfolio { background: transparent url(%s) no-repeat !important; }</style>', ACP_URL . 'images/portfolio-icon-32x32.png' );
+	printf( '<style type="text/css" media="screen">.icon32-posts-portfolio { background: transparent url(%s) no-repeat !important; }</style>', dal-portfolio_URL . 'images/portfolio-icon-32x32.png' );
     }
 
 
@@ -935,17 +934,17 @@ class Arconix_Portfolio {
      */
     function register_script() {
 
-        wp_register_script( 'jquery-quicksand', ACP_URL . 'includes/js/jquery.quicksand.js', array( 'jquery' ), '1.2.2', true );
-        wp_register_script( 'jquery-easing', ACP_URL . 'includes/js/jquery.easing.1.3.js', array( 'jquery' ), '1.3', true );
+        wp_register_script( 'jquery-quicksand', dal-portfolio_URL . 'includes/js/jquery.quicksand.js', array( 'jquery' ), '1.2.2', true );
+        wp_register_script( 'jquery-easing', dal-portfolio_URL . 'includes/js/jquery.easing.1.3.js', array( 'jquery' ), '1.3', true );
 
-	if( file_exists( get_stylesheet_directory() . "/arconix-portfolio.js" ) ) {
-	    wp_register_script( 'arconix-portfolio-js', get_stylesheet_directory_uri() . '/arconix-portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), ACP_VERSION, true );
+	if( file_exists( get_stylesheet_directory() . "/dal-portfolio.js" ) ) {
+	    wp_register_script( 'dal-portfolio-js', get_stylesheet_directory_uri() . '/dal-portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), dal-portfolio_VERSION, true );
 	}
-	elseif( file_exists( get_template_directory() . "/arconix-portfolio.js" ) ) {
-	    wp_register_script( 'arconix-portfolio-js', get_template_directory_uri() . '/arconix-portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), ACP_VERSION, true );
+	elseif( file_exists( get_template_directory() . "/dal-portfolio.js" ) ) {
+	    wp_register_script( 'dal-portfolio-js', get_template_directory_uri() . '/dal-portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), dal-portfolio_VERSION, true );
 	}
 	else {
-        wp_register_script( 'arconix-portfolio-js', ACP_URL . 'includes/js/portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), ACP_VERSION, true );
+        wp_register_script( 'dal-portfolio-js', dal-portfolio_URL . 'includes/js/portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), dal-portfolio_VERSION, true );
 	}
     }
 
@@ -960,7 +959,7 @@ class Arconix_Portfolio {
 	if( ! self::$load_js )
 	    return;
 
-	wp_print_scripts( 'arconix-portfolio-js' );
+	wp_print_scripts( 'dal-portfolio-js' );
     }
 
 
@@ -973,14 +972,14 @@ class Arconix_Portfolio {
      */
     function enqueue_css() {
 
-	if( file_exists( get_stylesheet_directory() . "/arconix-portfolio.css" ) ) {
-	    wp_enqueue_style( 'arconix-portfolio', get_stylesheet_directory_uri() . '/arconix-portfolio.css', array(), ACP_VERSION );
+	if( file_exists( get_stylesheet_directory() . "/dal-portfolio.css" ) ) {
+	    wp_enqueue_style( 'dal-portfolio', get_stylesheet_directory_uri() . '/dal-portfolio.css', array(), dal-portfolio_VERSION );
 	}
-	elseif( file_exists( get_template_directory() . "/arconix-portfolio.css" ) ) {
-	    wp_enqueue_style( 'arconix-portfolio', get_template_directory_uri() . '/arconix-portfolio.css', array(), ACP_VERSION );
+	elseif( file_exists( get_template_directory() . "/dal-portfolio.css" ) ) {
+	    wp_enqueue_style( 'dal-portfolio', get_template_directory_uri() . '/dal-portfolio.css', array(), dal-portfolio_VERSION );
 	}
 	else {
-	    wp_enqueue_style( 'arconix-portfolio', plugins_url( '/portfolio.css', __FILE__), array(), ACP_VERSION );
+	    wp_enqueue_style( 'dal-portfolio', plugins_url( '/portfolio.css', __FILE__), array(), dal-portfolio_VERSION );
 	}
     }
 
@@ -991,7 +990,7 @@ class Arconix_Portfolio {
      * @since 0.9.1
      */
     function register_dashboard_widget() {
-        wp_add_dashboard_widget( 'ac-portfolio', 'Arconix Portfolio', array( $this, 'dashboard_widget_output' ) );
+        wp_add_dashboard_widget( 'ac-portfolio', 'Dal Portfolio', array( $this, 'dashboard_widget_output' ) );
     }
 
 
@@ -1006,28 +1005,28 @@ class Arconix_Portfolio {
         echo '<div class="rss-widget">';
 
         wp_widget_rss_output( array(
-            'url' => 'http://arconixpc.com/tag/arconix-portfolio/feed', // feed url
-            'title' => 'Arconix Portfolio Posts', // feed title
+            'url' => 'http://dalpc.com/tag/dal-portfolio/feed', // feed url
+            'title' => 'Dal Portfolio Posts', // feed title
             'items' => 3, //how many posts to show
             'show_summary' => 1, // display excerpt
             'show_author' => 0, // display author
             'show_date' => 1 // display post date
         ) );
 
-        echo '<div class="acp-widget-bottom"><ul>'; ?>
-            <li><a href="http://arcnx.co/apwiki"><img src="<?php echo ACP_URL . 'images/page-16x16.png'?>">Wiki Page</a></li>
-            <li><a href="http://arcnx.co/aphelp"><img src="<?php echo ACP_URL . 'images/help-16x16.png'?>">Support Forum</a></li>
-            <li><a href="http://arcnx.co/aptrello"><img src="<?php echo ACP_URL . 'images/trello-16x16.png'?>">Dev Board</a></li>
+        echo '<div class="dal-portfolio-widget-bottom"><ul>'; ?>
+            <li><a href="http://arcnx.co/apwiki"><img src="<?php echo dal-portfolio_URL . 'images/page-16x16.png'?>">Wiki Page</a></li>
+            <li><a href="http://arcnx.co/aphelp"><img src="<?php echo dal-portfolio_URL . 'images/help-16x16.png'?>">Support Forum</a></li>
+            <li><a href="http://arcnx.co/aptrello"><img src="<?php echo dal-portfolio_URL . 'images/trello-16x16.png'?>">Dev Board</a></li>
         <?php echo '</ul></div>';
         echo "</div>";
 
         // handle the styling
         echo '<style type="text/css">
             #ac-portfolio .rsssummary { display: block; }
-            #ac-portfolio .acp-widget-bottom { border-top: 1px solid #ddd; padding-top: 10px; text-align: center; }
-            #ac-portfolio .acp-widget-bottom ul { list-style: none; }
-            #ac-portfolio .acp-widget-bottom ul li { display: inline; padding-right: 9%; }
-            #ac-portfolio .acp-widget-bottom img { padding-right: 3px; vertical-align: top; }
+            #ac-portfolio .dal-portfolio-widget-bottom { border-top: 1px solid #ddd; padding-top: 10px; text-align: center; }
+            #ac-portfolio .dal-portfolio-widget-bottom ul { list-style: none; }
+            #ac-portfolio .dal-portfolio-widget-bottom ul li { display: inline; padding-right: 9%; }
+            #ac-portfolio .dal-portfolio-widget-bottom img { padding-right: 3px; vertical-align: top; }
         </style>';
     }
 

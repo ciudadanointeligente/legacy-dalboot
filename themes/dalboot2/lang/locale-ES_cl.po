@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bootstrapwp\n"
-"POT-Creation-Date: 2013-01-18 17:01-0300\n"
+"POT-Creation-Date: 2013-01-18 17:02-0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: J. Pablo Pérez Trabucco <jpperez@ciudadanointeligente.org>\n"
 "Language-Team: Fundación Ciudadano Inteligente <devteam@ciudadanointeligente."

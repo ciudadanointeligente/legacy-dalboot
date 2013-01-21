@@ -7,7 +7,7 @@ add_action( 'save_post', 'save_custom_url' );
  * Add meta box
  */
 function add_custom_metabox() {
-  add_meta_box( 'custom-metabox', __( 'URL &amp; Description' ), 'url_custom_metabox', 'portfolio', 'side', 'high' );
+  add_meta_box( 'custom-metabox', __( 'URL &amp; Description','dal-functionality' ), 'url_custom_metabox', 'portfolio', 'side', 'high' );
 }
 
 /**
