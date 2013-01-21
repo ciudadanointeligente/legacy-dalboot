@@ -104,7 +104,7 @@ function create_pais_taxonomy() {
        if (!term_exists( 'Saint-Kitts-and-Nevis', 'pais')){
          wp_insert_term('Saint-Kitts-and-Nevis', 'pais');
        }
-       if (!term_exists( 'Saint Lucia', 'pais')){
+       if (!term_exists( 'Saint-Lucia', 'pais')){
          wp_insert_term('Saint-Lucia', 'pais');
        }
        if (!term_exists( 'Saint-Vincent-and-the-Grenadines', 'pais')){
