@@ -9255,6 +9255,9 @@ ol.comment-list li p.meta strong {
   display: block;
   width: auto;
 }
+.infoApp .fullcentered [class*="span"] {
+  margin-left: 0;
+}
 .nolist {
   list-style: none;
   margin: 0;
