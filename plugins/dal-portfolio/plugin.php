@@ -56,8 +56,8 @@ add_action( 'after_setup_theme', 'dal_portfolio_init' );
 function dal_portfolio_init() {
     global $_dal_portfolio;
 
-    define( 'ACP_URL', plugin_dir_url( __FILE__ ) );
-    define( 'ACP_VERSION', '1.1' );
+    define( 'dal-portfolio_URL', "/plugins/dal-portfolio/" );
+    define( 'dal-portfolio_VERSION', '1.1' );
 
     /** Includes **/
     require_once( dirname( __FILE__ ) . '/includes/class-portafolio.php' );

@@ -963,8 +963,8 @@ class Dal_Portfolio {
      */
     function register_script() {
 
-        wp_register_script( 'jquery-quicksand', dal-portfolio_URL . 'includes/js/jquery.quicksand.js', array( 'jquery' ), '1.2.2', true );
-        wp_register_script( 'jquery-easing', dal-portfolio_URL . 'includes/js/jquery.easing.1.3.js', array( 'jquery' ), '1.3', true );
+        wp_register_script( 'jquery-quicksand', "/wp-content/plugins/dal-portfolio/" . 'includes/js/jquery.quicksand.js', array( 'jquery' ), '1.2.2', true );
+        wp_register_script( 'jquery-easing', "/wp-content/plugins/dal-portfolio/" . 'includes/js/jquery.easing.1.3.js', array( 'jquery' ), '1.3', true );
 
 	if( file_exists( get_stylesheet_directory() . "/dal-portfolio.js" ) ) {
 	    wp_register_script( 'dal-portfolio-js', get_stylesheet_directory_uri() . '/dal-portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), dal-portfolio_VERSION, true );
@@ -973,7 +973,7 @@ class Dal_Portfolio {
 	    wp_register_script( 'dal-portfolio-js', get_template_directory_uri() . '/dal-portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), dal-portfolio_VERSION, true );
 	}
 	else {
-        wp_register_script( 'dal-portfolio-js', dal-portfolio_URL . 'includes/js/portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), dal-portfolio_VERSION, true );
+        wp_register_script( 'dal-portfolio-js', "/wp-content/plugins/dal-portfolio/" . 'includes/js/portfolio.js', array( 'jquery-quicksand', 'jquery-easing' ), dal-portfolio_VERSION, true );
 	}
     }
 
@@ -1000,16 +1000,7 @@ class Dal_Portfolio {
      * @version 1.0
      */
     function enqueue_css() {
-
-	if( file_exists( get_stylesheet_directory() . "/dal-portfolio.css" ) ) {
-	    wp_enqueue_style( 'dal-portfolio', get_stylesheet_directory_uri() . '/dal-portfolio.css', array(), dal-portfolio_VERSION );
-	}
-	elseif( file_exists( get_template_directory() . "/dal-portfolio.css" ) ) {
-	    wp_enqueue_style( 'dal-portfolio', get_template_directory_uri() . '/dal-portfolio.css', array(), dal-portfolio_VERSION );
-	}
-	else {
-	    wp_enqueue_style( 'dal-portfolio', plugins_url( '/portfolio.css', __FILE__), array(), dal-portfolio_VERSION );
-	}
+  wp_enqueue_style( 'dal-portfolio',  "/wp-content/plugins/dal-portfolio/". '/includes/dal-portfolio.css', array(), dal-portfolio_VERSION );
     }
 
 

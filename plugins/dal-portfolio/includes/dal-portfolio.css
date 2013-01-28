@@ -167,7 +167,7 @@ top: 0;}
 .dal-portfolio-flag {background-color: transparent;}
 
 .dal-portfolio-flag {
-    background-image: url(../images/flags-sprite.png);
+    background: url(../img/dal/flags24-sprite.png);
     width: 25px;
     height: 18px;
     display: block;
@@ -178,24 +178,40 @@ top: 0;}
 
 }
 
-.flag-argentina{ background-position: 0 0;  } 
-.flag-bolivia{ background-position: 0 -78px;  } 
-.flag-brasil{ background-position: 0 -152px;  } 
-.flag-chile{ background-position: 0 -226px;  } 
-.flag-colombia{ background-position: 0 -300px;  } 
-.flag-costa-rica{ background-position: 0 -374px;  } 
-.flag-cuba{ background-position: 0 -448px;  } 
-.flag-republica-dominicana{ background-position: 0 -522px;  } 
-.flag-ecuador{ background-position: 0 -596px;  } 
-.flag-guatemala{ background-position: 0 -670px;  } 
-.flag-honduras{ background-position: 0 -744px;  } 
-.flag-haiti{ background-position: 0 -818px;  } 
-.flag-mexico{ background-position: 0 -892px;  } 
-.flag-nicaragua{ background-position: 0 -966px;  } 
-.flag-panama{ background-position: 0 -1040px;  } 
-.flag-peru{ background-position: 0 -1114px;  } 
-.flag-puerto-rico{ background-position: 0 -1188px;  } 
-.flag-paraguay{ background-position: 0 -1262px;  } 
-.flag-el-salvador{ background-position: 0 -1336px;  } 
-.flag-uruguay{ background-position: 0 -1410px;  } 
-.flag-venezuela{ background-position: 0 -1484px;  } 
+.flag-aa{ background-position: 0 0; width: 24px; height: 24px; } 
+.flag-antigua-and-barbuda{ background-position: 0 -74px; width: 24px; height: 24px; } 
+.flag-argentina { background-position: 0 -148px; width: 24px; height: 24px; }           
+.flag-bolivia   { background-position: 0 -222px; width: 24px; height: 24px; }           
+.flag-brasil{ background-position: 0 -296px; width: 24px; height: 24px; } 
+.flag-belize{ background-position: 0 -370px; width: 24px; height: 24px; } 
+.flag-chile { background-position: 0 -444px; width: 24px; height: 24px; } 
+.flag-colombia  { background-position: 0 -518px; width: 24px; height: 24px; } 
+.flag-costa-rica{ background-position: 0 -592px; width: 24px; height: 24px; } 
+.flag-cuba  { background-position: 0 -666px; width: 24px; height: 24px; } 
+.flag-dominica  { background-position: 0 -740px; width: 24px; height: 24px; } 
+.flag-republica-dominicana  { background-position: 0 -814px; width: 24px; height: 24px; }           
+.flag-ecuador   { background-position: 0 -888px; width: 24px; height: 24px; } 
+.flag-grenada   { background-position: 0 -962px; width: 24px; height: 24px; }           
+.flag-guatemala { background-position: 0 -1036px; width: 24px; height: 24px; }           
+.flag-honduras  { background-position: 0 -1110px; width: 24px; height: 24px; } 
+.flag-haiti     { background-position: 0 -1184px; width: 24px; height: 24px; } 
+.flag-jamaica   { background-position: 0 -1258px; width: 24px; height: 24px; }          
+.flag-saint-kitts-and-nevis{ background-position: 0 -1332px; width: 24px; height: 24px; } 
+.flag-saint-lucia   { background-position: 0 -1406px; width: 24px; height: 24px; } 
+.flag-mexico    { background-position: 0 -1480px; width: 24px; height: 24px; } 
+.flag-nicaragua { background-position: 0 -1554px; width: 24px; height: 24px; } 
+.flag-panama{ background-position: 0 -1628px; width: 24px; height: 24px; } 
+.flag-peru  { background-position: 0 -1702px; width: 24px; height: 24px; } 
+.flag-puerto-rico   { background-position: 0 -1776px; width: 24px; height: 24px; } 
+.flag-paraguay  { background-position: 0 -1850px; width: 24px; height: 24px; } 
+.flag-el-salvador   { background-position: 0 -1924px; width: 24px; height: 24px; } 
+.flag-trinidad-and-tobago{ background-position: -74px 0; width: 24px; height: 24px; } 
+.flag-uruguay   { background-position: -74px -74px; width: 24px; height: 24px; } 
+.flag-saint-vincent-and-the-grenadines  { background-position: -74px -148px; width: 24px; height: 24px; } 
+.flag-venezuela { background-position: -74px -222px; width: 24px; height: 24px; } 
+
+
+//flags 24 px 
+
+
+
