@@ -9,7 +9,7 @@ query_posts( array( 'post_type' => 'post', 'pais'=>array_pop($term)->name, 'page
 
 <div class="well nofillwell">  
             
-    <h3> Ultimas Noticias</h3>
+    <h3> <?php _e( 'Latest News', 'bootstrapwp' ); ?></h3>
         <ul class="dalLinklist">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <li>

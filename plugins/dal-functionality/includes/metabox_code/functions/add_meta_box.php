@@ -49,50 +49,50 @@ $custom_meta_fields = array(
 	),
 */
 	array(
-		'label'	=> 'Nombre del equipo',
-		'desc'	=> 'Nombre del equipo participante',
+		'label'	=> __('Nombre del equipo','dal-functionality'),
+		'desc'	=> __('Nombre del equipo participante','dal-functionality'),
 		'id'	=> $prefix.'equipo',
 		'type'	=> 'text'
 	),
 
 	array(
-		'label'	=> 'Integrantes',
-		'desc'	=> 'Agrega los nombres de los integrantes del grupo',
+		'label'	=> __('Integrantes','dal-functionality'),
+		'desc'	=> __('Agrega los nombres de los integrantes del grupo','dal-functionality'),
 		'id'	=> $prefix.'integrante',
 		'type'	=> 'repeatable'
 
 	),
 	
 	array(
-		'label'	=> 'Datos Utilizados',
-		'desc'	=> 'Link de las bases de datos usadas en el desarrollo de la app',
+		'label'	=> __('Datos Utilizados','dal-functionality'),
+		'desc'	=> __('Link de las bases de datos usadas en el desarrollo de la app','dal-functionality'),
 		'id'	=> $prefix.'database',
 		'type'	=> 'repeatablelink'
 	),
 
 	array(
-		'label'	=> 'Problema que soluciona',
-		'desc'	=> 'Describe la problemática que aborda tu aplicación, si te inspiraste en alguna idea surgida en los meetups por favor agrega el link.',
+		'label'	=> __('Problema que soluciona','dal-functionality'),
+		'desc'	=> __('Describe la problemática que aborda tu aplicación, si te inspiraste en alguna idea surgida en los meetups por favor agrega el link.','dal-functionality'),
 		'id'	=> $prefix.'problema',
 		'type'	=> 'textarea'
 	),
 
 	array(
-		'label'	=> 'Solución planteada',
-		'desc'	=> 'Cómo tu aplicación soluciona este problema',
+		'label'	=> __('Solución planteada','dal-functionality'),
+		'desc'	=> __('Cómo tu aplicación soluciona este problema','dal-functionality'),
 		'id'	=> $prefix.'solucion',
 		'type'	=> 'textarea'
 	),
 
 	array(
-		'label'	=> 'Link a la aplicación',
-		'desc'	=> 'URL de la app',
+		'label'	=> __('Link a la aplicación','dal-functionality'),
+		'desc'	=> __('URL de la app','dal-functionality'),
 		'id'	=> $prefix.'urlapp',
 		'type'	=> 'link'
 	),
 	array(
-		'label'	=> 'Screencast',
-		'desc'	=> 'Embed code del screencast',
+		'label'	=> __('Screencast','dal-functionality'),
+		'desc'	=> __('Embed code del screencast','dal-functionality'),
 		'id'	=> $prefix.'screencast',
 		'type'	=> 'textarea'
 	),
@@ -208,8 +208,8 @@ $custom_meta_fields = array(
 		'type'	=> 'image'
 	),*/
 	array(
-		'label'	=> 'Github',
-		'desc'	=> 'Link al proyecto en github',
+		'label'	=> __('Github','dal-functionality'),
+		'desc'	=> __('Link al proyecto en github','dal-functionality'),
 		'id'	=> $prefix.'github',
 		'type'	=> 'link'
 	),
@@ -325,7 +325,7 @@ function show_app_meta_box() {
 					// tax_select
 					case 'tax_select':
 						echo '<select name="'.$field['id'].'" id="'.$field['id'].'">
-								<option value="">Select One</option>'; // Select One
+								<option value="">'.__("Select One",'dal-functionality').'</option>'; // Select One
 						$terms = get_terms($field['id'], 'get=all');
 						$selected = wp_get_object_terms($post->ID, $field['id']);
 						foreach ($terms as $term) {
@@ -344,7 +344,7 @@ function show_app_meta_box() {
 						'posts_per_page' => -1
 					));
 						echo '<select name="'.$field['id'].'" id="'.$field['id'].'">
-								<option value="">Select One</option>'; // Select One
+								<option value="">'.__("Select One",'dal-functionality').'</option>'; // Select One
 							foreach($items as $item) {
 								echo '<option value="'.$item->ID.'"',$meta == $item->ID ? ' selected="selected"' : '','>'.$item->post_type.': '.$item->post_title.'</option>';
 							} // end foreach

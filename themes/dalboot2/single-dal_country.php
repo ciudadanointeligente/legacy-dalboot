@@ -36,7 +36,7 @@ get_header(); ?>
         </div><!-- /.span5 -->
         <div class="span">
           
-          <h4 class="hr"> Organizan:</h4>
+          <h4 class="hr"> <?php _e( 'Organized by:', 'bootstrapwp' ); ?></h4>
           
           <?php get_template_part('local-organizers')?>
 

@@ -16,30 +16,30 @@ $prefix = 'country_';
 $country_meta_fields = array(
 	
 	array(
-		'label'	=> 'Inscipciones',
-		'desc'	=> 'Url donde pueden inscribirse los participantes',
+		'label'	=> __('Inscipciones','dal-functionality'),
+		'desc'	=> __('Url donde pueden inscribirse los participantes','dal-functionality'),
 		'id'	=> $prefix.'inscribete',
 		'type'	=> 'link'
 	),
 	
 	array(
-		'label'	=> 'Lugar del evento',
-		'desc'	=> 'Ciudades donde se realizará el evento. O dirección.',
+		'label'	=> __('Lugar del evento','dal-functionality'),
+		'desc'	=> __('Ciudades donde se realizará el evento. O dirección.','dal-functionality'),
 		'id'	=> $prefix.'venue',
-		'call'  => 'Agregar otro',
+		'call'  => __('Agregar otro','dal-functionality'),
 		'type'	=> 'repeatable',
 	),
 
 	array(
-		'label'	=> 'Bases de datos Disponibles en',
-		'desc'	=> 'URL de las bases de datos disponibles',
+		'label'	=> __('Bases de datos Disponibles en','dal-functionality'),
+		'desc'	=> __('URL de las bases de datos disponibles','dal-functionality'),
 		'id'	=> $prefix.'datasets',
 		'type'	=> 'link'
 	),
 
 	array(
-		'label'	=> 'Más información en:',
-		'desc'	=> 'Selecciona la página "DAL en tu país" ',
+		'label'	=> __('Más información en:','dal-functionality'),
+		'desc'	=> __('Selecciona la página "DAL en tu país" ','dal-functionality'),
 		'id'	=>  $prefix.'post_id',
 		'type'	=> 'country_page_list',
 		'post_type' => array('page')
@@ -132,7 +132,7 @@ function show_country_meta_box() {
 
 					));
 						echo '<select name="'.$field['id'].'" id="'.$field['id'].'">
-								<option value="">Select One</option>'; // Select One
+								<option value="">'.__("Select One",'dal-functionality').'</option>'; // Select One
 							foreach($items as $item) {
 								echo '<option value="'.$item->ID.'"',$meta == $item->ID ? ' selected="selected"' : '','>'.$item->post_type.': '.$item->post_title.'</option>';
 							} // end foreach
