@@ -76,7 +76,10 @@
 		</div>	
 			<div class="container fullcentered opacity"><?php _e( 'Site developed by:', 'bootstrapwp' ); ?> <a class="fci-link" href="http://ciudadanointeligente.org"></a></p>
 	 </footer>
+
 		<?php wp_footer(); ?>
+		<script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
+
 
   </body>
 </html>
