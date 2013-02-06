@@ -103,7 +103,7 @@ class Dal_Portfolio {
 	$args = apply_filters( 'dal_portfolio_taxonomy_args',
 	    array(
 		'labels' => array(
-		    'name' => __( 'premiopais', 'dal-portfolio' ),
+		    'name' => __( 'National Award', 'dal-portfolio' ),
 		    'singular_name' => __( 'Premio nacional', 'dal-portfolio' ),
 		    'search_items' =>  __( 'Buscar premios nacionales', 'dal-portfolio' ),
 		    'popular_items' => __( 'Premios populares', 'dal-portfolio' ),
@@ -172,7 +172,7 @@ class Dal_Portfolio {
 
          array(
           'labels' => array(
-              'name' => __( 'premioregional', 'dal-portfolio' ),
+              'name' => __( 'Regional Award', 'dal-portfolio' ),
               'singular_name' => __( 'Premio regional', 'dal-portfolio' ),
               'search_items' =>  __( 'Buscar premios regionales', 'dal-portfolio' ),
               'popular_items' => __( 'Populares', 'dal-portfolio' ),
@@ -242,12 +242,15 @@ class Dal_Portfolio {
 
     if (!taxonomy_exists('apps_tracks')) {
 
-        register_taxonomy('apps_tracks', array('portfolio', 'dal_country'), array(
-            'hierarchical' => True,
-            'labels' => $labels,
-            'show_ui' => true,
-            'query_var' => 'track', 
-            'rewrite' => array( 'slug' => 'track' ) )
+        register_taxonomy('apps_tracks', 
+          array('portfolio', 'dal_country'), 
+            array(
+              'hierarchical' => True,
+              'labels' => $labels,
+              'show_ui' => true,
+              'query_var' => 'track', 
+              'rewrite' => array( 'slug' => 'track' ) 
+              )
         );
     };
 
@@ -266,12 +269,15 @@ class Dal_Portfolio {
       );   
        if (!taxonomy_exists('app_year')) {
 
-        register_taxonomy('app_year', array('portfolio'), array(
-            'hierarchical' => True,
-            'labels' => $yearlabels,
-            'show_ui' => true,
-            'query_var' => 'ano', 
-            'rewrite' => array( 'slug' => 'ano' ) )
+        register_taxonomy('app_year', 
+          array('portfolio'), 
+            array(
+              'hierarchical' => True,
+              'labels' => $yearlabels,
+              'show_ui' => true,
+              'query_var' => 'ano', 
+              'rewrite' => array( 'slug' => 'ano' ) 
+              )
         );
 
         if (!term_exists( '2012', 'app_year')){
@@ -289,73 +295,99 @@ class Dal_Portfolio {
        }
     };
 
-     if (!taxonomy_exists('apppais')) {
-        register_taxonomy( 'apppais', 'portfolio', array( 'hierarchical' => false, 'label' => __('País de la aplicación', 'dal-portfolio' ), 'query_var' => 'apppais', 'rewrite' => array( 'slug' => 'apppais' ) ) );
+    $applabels = array(
+        'name' => __( 'App Country', 'taxonomy general name', 'dal-portfolio' ),
+        'singular_name' => __( 'App Country', 'taxonomy singular name', 'dal-portfolio' ),
+        'search_items' =>  __( 'Search countries', 'dal-portfolio' ),
+        'all_items' => __( 'All the countries', 'dal-portfolio' ),
+        'parent_item' => __( 'Parent country', 'dal-portfolio' ),
+        'parent_item_colon' => __( 'Parent country:', 'dal-portfolio' ),
+        'edit_item' => __( 'Edit country', 'dal-portfolio' ), 
+        'update_item' => __( 'Update app country', 'dal-portfolio' ),
+        'add_new_item' => __( 'Add new app country', 'dal-portfolio' ),
+        'new_item_name' => __( 'New App Country', 'dal-portfolio' ),
+        'menu_name' => __( 'App Country', 'dal-portfolio' ),
+      );   
+
+
+     if (!taxonomy_exists('appcountry')) {
+
+        register_taxonomy( 'appcountry', 
+          'portfolio', 
+            array(
+              'hierarchical' => false,
+              'labels' => $applabels,
+              'show_ui' => true,
+              'query_var' => 'appcountry', 
+              'rewrite' => array( 'slug' => 'appcountry' ) 
+              )
+              
+        );
         
-      if (!term_exists( 'Argentina', 'apppais')){
-         wp_insert_term('Argentina', 'apppais');
+      if (!term_exists( 'Argentina', 'appcountry')){
+         wp_insert_term('Argentina', 'appcountry');
        }
 
-       if (!term_exists( 'Bolivia', 'apppais')){
-        wp_insert_term('Bolivia', 'apppais');
+       if (!term_exists( 'Bolivia', 'appcountry')){
+        wp_insert_term('Bolivia', 'appcountry');
       }
 
-      if (!term_exists( 'Brasil', 'apppais')){
-        wp_insert_term('Brasil', 'apppais');
+      if (!term_exists( 'Brasil', 'appcountry')){
+        wp_insert_term('Brasil', 'appcountry');
       }
-      if (!term_exists( 'Chile', 'apppais')){
-        wp_insert_term('Chile', 'apppais');
+      if (!term_exists( 'Chile', 'appcountry')){
+        wp_insert_term('Chile', 'appcountry');
       }
-      if (!term_exists( 'Colombia', 'apppais')){
-        wp_insert_term('Colombia', 'apppais');
+      if (!term_exists( 'Colombia', 'appcountry')){
+        wp_insert_term('Colombia', 'appcountry');
       }
-      if (!term_exists( 'Costa-Rica', 'apppais')){
-        wp_insert_term('Costa-Rica', 'apppais');
+      if (!term_exists( 'Costa-Rica', 'appcountry')){
+        wp_insert_term('Costa-Rica', 'appcountry');
       }
-      if (!term_exists( 'Cuba', 'apppais')){
-        wp_insert_term('Cuba', 'apppais');
+      if (!term_exists( 'Cuba', 'appcountry')){
+        wp_insert_term('Cuba', 'appcountry');
       }
-      if (!term_exists( 'Ecuador', 'apppais')){
-        wp_insert_term('Ecuador', 'apppais');
+      if (!term_exists( 'Ecuador', 'appcountry')){
+        wp_insert_term('Ecuador', 'appcountry');
       }
-      if (!term_exists( 'El-Salvador', 'apppais')){
-      wp_insert_term('El-Salvador', 'apppais');
+      if (!term_exists( 'El-Salvador', 'appcountry')){
+      wp_insert_term('El-Salvador', 'appcountry');
       }
-      if (!term_exists( 'Guatemala', 'apppais')){
-        wp_insert_term('Guatemala', 'apppais');
+      if (!term_exists( 'Guatemala', 'appcountry')){
+        wp_insert_term('Guatemala', 'appcountry');
       }
-      if (!term_exists( 'Haiti', 'apppais')){
-        wp_insert_term('Haiti', 'apppais');
+      if (!term_exists( 'Haiti', 'appcountry')){
+        wp_insert_term('Haiti', 'appcountry');
       }
-      if (!term_exists( 'Honduras', 'apppais')){
-        wp_insert_term('Honduras', 'apppais');
+      if (!term_exists( 'Honduras', 'appcountry')){
+        wp_insert_term('Honduras', 'appcountry');
       }
-      if (!term_exists( 'Mexico', 'apppais')){
-        wp_insert_term('Mexico', 'apppais');
+      if (!term_exists( 'Mexico', 'appcountry')){
+        wp_insert_term('Mexico', 'appcountry');
       }
-      if (!term_exists( 'Nicaragua', 'apppais')){
-        wp_insert_term('Nicaragua', 'apppais');
+      if (!term_exists( 'Nicaragua', 'appcountry')){
+        wp_insert_term('Nicaragua', 'appcountry');
       }
-      if (!term_exists( 'Panama', 'apppais')){
-        wp_insert_term('Panama', 'apppais');
+      if (!term_exists( 'Panama', 'appcountry')){
+        wp_insert_term('Panama', 'appcountry');
       }
-      if (!term_exists( 'Paraguay', 'apppais')){
-        wp_insert_term('Paraguay', 'apppais');
+      if (!term_exists( 'Paraguay', 'appcountry')){
+        wp_insert_term('Paraguay', 'appcountry');
       }
-      if (!term_exists( 'Peru', 'apppais')){
-        wp_insert_term('Peru', 'apppais');
+      if (!term_exists( 'Peru', 'appcountry')){
+        wp_insert_term('Peru', 'appcountry');
       }
-      if (!term_exists( 'Republica-Dominicana', 'apppais')){
-        wp_insert_term('Republica-Dominicana', 'apppais');
+      if (!term_exists( 'Republica-Dominicana', 'appcountry')){
+        wp_insert_term('Republica-Dominicana', 'appcountry');
       }
-      if (!term_exists( 'Uruguay', 'apppais')){
-        wp_insert_term('Uruguay', 'apppais');
+      if (!term_exists( 'Uruguay', 'appcountry')){
+        wp_insert_term('Uruguay', 'appcountry');
       }
-      if (!term_exists( 'Venezuela', 'apppais')){
-        wp_insert_term('Venezuela', 'apppais');
+      if (!term_exists( 'Venezuela', 'appcountry')){
+        wp_insert_term('Venezuela', 'appcountry');
       }
-      if (!term_exists( 'Puerto-Rico', 'apppais')){
-        wp_insert_term('Puerto-Rico', 'apppais');
+      if (!term_exists( 'Puerto-Rico', 'appcountry')){
+        wp_insert_term('Puerto-Rico', 'appcountry');
       }
        //The Caribbean
 
@@ -547,7 +579,7 @@ class Dal_Portfolio {
     'datitos'=> __( 'info', 'dal-portfolio' ),
     'terms' => '',
     'operator' => __( 'IN', 'dal-portfolio' ),
-    'apppais'=> $apppais,
+    'appcountry'=> $appcountry,
     'app_year'=> $app_year,
     'award'=> __( 'national', 'dal-portfolio' ),
     
@@ -568,7 +600,7 @@ class Dal_Portfolio {
     'meta_key' => '_thumbnail_id', // Should pull only items with featured images
 		'orderby' => $orderby,
 		'order' => $order,
-    'taxonomy' =>'apppais',
+    'taxonomy' =>'appcountry',
     'tax_query'=> array()
     
 
@@ -578,11 +610,11 @@ class Dal_Portfolio {
         /** If the user has defined any tax (premiopais) terms, then we create our tax_query and merge to our main query  */
         //si tiene un lugar hace esto
 
-        if( $apppais ) {
+        if( $appcountry ) {
             $post_meta_data = get_post_custom($post->ID);
             $args['tax_query'][]=   array(
-                        'taxonomy' => 'apppais',
-                        'terms' => $apppais,
+                        'taxonomy' => 'appcountry',
+                        'terms' => $appcountry,
                         'field' => 'slug',
                       
                     );         
@@ -728,8 +760,8 @@ class Dal_Portfolio {
 
                 $return .= '<div class="'.$uid.'" ><h2 class="dal-portf-title">'.$preposicion.'';
 
-                if ($apppais){
-                  $return .= ' <span style="text-transform: capitalize;">'.$apppais. '</span>';
+                if ($appcountry){
+                  $return .= ' <span style="text-transform: capitalize;">'.$appcountry. '</span>';
                  }
                if ($app_year){
                 $return .= ' '.$app_year.'';
@@ -850,7 +882,7 @@ class Dal_Portfolio {
                     
                     $return .="<div class='dal-portfolio-datitos'> <div class='dal-fila'>";
                         //get the flags
-                        $terms = get_the_terms( get_the_ID(), 'apppais' );
+                        $terms = get_the_terms( get_the_ID(), 'appcountry' );
                         if( count( $terms ) > 0 )  {
                            $return .= '<div class="dal-meta-item">';
                                foreach ( $terms as $term ) {

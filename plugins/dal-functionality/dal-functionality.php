@@ -342,57 +342,57 @@ function create_dal_post_type() {
 
 //
 //
-//======================== add apppais
+//======================== add appcountry
 //
 //
 //
-// 4- Agrega taxonomía "apppais" con dropdown para cpt apps./ importante para que no se confundan las queries de apps con las del blog
+// 4- Agrega taxonomía "appcountry" con dropdown para cpt apps./ importante para que no se confundan las queries de apps con las del blog
 //
  
 
- function add_apppais_box() {
-  remove_meta_box('tagsdiv-apppais', 'portfolio','core');
-  add_meta_box('apppais_box_ID', __('apppais'), 'apppais_styling_function','portfolio','side','high');
+ function add_appcountry_box() {
+  remove_meta_box('tagsdiv-appcountry', 'portfolio','core');
+  add_meta_box('appcountry_box_ID', __('Country of the App'), 'appcountry_styling_function','portfolio','side','high');
  } 
  
- function add_apppais_menus() {
+ function add_appcountry_menus() {
  
   if ( ! is_admin() )
     return;
  
-  add_action('admin_menu', 'add_apppais_box');
+  add_action('admin_menu', 'add_appcountry_box');
 
   //Use the save_post action to save new post data 
-  add_action('save_post', 'save_apppais_data');
+  add_action('save_post', 'save_appcountry_data');
  }
  
-add_apppais_menus();
+add_appcountry_menus();
 
 // This function gets called in edit-form-advanced.php
-function apppais_styling_function($post) {
+function appcountry_styling_function($post) {
  
   echo '<input type="hidden" name="taxonomy_noncename" id="taxonomy_noncename" value="' . 
-        wp_create_nonce( 'taxonomy_apppais' ) . '" />';
+        wp_create_nonce( 'taxonomy_appcountry' ) . '" />';
  
  
-  // Get all apppais taxonomy terms
-  $apppaises = get_terms('apppais', 'hide_empty=0'); 
+  // Get all appcountry taxonomy terms
+  $appcountryes = get_terms('appcountry', 'hide_empty=0'); 
  
 ?>
-<select name='post_apppais' id='post_apppais'>
-  <!-- Display apppaises as options -->
+<select name='post_appcountry' id='post_appcountry'>
+  <!-- Display appcountryes as options -->
     <?php 
-        $names = wp_get_object_terms($post->ID, 'apppais'); 
+        $names = wp_get_object_terms($post->ID, 'appcountry'); 
         ?>
-        <option class='apppais-option' value='' 
+        <option class='appcountry-option' value='' 
         <?php if (!count($names)) echo "selected";?>><?php _e("Ninguno",'dal-functionality'); ?></option>
         <?php
-  foreach ($apppaises as $apppais) {
-    if (!is_wp_error($names) && !empty($names) && !strcmp($apppais->slug, $names[0]->slug)) 
-      echo "<option class='apppais-option' value='" . $apppais->slug . "' selected>" . $apppais->name . "</option>\n"; 
+  foreach ($appcountryes as $appcountry) {
+    if (!is_wp_error($names) && !empty($names) && !strcmp($appcountry->slug, $names[0]->slug)) 
+      echo "<option class='appcountry-option' value='" . $appcountry->slug . "' selected>" . $appcountry->name . "</option>\n"; 
     
     else
-      echo "<option class='apppais-option' value='" . $apppais->slug . "'>" . $apppais->name . "</option>\n"; 
+      echo "<option class='appcountry-option' value='" . $appcountry->slug . "'>" . $appcountry->name . "</option>\n"; 
   }
 
    ?>
@@ -400,10 +400,10 @@ function apppais_styling_function($post) {
 <?php
 }
 
-function save_apppais_data($post_id) {
+function save_appcountry_data($post_id) {
 // verify this came from our screen and with proper authorization.
  
-  if ( !wp_verify_nonce( $_POST['taxonomy_noncename'], 'taxonomy_apppais' )) {
+  if ( !wp_verify_nonce( $_POST['taxonomy_noncename'], 'taxonomy_appcountry' )) {
       return $post_id;
     }
  
@@ -425,10 +425,10 @@ function save_apppais_data($post_id) {
   $post = get_post($post_id);
   if (($post->post_type == 'dal_country_sponsor') || ($post->post_type == 'page') || ($post->post_type == 'post') || ($post->post_type == 'portfolio') || ($post->post_type == 'dal_country')){ 
            // OR $post->post_type != 'revision'
-           $apppais = $_POST['post_apppais'];
-     wp_set_object_terms( $post_id, $apppais, 'apppais' );
+           $appcountry = $_POST['post_appcountry'];
+     wp_set_object_terms( $post_id, $appcountry, 'appcountry' );
         }
-  return $apppais; 
+  return $appcountry; 
 }
 
 
