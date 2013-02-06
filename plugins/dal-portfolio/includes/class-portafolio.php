@@ -251,7 +251,7 @@ class Dal_Portfolio {
         );
     };
 
-    $labelsano = array(
+    $yearlabels = array(
         'name' => _x( 'Año', 'taxonomy general name', 'dal-portfolio' ),
         'singular_name' => _x( 'Año', 'taxonomy singular name', 'dal-portfolio' ),
         'search_items' =>  __( 'Buscar por año', 'dal-portfolio' ),
@@ -264,28 +264,28 @@ class Dal_Portfolio {
         'new_item_name' => __( 'Nuevo año', 'dal-portfolio' ),
         'menu_name' => __( 'Año de la aplicación', 'dal-portfolio' ),
       );   
-       if (!taxonomy_exists('apps_ano')) {
+       if (!taxonomy_exists('app_year')) {
 
-        register_taxonomy('apps_ano', array('portfolio'), array(
+        register_taxonomy('app_year', array('portfolio'), array(
             'hierarchical' => True,
-            'labels' => $labelsano,
+            'labels' => $yearlabels,
             'show_ui' => true,
             'query_var' => 'ano', 
             'rewrite' => array( 'slug' => 'ano' ) )
         );
 
-        if (!term_exists( '2012', 'apps_ano')){
-         wp_insert_term('2012', 'apps_ano');
+        if (!term_exists( '2012', 'app_year')){
+         wp_insert_term('2012', 'app_year');
        }
 
-        if (!term_exists( '2011', 'apps_ano')){
-         wp_insert_term('2011', 'apps_ano');
+        if (!term_exists( '2011', 'app_year')){
+         wp_insert_term('2011', 'app_year');
        }
-       if (!term_exists( '2013', 'apps_ano')){
-         wp_insert_term('2013', 'apps_ano');
+       if (!term_exists( '2013', 'app_year')){
+         wp_insert_term('2013', 'app_year');
        }
-         if (!term_exists( '2014', 'apps_ano')){
-         wp_insert_term('2014', 'apps_ano');
+         if (!term_exists( '2014', 'app_year')){
+         wp_insert_term('2014', 'app_year');
        }
     };
 
@@ -548,8 +548,8 @@ class Dal_Portfolio {
     'terms' => '',
     'operator' => __( 'IN', 'dal-portfolio' ),
     'apppais'=> $apppais,
-    'apps_ano'=> $apps_ano,
-    'premiados'=> __( 'nacional', 'dal-portfolio' ),
+    'app_year'=> $app_year,
+    'award'=> __( 'national', 'dal-portfolio' ),
     
     
     
@@ -588,11 +588,11 @@ class Dal_Portfolio {
                     );         
         }
 
-        if ($apps_ano) {
+        if ($app_year) {
           $post_meta_data = get_post_custom($post->ID);
           $args['tax_query'][]=   array(
-                        'taxonomy' => 'apps_ano',
-                        'terms' => $apps_ano,
+                        'taxonomy' => 'app_year',
+                        'terms' => $app_year,
                         'field' => 'slug',
                       
                     );    
@@ -622,8 +622,8 @@ class Dal_Portfolio {
 
        
 
-          switch( $premiados ) {
-            case "nacional" :
+          switch( $award ) {
+            case "national" :
 
               $termspremio = get_terms( 'premiopais' );
               $arraypremiosnac = array();
@@ -713,35 +713,36 @@ class Dal_Portfolio {
             $uid= uniqid();
 
             if( count( $terms ) > 1)  {
-                if ($premiados == 'nacional' || $premiados == 'regional' ){
-                    $preposicion ='Ganadores ';
-                  } else {
-                     $preposicion ='Aplicaciones ';
-                  }
+                if ($award == 'national'){
+                    $preposicion =__('National Awards', 'dal-portfolio');
+                }
+
+                if ($award == 'regional'){
+                    $preposicion =__('Regional Awards', 'dal-portfolio');
+
+                } 
+                 if (empty( $award) ){
+                    $preposicion =__('Apps', 'dal-portfolio');
+
+                } 
 
                 $return .= '<div class="'.$uid.'" ><h2 class="dal-portf-title">'.$preposicion.'';
-               if ($premiados == 'nacional'){
-                 $return .= 'nacionales ';
-               }
-               if ($premiados == 'regional'){
-                 $return .= 'regionales ';
-               }
 
                 if ($apppais){
                   $return .= ' <span style="text-transform: capitalize;">'.$apppais. '</span>';
                  }
-               if ($apps_ano){
-                $return .= ' '.$apps_ano.'';
+               if ($app_year){
+                $return .= ' '.$app_year.'';
                }
 
                 $return .= '</h2></div>'; 
-                 if ($premiados == 'nacional' ){
+                 if ($award == 'national' ){
                 $return .= '<div class="head-premios premios-nac"></div>';
               }
-               if ($premiados == 'regional'){
+               if ($award == 'regional'){
                 $return .= '<div class="head-premios"></div>';
               }
-                if (!($premiados == 'nacional' || $premiados == 'regional' )){
+                if (!($award == 'national' || $award == 'regional' )){
                  
                   
                     $return .= '<ul class="dal-portfolio-filtro '.$uid.' "><li class="dal-portfolio-category-title">';
@@ -770,7 +771,7 @@ class Dal_Portfolio {
                 $return .= "});</script>";
                 
             }
-            if ($premiados == 'nacional' || $premiados == 'regional' ){
+            if ($award == 'national' || $award == 'regional' ){
                    $return .= '<ul class="dal-portfolio-grid colorganador '.$uid.'">';
                   } else {
                     
@@ -799,7 +800,7 @@ class Dal_Portfolio {
                   $return .= '">';
                 
                 //get the year
-                          $tyears =  wp_get_post_terms(get_the_ID(), 'apps_ano', array("fields" => "all"));
+                          $tyears =  wp_get_post_terms(get_the_ID(), 'app_year', array("fields" => "all"));
                           $countyear = count($tyears);
 
                              
