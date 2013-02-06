@@ -36,7 +36,7 @@ get_header(); ?>
 				//getting pais 
 
 				global $post;
-				$paises = get_the_terms($post->id, 'apppais');
+				$paises = get_the_terms($post->id, 'appcountry');
 				foreach ($paises as $pais => $valorpais) {
 						$mycountry= $valorpais->name;
 						$mycountryslug = $valorpais->slug;
