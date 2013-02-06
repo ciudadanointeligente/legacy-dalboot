@@ -9948,7 +9948,7 @@ body {
   background: url(../img/dal/paperr.jpg) repeat #000000;
   border: 1px solid #DDD;
 }
-/*.arconix-portfolio-grid.colorganador{.border-radius(10px);
+/*.dal-portfolio-grid.colorganador{.border-radius(10px);
 			background-color: @linkColor;
 			padding: 15px 0px 15px 16px;
 			background-image: none;
@@ -10119,29 +10119,29 @@ section.infoApp {
   border: 1px solid #d2d2d2;
 }
 /* CSS DISPLAY PORTFOLIO GALLERY------- OVERWRITES PORFTOLIO.CSS from arconix portfolio modified plugin.*/
-.arconix-portfolio-grid .dal-portf-ano.dal-ano-2014 {
+.dal-portfolio-grid .dal-portf-ano.dal-ano-2014 {
   background-color: #ff424c;
   border-right: 2px solid #ff0f1c;
 }
-.arconix-portfolio-grid .dal-ano-2014.dal-portf-ano:before {
+.dal-portfolio-grid .dal-ano-2014.dal-portf-ano:before {
   border-top: 12px solid #ff424c;
   border-bottom: 11px solid #ff424c;
   border-left: 5px solid transparent;
 }
-.arconix-portfolio-grid .dal-portf-ano.dal-ano-2012 {
+.dal-portfolio-grid .dal-portf-ano.dal-ano-2012 {
   background-color: #0088cc;
   border-right: 2px solid #006699;
 }
-.arconix-portfolio-grid .dal-ano-2012.dal-portf-ano:before {
+.dal-portfolio-grid .dal-ano-2012.dal-portf-ano:before {
   border-top: 12px solid #0088cc;
   border-bottom: 11px solid #0088cc;
   border-left: 5px solid transparent;
 }
-.arconix-portfolio-grid .dal-portf-ano.dal-ano-2013 {
+.dal-portfolio-grid .dal-portf-ano.dal-ano-2013 {
   background-color: #f7a81f;
   border-right: 2px solid #db8e08;
 }
-.arconix-portfolio-grid .dal-ano-2013.dal-portf-ano:before {
+.dal-portfolio-grid .dal-ano-2013.dal-portf-ano:before {
   border-top: 12px solid #f7a81f;
   border-bottom: 11px solid #f7a81f;
   border-left: 5px solid transparent;
