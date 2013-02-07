@@ -2,228 +2,205 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dal-functionality\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-17 16:31-0300\n"
-"PO-Revision-Date: 2013-01-17 18:05-0300\n"
-"Last-Translator: Luis Felipe Álvarez Burgos <falvarez@ciudadanointeligente.cl>\n"
+"POT-Creation-Date: 2013-02-07 12:50-0300\n"
+"PO-Revision-Date: 2013-02-07 12:50-0300\n"
+"Last-Translator: J. Pablo Pérez Trabucco <jpperez@ciudadanointeligente.org>\n"
 "Language-Team: Fundación Ciudadano Inteligente\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x\n"
-"X-Poedit-Basepath: /home/falvarez/FCI/dalboot/plugins/dal-functionality\n"
-"X-Poedit-Language: Spanish\n"
-"X-Poedit-Country: CHILE\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: /home/pablo/Developer/workspace/desarrollando/dalboot/"
+"plugins/dal-functionality\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: dal-functionality.php:24
-#: dal-functionality.php:98
-#: dal-functionality.php:99
-#: dal-functionality.php:100
-#: dal-functionality.php:101
-#: dal-functionality.php:102
-msgid "Pais"
+#: dal-functionality.php:24 dal-functionality.php:129
+#: dal-functionality.php:130 dal-functionality.php:131
+#: dal-functionality.php:132 dal-functionality.php:133
+msgid "Country"
 msgstr ""
 
-#: dal-functionality.php:134
-#: dal-functionality.php:357
-msgid "Ninguno"
-msgstr ""
-
-#: dal-functionality.php:186
-msgid "Country page sidebar"
-msgstr ""
-
-#: dal-functionality.php:188
-msgid "Widgets in this area will be shown on the country pages."
-msgstr ""
-
-#: dal-functionality.php:212
-#: dal-functionality.php:224
-msgid "Organizers"
-msgstr ""
-
-#: dal-functionality.php:213
-msgid "Organizer"
-msgstr ""
-
-#: dal-functionality.php:214
-#: dal-functionality.php:215
-msgid "Add New Organizer"
-msgstr ""
-
-#: dal-functionality.php:216
-msgid "Edit Organizer"
+#: dal-functionality.php:165 dal-functionality.php:388
+msgid "None"
 msgstr ""
 
 #: dal-functionality.php:217
-msgid "New Organizer"
-msgstr ""
-
-#: dal-functionality.php:218
-msgid "All Organizers"
+msgid "Country page sidebar"
 msgstr ""
 
 #: dal-functionality.php:219
-msgid "View Organizer"
+msgid "Widgets in this area will be shown on the country pages."
 msgstr ""
 
-#: dal-functionality.php:220
-msgid "Search Organizer"
-msgstr ""
-
-#: dal-functionality.php:221
-msgid "No Organizer País found"
-msgstr ""
-
-#: dal-functionality.php:222
-msgid "No Organizer found in Trash"
-msgstr ""
-
-#: dal-functionality.php:239
-msgid "Ficha base paises en competencia"
-msgstr ""
-
-#: dal-functionality.php:240
-msgid "Ficha base país en competencia"
-msgstr ""
-
-#: dal-functionality.php:241
-msgid "Add New Ficha país"
-msgstr ""
-
-#: dal-functionality.php:242
-msgid "Add New ficha país"
-msgstr ""
-
-#: dal-functionality.php:243
-msgid "Edit Ficha país"
+#: dal-functionality.php:243 dal-functionality.php:255
+msgid "Country Organizers"
 msgstr ""
 
 #: dal-functionality.php:244
-msgid "New Ficha país"
+msgid "Country Organizer"
 msgstr ""
 
-#: dal-functionality.php:245
-msgid "All Fichas país"
-msgstr ""
-
-#: dal-functionality.php:246
-msgid "View Ficha país"
-msgstr ""
-
-#: dal-functionality.php:247
-msgid "Search Ficha país"
-msgstr ""
-
-#: dal-functionality.php:248
-msgid "No Ficha país found"
-msgstr ""
-
-#: dal-functionality.php:249
-msgid "No Ficha país found in Trash"
-msgstr ""
-
-#: dal-functionality.php:251
-msgid "Ficha base país"
-msgstr ""
-
-#: dal-functionality.php:265
-#: dal-functionality.php:277
-msgid "Sponsors"
-msgstr ""
-
-#: dal-functionality.php:266
-msgid "Sponsor"
-msgstr ""
-
-#: dal-functionality.php:267
-#: dal-functionality.php:291
+#: dal-functionality.php:245 dal-functionality.php:272
+#: dal-functionality.php:298 dal-functionality.php:322
 msgid "Add New"
 msgstr ""
 
-#: dal-functionality.php:268
-msgid "Add New Sponsor"
+#: dal-functionality.php:246
+msgid "Add New Organizer"
 msgstr ""
 
-#: dal-functionality.php:269
-msgid "Edit Sponsor"
+#: dal-functionality.php:247
+msgid "Edit Organizer"
 msgstr ""
 
-#: dal-functionality.php:270
-msgid "New Sponsor"
+#: dal-functionality.php:248
+msgid "New Organizer"
 msgstr ""
 
-#: dal-functionality.php:271
-msgid "All Sponsors"
+#: dal-functionality.php:249
+msgid "All Organizers"
 msgstr ""
 
-#: dal-functionality.php:272
-msgid "View Sponsor"
+#: dal-functionality.php:250
+msgid "View Organizer"
+msgstr ""
+
+#: dal-functionality.php:251
+msgid "Search Organizers"
+msgstr ""
+
+#: dal-functionality.php:252
+msgid "No Country Organizer found"
+msgstr ""
+
+#: dal-functionality.php:253
+msgid "No Organizer found in Trash"
+msgstr ""
+
+#: dal-functionality.php:270 dal-functionality.php:271
+#: dal-functionality.php:282
+msgid "Basic Country Info Form"
 msgstr ""
 
 #: dal-functionality.php:273
-msgid "Search Sponsors"
+msgid "Add New Basic Country Info"
 msgstr ""
 
 #: dal-functionality.php:274
-msgid "No Sponsors found"
+msgid "Edit Country Info"
 msgstr ""
 
 #: dal-functionality.php:275
-msgid "No Sponsors found in Trash"
+msgid "New Basic Country Info"
 msgstr ""
 
-#: dal-functionality.php:289
-msgid "Sponsors Regionales"
+#: dal-functionality.php:276
+msgid "All Country Info Forms"
 msgstr ""
 
-#: dal-functionality.php:290
-msgid "Sponsor Regional"
+#: dal-functionality.php:277
+msgid "View Country Info"
 msgstr ""
 
-#: dal-functionality.php:292
-msgid "Add New Regional Sponsor"
+#: dal-functionality.php:278
+msgid "Search Basic Country Info Forms"
 msgstr ""
 
-#: dal-functionality.php:293
-msgid "Edit Regional Sponsor"
+#: dal-functionality.php:279
+msgid "No Country Info Form found"
 msgstr ""
 
-#: dal-functionality.php:294
-msgid "New Regional Sponsor"
+#: dal-functionality.php:280
+msgid "No Country Info Form found in Trash"
 msgstr ""
 
-#: dal-functionality.php:295
-msgid "All Regional Sponsors"
-msgstr ""
-
-#: dal-functionality.php:296
-msgid "View Regional Sponsor"
+#: dal-functionality.php:296 dal-functionality.php:308
+msgid "Sponsors"
 msgstr ""
 
 #: dal-functionality.php:297
-msgid "Search Regional Sponsors"
-msgstr ""
-
-#: dal-functionality.php:298
-msgid "No Regional Sponsors found"
+msgid "Sponsor"
 msgstr ""
 
 #: dal-functionality.php:299
-msgid "No Regional Sponsors found in Trash"
+msgid "Add New Sponsor"
+msgstr ""
+
+#: dal-functionality.php:300
+msgid "Edit Sponsor"
 msgstr ""
 
 #: dal-functionality.php:301
+msgid "New Sponsor"
+msgstr ""
+
+#: dal-functionality.php:302
+msgid "All Sponsors"
+msgstr ""
+
+#: dal-functionality.php:303
+msgid "View Sponsor"
+msgstr ""
+
+#: dal-functionality.php:304
+msgid "Search Sponsors"
+msgstr ""
+
+#: dal-functionality.php:305
+msgid "No Sponsors found"
+msgstr ""
+
+#: dal-functionality.php:306
+msgid "No Sponsors found in Trash"
+msgstr ""
+
+#: dal-functionality.php:320 dal-functionality.php:332
 msgid "Regional Sponsors"
 msgstr ""
 
-#: dal-functionality.php:324
-msgid "apppais"
+#: dal-functionality.php:321
+msgid "Regional Sponsor"
 msgstr ""
 
-#: dal-functionality.php:422
+#: dal-functionality.php:323
+msgid "Add New Regional Sponsor"
+msgstr ""
+
+#: dal-functionality.php:324
+msgid "Edit Regional Sponsor"
+msgstr ""
+
+#: dal-functionality.php:325
+msgid "New Regional Sponsor"
+msgstr ""
+
+#: dal-functionality.php:326
+msgid "All Regional Sponsors"
+msgstr ""
+
+#: dal-functionality.php:327
+msgid "View Regional Sponsor"
+msgstr ""
+
+#: dal-functionality.php:328
+msgid "Search Regional Sponsors"
+msgstr ""
+
+#: dal-functionality.php:329
+msgid "No Regional Sponsors found"
+msgstr ""
+
+#: dal-functionality.php:330
+msgid "No Regional Sponsors found in Trash"
+msgstr ""
+
+#: dal-functionality.php:355
+msgid "Country of the App"
+msgstr ""
+
+#: dal-functionality.php:453
 msgid "Hero Menu"
 msgstr ""
 
@@ -232,123 +209,99 @@ msgid "URL &amp; Description"
 msgstr ""
 
 #: includes/metabox_code/functions/add_portfolio_meta_box.php:52
-#: includes/metabox_code/functions/add_meta_box.php:52
-msgid "Nombre del equipo"
+msgid "Team Name"
 msgstr ""
 
-#: includes/metabox_code/functions/add_portfolio_meta_box.php:53
-#: includes/metabox_code/functions/add_meta_box.php:53
-msgid "Nombre del equipo participante"
+#: includes/metabox_code/functions/add_portfolio_meta_box.php:58
+msgid "Team members"
 msgstr ""
 
 #: includes/metabox_code/functions/add_portfolio_meta_box.php:59
-#: includes/metabox_code/functions/add_meta_box.php:59
-msgid "Integrantes"
+msgid "Add the name of the team members"
 msgstr ""
 
-#: includes/metabox_code/functions/add_portfolio_meta_box.php:60
-#: includes/metabox_code/functions/add_meta_box.php:60
-msgid "Agrega los nombres de los integrantes del grupo"
+#: includes/metabox_code/functions/add_portfolio_meta_box.php:66
+msgid "Datasets used"
 msgstr ""
 
 #: includes/metabox_code/functions/add_portfolio_meta_box.php:67
-#: includes/metabox_code/functions/add_meta_box.php:67
-msgid "Datos Utilizados"
+msgid "URL of datasets used for the application development"
 msgstr ""
 
-#: includes/metabox_code/functions/add_portfolio_meta_box.php:68
-#: includes/metabox_code/functions/add_meta_box.php:68
-msgid "Link de las bases de datos usadas en el desarrollo de la app"
+#: includes/metabox_code/functions/add_portfolio_meta_box.php:73
+msgid "Problem solved by the app"
 msgstr ""
 
 #: includes/metabox_code/functions/add_portfolio_meta_box.php:74
-#: includes/metabox_code/functions/add_meta_box.php:74
-msgid "Problema que soluciona"
+msgid ""
+"Describe the problem solved by your app. If you where inspired by an idea "
+"from the meetups or elsewhere, please add the link to it. "
 msgstr ""
 
-#: includes/metabox_code/functions/add_portfolio_meta_box.php:75
-#: includes/metabox_code/functions/add_meta_box.php:75
-msgid "Describe la problemática que aborda tu aplicación, si te inspiraste en alguna idea surgida en los meetups por favor agrega el link."
+#: includes/metabox_code/functions/add_portfolio_meta_box.php:80
+msgid "Proposed solution"
 msgstr ""
 
 #: includes/metabox_code/functions/add_portfolio_meta_box.php:81
-#: includes/metabox_code/functions/add_meta_box.php:81
-msgid "Solución planteada"
+msgid "How does your app solve the problem?"
 msgstr ""
 
-#: includes/metabox_code/functions/add_portfolio_meta_box.php:82
-#: includes/metabox_code/functions/add_meta_box.php:82
-msgid "Cómo tu aplicación soluciona este problema"
-msgstr ""
-
+#: includes/metabox_code/functions/add_portfolio_meta_box.php:87
 #: includes/metabox_code/functions/add_portfolio_meta_box.php:88
-#: includes/metabox_code/functions/add_meta_box.php:88
-msgid "Link a la aplicación"
+msgid "App URL"
 msgstr ""
 
-#: includes/metabox_code/functions/add_portfolio_meta_box.php:89
-#: includes/metabox_code/functions/add_meta_box.php:89
-msgid "URL de la app"
-msgstr ""
-
-#: includes/metabox_code/functions/add_portfolio_meta_box.php:94
-#: includes/metabox_code/functions/add_meta_box.php:94
+#: includes/metabox_code/functions/add_portfolio_meta_box.php:93
 msgid "Screencast"
 msgstr ""
 
-#: includes/metabox_code/functions/add_portfolio_meta_box.php:95
-#: includes/metabox_code/functions/add_meta_box.php:95
-msgid "Embed code del screencast"
+#: includes/metabox_code/functions/add_portfolio_meta_box.php:94
+msgid "Screencast embed code"
+msgstr ""
+
+#: includes/metabox_code/functions/add_portfolio_meta_box.php:99
+msgid "How to contact your team<br />(and any extra team information) "
 msgstr ""
 
 #: includes/metabox_code/functions/add_portfolio_meta_box.php:100
-msgid "CÓMO CONTACTAR A TU EQUIPO<br />(y cualquier otra info del grupo) "
+msgid ""
+"Participants twitter names, mails, websites, lifestory, and so forth.<br /"
+">Use [at] instead of @ to avoid spam! Eg: <strong>name[at]mail.com</strong>"
 msgstr ""
 
-#: includes/metabox_code/functions/add_portfolio_meta_box.php:101
-msgid "Twitter, mails, website de los participantes, historia de vida, etc.<br />Usa [arroba] en vez de @ para evitar spam!: ej <strong>nombre[arroba]mail.com</strong>"
+#: includes/metabox_code/functions/add_portfolio_meta_box.php:216
+msgid "Code Repository"
 msgstr ""
 
 #: includes/metabox_code/functions/add_portfolio_meta_box.php:217
-#: includes/metabox_code/functions/add_meta_box.php:211
-msgid "Github"
+msgid "Link to project on: Github, Bitbucket, Google Code, etc."
 msgstr ""
 
-#: includes/metabox_code/functions/add_portfolio_meta_box.php:218
-#: includes/metabox_code/functions/add_meta_box.php:212
-msgid "Link al proyecto en github"
-msgstr ""
-
-#: includes/metabox_code/functions/add_portfolio_meta_box.php:334
-#: includes/metabox_code/functions/add_portfolio_meta_box.php:353
-#: includes/metabox_code/functions/add_meta_box.php:328
-#: includes/metabox_code/functions/add_meta_box.php:347
+#: includes/metabox_code/functions/add_portfolio_meta_box.php:333
+#: includes/metabox_code/functions/add_portfolio_meta_box.php:352
 #: includes/metabox_code/functions/dal_country_meta_box.php:135
 msgid "Select One"
 msgstr ""
 
 #: includes/metabox_code/functions/organizer_metabox.php:28
-msgid "logo"
+msgid "Logo"
 msgstr ""
 
 #: includes/metabox_code/functions/organizer_metabox.php:29
-msgid "logo de la organizacion"
+msgid "Organization logo"
 msgstr ""
 
 #: includes/metabox_code/functions/organizer_metabox.php:34
-msgid "link organización"
+msgid "Organization link"
 msgstr ""
 
 #: includes/metabox_code/functions/organizer_metabox.php:35
-msgid "url organización, debes anteponer http://"
+msgid "Organization URL, must start with http://"
 msgstr ""
 
 #: includes/metabox_code/functions/organizer_metabox.php:40
-msgid "Descripción organización"
-msgstr ""
-
 #: includes/metabox_code/functions/organizer_metabox.php:41
-msgid "Descripción de la organización"
+msgid "Organization description"
 msgstr ""
 
 #: includes/metabox_code/functions/organizer_metabox.php:70
@@ -356,71 +309,41 @@ msgid "Select Image"
 msgstr ""
 
 #: includes/metabox_code/functions/organizer_metabox.php:71
-#: includes/metabox_code/functions/multi_field_metabox.php:89
 msgid "Remove Image"
 msgstr ""
 
-#: includes/metabox_code/functions/multi_field_metabox.php:23
-msgid "Add "
-msgstr ""
-
-#: includes/metabox_code/functions/multi_field_metabox.php:24
-msgid "This meta box is under development"
-msgstr ""
-
-#: includes/metabox_code/functions/multi_field_metabox.php:30
-msgid "Logo organizer"
-msgstr ""
-
-#: includes/metabox_code/functions/multi_field_metabox.php:31
-msgid "Agrega el logo de los organizadores locales"
-msgstr ""
-
-#: includes/metabox_code/functions/multi_field_metabox.php:88
-msgid "Choose Image"
-msgstr ""
-
-#: includes/metabox_code/functions/multi_field_metabox.php:92
-msgid "Remove org"
-msgstr ""
-
-#: includes/metabox_code/functions/multi_field_metabox.php:103
-msgid "Add organizer"
-msgstr ""
-
 #: includes/metabox_code/functions/dal_country_meta_box.php:19
-msgid "Inscipciones"
+msgid "Registration"
 msgstr ""
 
 #: includes/metabox_code/functions/dal_country_meta_box.php:20
-msgid "Url donde pueden inscribirse los participantes"
+msgid "Registration URL"
 msgstr ""
 
 #: includes/metabox_code/functions/dal_country_meta_box.php:26
-msgid "Lugar del evento"
+msgid "Venue"
 msgstr ""
 
 #: includes/metabox_code/functions/dal_country_meta_box.php:27
-msgid "Ciudades donde se realizará el evento. O dirección."
+msgid "Venue or cities where the event will take place."
 msgstr ""
 
 #: includes/metabox_code/functions/dal_country_meta_box.php:29
-msgid "Agregar otro"
+msgid "Add another"
 msgstr ""
 
 #: includes/metabox_code/functions/dal_country_meta_box.php:34
-msgid "Bases de datos Disponibles en"
+msgid "Datasets available at"
 msgstr ""
 
 #: includes/metabox_code/functions/dal_country_meta_box.php:35
-msgid "URL de las bases de datos disponibles"
+msgid "Url where participants can find available datasets"
 msgstr ""
 
 #: includes/metabox_code/functions/dal_country_meta_box.php:41
-msgid "Más información en:"
+msgid "More info:"
 msgstr ""
 
 #: includes/metabox_code/functions/dal_country_meta_box.php:42
-msgid "Selecciona la página \"DAL en tu país\" "
+msgid "Select your \"Country Page\". Must be parent of all your country pages."
 msgstr ""
-
