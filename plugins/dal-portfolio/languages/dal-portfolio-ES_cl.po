@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: dal-portfolio\n"
-"POT-Creation-Date: 2013-01-18 11:30-0300\n"
-"PO-Revision-Date: 2013-01-18 11:30-0300\n"
+"POT-Creation-Date: 2013-02-07 11:15-0300\n"
+"PO-Revision-Date: 2013-02-07 11:15-0300\n"
 "Last-Translator: J. Pablo Pérez Trabucco <jpperez@ciudadanointeligente.org>\n"
 "Language-Team: Fundación Ciudadano Inteligente <devteam@ciudadanointeligente."
 "org>\n"
@@ -10,331 +10,366 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
-"X-Poedit-KeywordsList: __;_e\n"
-"X-Poedit-Basepath: /var/www/desarrollando/dalboot/plugins/dal-portfolio\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: /home/pablo/Developer/workspace/desarrollando/dalboot/"
+"plugins/dal-portfolio\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: includes/class-portafolio.php:68
-msgid "Aplicaciones participantes"
+#: includes/class-portafolio.php:68 includes/class-portafolio.php:754
+msgid "Apps"
 msgstr ""
 
 #: includes/class-portafolio.php:69
-msgid "Aplicación"
+msgid "App"
 msgstr ""
 
 #: includes/class-portafolio.php:70
-msgid "Agregar nuevo"
+msgid "Add new"
 msgstr ""
 
 #: includes/class-portafolio.php:71
-msgid "Agregar nueva aplicación"
+msgid "Add new app"
 msgstr ""
 
 #: includes/class-portafolio.php:72
-msgid "Editar"
+msgid "Edit"
 msgstr ""
 
 #: includes/class-portafolio.php:73
-msgid "Editar aplicación"
+msgid "Edit app"
 msgstr ""
 
 #: includes/class-portafolio.php:74
-msgid "Nueva aplicación"
+msgid "New App"
 msgstr ""
 
 #: includes/class-portafolio.php:75
-msgid "Ver aplicaciones"
+msgid "View"
 msgstr ""
 
 #: includes/class-portafolio.php:76
-msgid "Ver aplicación"
+msgid "View app"
 msgstr ""
 
 #: includes/class-portafolio.php:77
-msgid "Buscar aplicaciones"
+msgid "Search Apps"
 msgstr ""
 
 #: includes/class-portafolio.php:78
-msgid "No se encontraron aplicaciones"
+msgid "No Apps found"
 msgstr ""
 
 #: includes/class-portafolio.php:79
-msgid "No se encontraron aplicaciones en la papelera"
+msgid "No Apps found in trash"
 msgstr ""
 
-#: includes/class-portafolio.php:106
-msgid "premiopais"
-msgstr ""
-
-#: includes/class-portafolio.php:107
-msgid "Premio nacional"
+#: includes/class-portafolio.php:106 includes/class-portafolio.php:107
+msgid "National Award"
 msgstr ""
 
 #: includes/class-portafolio.php:108
-msgid "Buscar premios nacionales"
+msgid "All National awards"
 msgstr ""
 
-#: includes/class-portafolio.php:109
-msgid "Premios populares"
+#: includes/class-portafolio.php:111
+msgid "Edit National Award"
 msgstr ""
 
-#: includes/class-portafolio.php:110
-msgid "Todos los premios nacionales"
+#: includes/class-portafolio.php:112
+msgid "Update Award"
 msgstr ""
 
-#: includes/class-portafolio.php:113 includes/class-portafolio.php:182
-msgid "Editar premio"
+#: includes/class-portafolio.php:113
+msgid "Add new National Award"
 msgstr ""
 
-#: includes/class-portafolio.php:114 includes/class-portafolio.php:183
-msgid "Actualizar premio"
+#: includes/class-portafolio.php:114
+msgid "New National Award"
 msgstr ""
 
-#: includes/class-portafolio.php:115 includes/class-portafolio.php:184
-msgid "Agregar nuevo premio"
+#: includes/class-portafolio.php:115
+msgid "separate items with commas"
 msgstr ""
 
-#: includes/class-portafolio.php:116 includes/class-portafolio.php:185
-msgid "Nuevo premio"
+#: includes/class-portafolio.php:116
+msgid "Add or remove National Awards"
 msgstr ""
 
 #: includes/class-portafolio.php:117
-msgid "separados por comas"
+msgid "Choose from most granted"
 msgstr ""
 
-#: includes/class-portafolio.php:118 includes/class-portafolio.php:187
-msgid "Agregar o remover premio"
+#: includes/class-portafolio.php:118 includes/class-portafolio.php:470
+#: includes/class-portafolio.php:746
+msgid "National Awards"
 msgstr ""
 
-#: includes/class-portafolio.php:119
-msgid "Elige de los premios más usados"
-msgstr ""
-
-#: includes/class-portafolio.php:120
-msgid "Premios nacionales"
+#: includes/class-portafolio.php:173 includes/class-portafolio.php:174
+msgid "Regional Award"
 msgstr ""
 
 #: includes/class-portafolio.php:175
-msgid "premioregional"
+msgid "Search Regional Awards"
 msgstr ""
 
 #: includes/class-portafolio.php:176
-msgid "Premio regional"
+msgid "Populars"
 msgstr ""
 
 #: includes/class-portafolio.php:177
-msgid "Buscar premios regionales"
+msgid "All Regional Awards"
 msgstr ""
 
-#: includes/class-portafolio.php:178
-msgid "Populares"
+#: includes/class-portafolio.php:180
+msgid "Edit Regional Award"
 msgstr ""
 
-#: includes/class-portafolio.php:179
-msgid "Todos los premios regionales"
+#: includes/class-portafolio.php:181
+msgid "Update Regional Award"
 msgstr ""
 
-#: includes/class-portafolio.php:186
-msgid "Separa los premios con comas"
+#: includes/class-portafolio.php:182
+msgid "Add new Regional Award"
 msgstr ""
 
-#: includes/class-portafolio.php:188
-msgid "Elige de los más usados"
+#: includes/class-portafolio.php:183
+msgid "New Regional Award"
 msgstr ""
 
-#: includes/class-portafolio.php:189
-msgid "Premios regionales"
+#: includes/class-portafolio.php:184
+msgid "Separate with commas"
 msgstr ""
 
-#: includes/class-portafolio.php:225
-msgid "Tags de las aplicaciones"
+#: includes/class-portafolio.php:185
+msgid "Add or remove Regional Award"
+msgstr ""
+
+#: includes/class-portafolio.php:186 includes/class-portafolio.php:750
+msgid "Regional Awards"
+msgstr ""
+
+#: includes/class-portafolio.php:222
+msgid "App Tags"
+msgstr ""
+
+#: includes/class-portafolio.php:226 includes/class-portafolio.php:236
+msgid "Tracks"
+msgstr ""
+
+#: includes/class-portafolio.php:227
+msgid "Track"
+msgstr ""
+
+#: includes/class-portafolio.php:228
+msgid "Search tracks"
+msgstr ""
+
+#: includes/class-portafolio.php:229
+msgid "All the tracks"
+msgstr ""
+
+#: includes/class-portafolio.php:230
+msgid "parent Track"
 msgstr ""
 
 #: includes/class-portafolio.php:231
-msgid "Buscar tracks"
+msgid "Parent track:"
 msgstr ""
 
 #: includes/class-portafolio.php:232
-msgid "Todos los tracks"
+msgid "Edit track"
 msgstr ""
 
 #: includes/class-portafolio.php:233
-msgid "Track padre"
+msgid "Update track"
 msgstr ""
 
 #: includes/class-portafolio.php:234
-msgid "Track padre:"
+msgid "Add newtrack"
 msgstr ""
 
 #: includes/class-portafolio.php:235
-msgid "Editar track"
+msgid "New track"
 msgstr ""
 
-#: includes/class-portafolio.php:236
-msgid "Actualizar track"
-msgstr ""
-
-#: includes/class-portafolio.php:237
-msgid "Agregar nuevo track"
-msgstr ""
-
-#: includes/class-portafolio.php:238
-msgid "Nuevo track"
-msgstr ""
-
-#: includes/class-portafolio.php:239
-msgid "Temas (tracks)"
+#: includes/class-portafolio.php:255 includes/class-portafolio.php:256
+msgid "Year"
 msgstr ""
 
 #: includes/class-portafolio.php:257
-msgid "Buscar por año"
+msgid "Search by Year"
 msgstr ""
 
 #: includes/class-portafolio.php:258
-msgid "Todos los años"
+msgid "All Years"
 msgstr ""
 
 #: includes/class-portafolio.php:259
-msgid "Año padre"
+msgid "Parent year"
 msgstr ""
 
 #: includes/class-portafolio.php:260
-msgid "Año padre:"
+msgid "Parent year:"
 msgstr ""
 
 #: includes/class-portafolio.php:261
-msgid "Editar año"
+msgid "Edit year"
 msgstr ""
 
 #: includes/class-portafolio.php:262
-msgid "Actualizar año"
+msgid "Update Year"
 msgstr ""
 
 #: includes/class-portafolio.php:263
-msgid "Agregar nuevo año"
+msgid "Add new year"
 msgstr ""
 
 #: includes/class-portafolio.php:264
-msgid "Nuevo año"
+msgid "New year"
 msgstr ""
 
 #: includes/class-portafolio.php:265
-msgid "Año de la aplicación"
+msgid "App year"
 msgstr ""
 
-#: includes/class-portafolio.php:293
-msgid "País de la aplicación"
+#: includes/class-portafolio.php:296 includes/class-portafolio.php:297
+#: includes/class-portafolio.php:306
+msgid "App Country"
 msgstr ""
 
-#: includes/class-portafolio.php:380
+#: includes/class-portafolio.php:298
+msgid "Search countries"
+msgstr ""
+
+#: includes/class-portafolio.php:299
+msgid "All the countries"
+msgstr ""
+
+#: includes/class-portafolio.php:300
+msgid "Parent country"
+msgstr ""
+
+#: includes/class-portafolio.php:301
+msgid "Parent country:"
+msgstr ""
+
+#: includes/class-portafolio.php:302
+msgid "Edit country"
+msgstr ""
+
+#: includes/class-portafolio.php:303
+msgid "Update app country"
+msgstr ""
+
+#: includes/class-portafolio.php:304
+msgid "Add new app country"
+msgstr ""
+
+#: includes/class-portafolio.php:305
+msgid "New App Country"
+msgstr ""
+
+#: includes/class-portafolio.php:438
 #, php-format
-msgid "Ítem de DAL Portfolio actualizado. <a href=\"%s\">View app</a>"
+msgid "App updated. <a href=\"%s\">View app</a>"
 msgstr ""
 
-#: includes/class-portafolio.php:381
-msgid "Campo personalizado actualizado."
+#: includes/class-portafolio.php:439
+msgid "Custom field updated ."
 msgstr ""
 
-#: includes/class-portafolio.php:382
-msgid "Campo personalizado eliminado."
+#: includes/class-portafolio.php:440
+msgid "Custom field deleted ."
 msgstr ""
 
-#: includes/class-portafolio.php:383
-msgid "Ítem de DAL Portfolio actualizado."
+#: includes/class-portafolio.php:441
+msgid "App updated."
 msgstr ""
 
-#: includes/class-portafolio.php:385
+#: includes/class-portafolio.php:443
 #, php-format
-msgid "DAL Portfolio item restored to revision from %s"
+msgid " App restored to revision from %s"
 msgstr ""
 
-#: includes/class-portafolio.php:386
+#: includes/class-portafolio.php:444
 #, php-format
-msgid "Ítem de DAL Portfolio publicado. <a href=\"%s\">View app </a>"
+msgid "App published. <a href=\"%s\">View app </a>"
 msgstr ""
 
-#: includes/class-portafolio.php:387
-msgid "Ítem de DAL Portfolio guardado."
+#: includes/class-portafolio.php:445
+msgid "App saved."
 msgstr ""
 
-#: includes/class-portafolio.php:388
+#: includes/class-portafolio.php:446
+#, php-format
+msgid "App sent <a target=\"_blank\" href=\"%s\">Preview</a>"
+msgstr ""
+
+#: includes/class-portafolio.php:447
 #, php-format
 msgid ""
-"Ítem de DAL Portfolio enviado. <a target=\"_blank\" href=\"%s"
-"\">Previsualizar ítem de portfolio</a>"
+"App programmed by: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
+"\">Preview</a>"
 msgstr ""
 
-#: includes/class-portafolio.php:389
-#, php-format
-msgid ""
-"Ítem de DAL Portfolio programado por: <strong>%1$s</strong>. <a target="
-"\"_blank\" href=\"%2$s\">Previsualizar ítem de DAL portfolio</a>"
-msgstr ""
-
-#: includes/class-portafolio.php:391
+#: includes/class-portafolio.php:449
 msgid "M j, Y @ G:i"
 msgstr ""
 
-#: includes/class-portafolio.php:392
+#: includes/class-portafolio.php:450
 #, php-format
-msgid ""
-"Borrador de ítem DAL Portfolio actualizado. <a target=\"_blank\" href=\"%s"
-"\">Previsualizar aplicación</a>"
+msgid "Draft <a target=\"_blank\" href=\"%s\">Preview app</a>"
 msgstr ""
 
-#: includes/class-portafolio.php:409
-msgid "Imagen"
+#: includes/class-portafolio.php:467
+msgid "image"
 msgstr ""
 
-#: includes/class-portafolio.php:410
-msgid "Título"
+#: includes/class-portafolio.php:468
+msgid "Title"
 msgstr ""
 
-#: includes/class-portafolio.php:411
-msgid "Descripción"
+#: includes/class-portafolio.php:469
+msgid "Description"
 msgstr ""
 
-#: includes/class-portafolio.php:412
-msgid "premiopaises"
-msgstr ""
-
-#: includes/class-portafolio.php:510
+#: includes/class-portafolio.php:568
 msgid "page"
 msgstr ""
 
-#: includes/class-portafolio.php:511
+#: includes/class-portafolio.php:569
 msgid "portfolio-thumb"
 msgstr ""
 
-#: includes/class-portafolio.php:512
+#: includes/class-portafolio.php:570
 msgid "portfolio-large"
 msgstr ""
 
-#: includes/class-portafolio.php:513
+#: includes/class-portafolio.php:571
 msgid "above"
 msgstr ""
 
-#: includes/class-portafolio.php:515
+#: includes/class-portafolio.php:573
 msgid "Display"
 msgstr ""
 
-#: includes/class-portafolio.php:516
+#: includes/class-portafolio.php:574
 msgid "date"
 msgstr ""
 
-#: includes/class-portafolio.php:517
+#: includes/class-portafolio.php:575
 msgid "desc"
 msgstr ""
 
-#: includes/class-portafolio.php:518
+#: includes/class-portafolio.php:576
 msgid "info"
 msgstr ""
 
-#: includes/class-portafolio.php:520
+#: includes/class-portafolio.php:578
 msgid "IN"
 msgstr ""
 
-#: includes/class-portafolio.php:523
-msgid "nacional"
+#: includes/class-portafolio.php:581
+msgid "national"
 msgstr ""
