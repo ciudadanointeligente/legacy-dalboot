@@ -49,56 +49,55 @@ $custom_meta_fields = array(
 	),
 */
 	array(
-		'label'	=> __('Nombre del equipo','dal-functionality'),
-		'desc'	=> __('Nombre del equipo participante','dal-functionality'),
+		'label'	=> __('Team Name','dal-functionality'),
 		'id'	=> $prefix.'equipo',
 		'type'	=> 'text'
 	),
 
 	array(
-		'label'	=> __('Integrantes','dal-functionality'),
-		'desc'	=> __('Agrega los nombres de los integrantes del grupo','dal-functionality'),
+		'label'	=> __('Team members','dal-functionality'),
+		'desc'	=> __('Add the name of the team members','dal-functionality'),
 		'id'	=> $prefix.'integrante',
 		'type'	=> 'repeatable'
 
 	),
 	
 	array(
-		'label'	=> __('Datos Utilizados','dal-functionality'),
-		'desc'	=> __('Link de las bases de datos usadas en el desarrollo de la app','dal-functionality'),
+		'label'	=> __('Datasets used','dal-functionality'),
+		'desc'	=> __('URL of datasets used for the application development','dal-functionality'),
 		'id'	=> $prefix.'database',
 		'type'	=> 'repeatablelink'
 	),
 
 	array(
-		'label'	=> __('Problema que soluciona'),
-		'desc'	=> __('Describe la problemática que aborda tu aplicación, si te inspiraste en alguna idea surgida en los meetups por favor agrega el link.','dal-functionality'),
+		'label'	=> __('Problem solved by the app'),
+		'desc'	=> __('Describe the problem solved by your app. If you where inspired by an idea from the meetups or elsewhere, please add the link to it. ','dal-functionality'),
 		'id'	=> $prefix.'problema',
 		'type'	=> 'textarea'
 	),
 
 	array(
-		'label'	=> __('Solución planteada','dal-functionality'),
-		'desc'	=> __('Cómo tu aplicación soluciona este problema','dal-functionality'),
+		'label'	=> __('Proposed solution','dal-functionality'),
+		'desc'	=> __('How does your app solve the problem?','dal-functionality'),
 		'id'	=> $prefix.'solucion',
 		'type'	=> 'textarea'
 	),
 
 	array(
-		'label'	=> __('Link a la aplicación','dal-functionality'),
-		'desc'	=> __('URL de la app','dal-functionality'),
+		'label'	=> __('App URL','dal-functionality'),
+		'desc'	=> __('App URL','dal-functionality'),
 		'id'	=> $prefix.'urlapp',
 		'type'	=> 'link'
 	),
 	array(
 		'label'	=> __('Screencast','dal-functionality'),
-		'desc'	=> __('Embed code del screencast','dal-functionality'),
+		'desc'	=> __('Screencast embed code','dal-functionality'),
 		'id'	=> $prefix.'screencast',
 		'type'	=> 'textarea'
 	),
 	array(
-		'label'	=> __('CÓMO CONTACTAR A TU EQUIPO<br />(y cualquier otra info del grupo) ','dal-functionality'),
-		'desc'	=> __('Twitter, mails, website de los participantes, historia de vida, etc.<br />Usa [arroba] en vez de @ para evitar spam!: ej <strong>nombre[arroba]mail.com</strong>','dal-functionality'),
+		'label'	=> __('How to contact your team<br />(and any extra team information) ','dal-functionality'),
+		'desc'	=> __('Participants twitter names, mails, websites, lifestory, and so forth.<br />Use [at] instead of @ to avoid spam! Eg: <strong>name[at]mail.com</strong>','dal-functionality'),
 		'id'	=> $prefix.'contactoequipo',
 		'type'	=> 'textarea'
 	),
@@ -214,8 +213,8 @@ $custom_meta_fields = array(
 		'type'	=> 'image'
 	),*/
 	array(
-		'label'	=> __('Github','dal-functionality'),
-		'desc'	=> __('Link al proyecto en github','dal-functionality'),
+		'label'	=> __('Code Repository','dal-functionality'),
+		'desc'	=> __('Link to project on: Github, Bitbucket, Google Code, etc.','dal-functionality'),
 		'id'	=> $prefix.'github',
 		'type'	=> 'link'
 	),

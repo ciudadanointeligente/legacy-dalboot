@@ -16,30 +16,30 @@ $prefix = 'country_';
 $country_meta_fields = array(
 	
 	array(
-		'label'	=> __('Inscipciones','dal-functionality'),
-		'desc'	=> __('Url donde pueden inscribirse los participantes','dal-functionality'),
+		'label'	=> __('Registration','dal-functionality'),
+		'desc'	=> __('Registration URL','dal-functionality'),
 		'id'	=> $prefix.'inscribete',
 		'type'	=> 'link'
 	),
 	
 	array(
-		'label'	=> __('Lugar del evento','dal-functionality'),
-		'desc'	=> __('Ciudades donde se realizará el evento. O dirección.','dal-functionality'),
+		'label'	=> __('Venue','dal-functionality'),
+		'desc'	=> __('Venue or cities where the event will take place.','dal-functionality'),
 		'id'	=> $prefix.'venue',
-		'call'  => __('Agregar otro','dal-functionality'),
+		'call'  => __('Add another','dal-functionality'),
 		'type'	=> 'repeatable',
 	),
 
 	array(
-		'label'	=> __('Bases de datos Disponibles en','dal-functionality'),
-		'desc'	=> __('URL de las bases de datos disponibles','dal-functionality'),
+		'label'	=> __('Datasets available at','dal-functionality'),
+		'desc'	=> __('Url where participants can find available datasets','dal-functionality'),
 		'id'	=> $prefix.'datasets',
 		'type'	=> 'link'
 	),
 
 	array(
-		'label'	=> __('Más información en:','dal-functionality'),
-		'desc'	=> __('Selecciona la página "DAL en tu país" ','dal-functionality'),
+		'label'	=> __('More info:','dal-functionality'),
+		'desc'	=> __('Select your "Country Page". Must be parent of all your country pages.','dal-functionality'),
 		'id'	=>  $prefix.'post_id',
 		'type'	=> 'country_page_list',
 		'post_type' => array('page')

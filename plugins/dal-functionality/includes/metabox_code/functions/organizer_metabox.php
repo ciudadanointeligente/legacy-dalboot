@@ -25,20 +25,20 @@ $prefix = 'org_';
 $org_meta_fields = array(
     
     array(
-        'label' => __('logo','dal-functionality'),
-        'desc'  => __('logo de la organizacion','dal-functionality'),
+        'label' => __('Logo','dal-functionality'),
+        'desc'  => __('Organization logo','dal-functionality'),
         'id'    => $prefix.'logo',
         'type'  => 'image'
     ),
      array(
-        'label' => __('link organización','dal-functionality'),
-        'desc'  => __('url organización, debes anteponer http://','dal-functionality'),
+        'label' => __('Organization link','dal-functionality'),
+        'desc'  => __('Organization URL, must start with http://','dal-functionality'),
         'id'    => $prefix.'link',
         'type'  => 'link'
     ),
      array(
-        'label' => __('Descripción organización','dal-functionality'),
-        'desc'  => __('Descripción de la organización','dal-functionality'),
+        'label' => __('Organization description','dal-functionality'),
+        'desc'  => __('Organization description','dal-functionality'),
         'id'    => $prefix.'desc_org',
         'type'  => 'textarea'
     ),
