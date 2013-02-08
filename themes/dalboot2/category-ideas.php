@@ -9,11 +9,7 @@
 
 get_header();
 if (have_posts() ) ;?>
-<div class="row">
-	<div class="container breadcrumb">
-		_e( 'Archive', 'bootstrapwp' );
-	</div><!--/.container -->
-</div><!--/.row -->
+
 <div class="container">
 
 	<header class="jumbotron subhead" id="overview">
