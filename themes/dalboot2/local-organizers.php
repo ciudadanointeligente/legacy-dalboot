@@ -1,6 +1,4 @@
-
-	
-  <h4 class="hr"> <?php _e( 'Organized by:', 'bootstrapwp' ); ?></h4>
+<h4 class="hr"> <?php _e( 'Organized by:', 'bootstrapwp' ); ?></h4>
 <div class="row sponsorFooter well nolist"> 
 
 	<ul class="sponsorlist">

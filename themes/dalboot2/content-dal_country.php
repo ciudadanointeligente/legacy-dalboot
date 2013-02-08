@@ -4,7 +4,7 @@
 			
 			<?php 
 			$post_meta_data = get_post_custom($post->ID); 
-			echo'<a class= "btn btn-large btn-success span2" href="'.$post_meta_data[country_inscribete][0].'" ><i class="icon-pencil icon-white"></i>  Sign up in '.get_the_title().'</a>';?>	
+			echo'<a class= "btn btn-large btn-success span2" href="'.$post_meta_data[country_inscribete][0].'" ><i class="icon-pencil icon-white"></i>  '.__( 'Participate in', 'bootstrapwp' ) .' '.get_the_title().'</a>';?>	
 			
 			<ul class='span'>
 				</br>
@@ -29,7 +29,7 @@
 							<h4> <?php _e( 'Social topics', 'bootstrapwp' ); ?></h4>
 							<p><em class="lostracks"><?php echo $apps_tracks; ?></em></p>
 
-							<?php echo'<a class= "btn btn-small" href="'.$post_meta_data[country_datasets][0].'" ><i class="icon-th"></i> Data for your application </a>';?><?php/*.get_the_title().*/?>
+							<?php echo'<a class= "btn btn-small" href="'.$post_meta_data[country_datasets][0].'" ><i class="icon-th"></i> '.__( 'Data for your application ', 'bootstrapwp' ) .'</a>';?><?php/*.get_the_title().*/?>
 						</div>
 
 						<?php endif; ?>
@@ -51,7 +51,7 @@
 				$country_link_id = $post_meta_data[country_post_id][0];
 				$country_link = get_permalink($country_link_id);
 				if (is_single() || is_post_type_archive( 'dal_country' )){
-				echo'<a id="masInfoPais'.$country_link_id.'" class= "masInfoPais btn btn-medium btn-warning span2" href="'.$country_link.'" ><i class="icon-chevron-right icon-white"></i>  More information of DAL on '.get_the_title().' </a>';
+				echo'<a id="masInfoPais'.$country_link_id.'" class= "masInfoPais btn btn-medium btn-warning span2" href="'.$country_link.'" ><i class="icon-chevron-right icon-white"></i> '.__( 'More about the event in ', 'bootstrapwp' ).''. get_the_title().' </a>';
 				}
 				else{
 					echo '';

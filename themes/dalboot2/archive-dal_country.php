@@ -24,7 +24,7 @@ if (have_posts() ) ;?>
 <div class="container">
 	<header class="jumbotron subhead" id="overview">
 		<h1><?php
-			_e( 'Countries on DAL', 'bootstrapwp' );
+			_e( 'Countries participating', 'bootstrapwp' );
 		?></h1>
 	</h1>
 </header>

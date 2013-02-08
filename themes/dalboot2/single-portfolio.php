@@ -106,9 +106,9 @@ get_header(); ?>
 							        
 									<ul id="infoAppUl" style="list-style: none;">
 										<li> 
-											<strong>< Equipo ></strong><div class="appresponse teamName"><?php echo $post_meta_data[custom_equipo][0]; ?></div>
+											<strong><?php _e( '&lt; Team &gt;', 'bootstrapwp' ); ?></strong><div class="appresponse teamName"><?php echo $post_meta_data[custom_equipo][0]; ?></div>
 										</li>
-										<li><strong> < Integrantes ></strong>
+										<li><strong> <?php _e( '&lt; Team Members &gt;', 'bootstrapwp' ); ?></strong>
 											<ul class="appresponse" style="list-style:none"> 
 												<?php  $custom_integrantes = get_post_meta($post->ID, 'custom_integrante', true);
 												if (!empty($custom_integrantes)){
@@ -122,7 +122,7 @@ get_header(); ?>
 										
 												<?php
 												 if (!empty($tracks)){ //do not draw it if there is not term assigned
-												 	echo ' <li> <strong>< Tema > </strong><div class="appresponse">';
+												 	echo ' <li> <strong>'. __( '&lt; Tracks &gt;', 'bootstrapwp' ) .' </strong><div class="appresponse">';
 												 	foreach ($tracks as $track => $eltrack) {
 																$mytrack= $eltrack->name;
 																echo '<span class="track">'.$mytrack. '</span> ';
@@ -135,7 +135,7 @@ get_header(); ?>
 											<?php 
 
 											if (!empty($post_meta_data[custom_urlapp][0])){
-											echo'<a class= "btn btn-large btn-primary span3" href="'.$post_meta_data[custom_urlapp][0].'">Ver la app </a>';
+											echo'<a class= "btn btn-large btn-primary span3" href="'.$post_meta_data[custom_urlapp][0].'">'. __( '&lt; Go to the App &gt;', 'bootstrapwp' ) .' </a>';
 											}
 											?>
 
@@ -146,7 +146,7 @@ get_header(); ?>
 												<?php 
 
 													if (!empty($post_meta_data[custom_github][0])){
-													echo'<a href="'.$post_meta_data[custom_github][0].'"><i class="ic-github"></i> Ver el repositorio de código</a>'; 
+													echo'<a href="'.$post_meta_data[custom_github][0].'"><i class="ic-github"></i> '. __( '&lt; Go to code repository &gt;', 'bootstrapwp' ) .'</a>'; 
 												}
 												?>
 											
@@ -166,14 +166,14 @@ get_header(); ?>
 
 								
 
-								echo '<h3>Problemática</h3>';
+								echo '<h3>'. __( 'Social Problem', 'bootstrapwp' ) .'</h3>';
 								echo apply_filters('the_content', $post_meta_data[custom_problema][0]);
-								echo '<h3>Solución planteada</h3>';
+								echo '<h3>'. __( 'Proposed solution', 'bootstrapwp' ) .'</h3>';
 								echo apply_filters('the_content', $post_meta_data[custom_solucion][0]);  
-								echo '<h3>Screencast</h3>';
+								echo '<h3>'. __( 'Screencast', 'bootstrapwp' ) .'</h3>';
 								echo $post_meta_data[custom_screencast][0];  
 
-								echo '<div class="well"><h3> Datos Utilizados</h3><ul class="databaseList">';
+								echo '<div class="well"><h3> '. __( 'Datasets used', 'bootstrapwp' ) .'</h3><ul class="databaseList">';
 
 								$custom_databases = get_post_meta($post->ID, 'custom_database', true);
 								if (!empty($custom_databases )){
@@ -189,7 +189,7 @@ get_header(); ?>
 						</section>
 						<?php 
 							if (!empty($post_meta_data[custom_contactoequipo][0])){
-								echo '<aside class="appresponse"><h3> Sobre el equipo </h3>';
+								echo '<aside class="appresponse"><h3> '. __( 'About the Team', 'bootstrapwp' ) .'</h3>';
 								echo $post_meta_data[custom_contactoequipo][0]; 
 								echo '</aside>';	
 							}
