@@ -1,7 +1,8 @@
 <div class="sponsorFooter nolist row">
-
+	<h4 class="hr"> <?php _e( 'Sponsors:', 'bootstrapwp' ); ?></h4>
 	<ul class="sponsorlist">
-		<li><h2>Sponsors</h2></li>
+
+		
 <?php
 $term = get_the_terms($post->ID, 'pais');
 //print_r($term);

@@ -1,8 +1,10 @@
-<div class="row sponsorFooter well nolist"> 
+
 	
+  <h4 class="hr"> <?php _e( 'Organized by:', 'bootstrapwp' ); ?></h4>
+<div class="row sponsorFooter well nolist"> 
 
 	<ul class="sponsorlist">
-		<li><h2>Organiza:</h2></li>
+	
 	<?php
 
 	$term = get_the_terms($post->ID, 'pais');
