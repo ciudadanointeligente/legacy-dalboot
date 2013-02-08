@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bootstrapwp\n"
-"POT-Creation-Date: 2013-01-18 17:01-0300\n"
+"POT-Creation-Date: 2013-02-08 15:56-0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: J. Pablo Pérez Trabucco <jpperez@ciudadanointeligente.org>\n"
 "Language-Team: Fundación Ciudadano Inteligente <devteam@ciudadanointeligente."
@@ -11,50 +11,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e\n"
-"X-Poedit-Basepath: /var/www/desarrollando/dalboot/themes/dalboot2\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: /home/pablo/Developer/workspace/desarrollando/dalboot/"
+"themes/dalboot2\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: single-dal_country.php:39
-msgid "Organized by:"
+#: country-posts-list.php:12
+msgid "Latest News"
 msgstr ""
 
-#: author.php:30
-#, php-format
-msgid "Author Archives: %s"
+#: 404.php:23
+msgid "This is Embarrassing"
 msgstr ""
 
-#: content-dal_country.php:29
-msgid "Social topics"
+#: 404.php:24
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching, or one of the links below, can help."
 msgstr ""
 
-#: archive.php:26
-#, php-format
-msgid "Daily Archives: %s"
-msgstr ""
-
-#: archive.php:28
-#, php-format
-msgid "Monthly Archives: %s"
-msgstr ""
-
-#: archive.php:30
-#, php-format
-msgid "Yearly Archives: %s"
-msgstr ""
-
-#: archive.php:32
-#, php-format
-msgid "Tag Archives: %s"
-msgstr ""
-
-#: archive.php:38 category-ideas.php:21
-#, php-format
-msgid "%s"
-msgstr ""
-
-#: archive.php:44 category-ideas.php:27
-msgid "Blog Archives"
+#: 404.php:44
+msgid "Most Used Categories"
 msgstr ""
 
 #: search.php:20
@@ -72,8 +49,47 @@ msgid ""
 "should try again with a different search term."
 msgstr ""
 
+#: comments.php:19
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:59
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:30
+msgid "With the support of"
+msgstr ""
+
+#: footer.php:77
+msgid "Site developed by:"
+msgstr ""
+
 #: archive-dal_country.php:27
-msgid "Countries on DAL"
+msgid "Countries participating"
+msgstr ""
+
+#: author.php:30
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: local-sponsors.php:2
+msgid "Sponsors:"
+msgstr ""
+
+#: header.php:33
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: functions.php:234
+msgid "&larr;"
+msgstr ""
+
+#: functions.php:235
+msgid "&rarr;"
 msgstr ""
 
 #: functions.php:240
@@ -125,44 +141,105 @@ msgstr ""
 msgid "Page"
 msgstr ""
 
-#: header.php:33
+#: archive.php:26
 #, php-format
-msgid "Page %s"
+msgid "Daily Archives: %s"
 msgstr ""
 
-#: 404.php:23
-msgid "This is Embarrassing"
+#: archive.php:28
+#, php-format
+msgid "Monthly Archives: %s"
 msgstr ""
 
-#: 404.php:24
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching, or one of the links below, can help."
+#: archive.php:28
+msgid "F Y"
 msgstr ""
 
-#: 404.php:44
-msgid "Most Used Categories"
+#: archive.php:30
+#, php-format
+msgid "Yearly Archives: %s"
 msgstr ""
 
-#: footer.php:30
-msgid "With the support of"
+#: archive.php:30
+msgid "Y"
 msgstr ""
 
-#: footer.php:77
-msgid "Site developed by:"
+#: archive.php:32
+#, php-format
+msgid "Tag Archives: %s"
 msgstr ""
 
-#: comments.php:19
-msgid ""
-"This post is password protected. Enter the password to view any comments."
+#: archive.php:38 category-ideas.php:17
+#, php-format
+msgid "%s"
 msgstr ""
 
-#: comments.php:59
-msgid "Comments are closed."
+#: archive.php:44 category-ideas.php:23
+msgid "Blog Archives"
 msgstr ""
 
-#: country-posts-list.php:12
-msgid "Latest News"
+#: single-portfolio.php:109
+msgid "&lt; Team &gt;"
+msgstr ""
+
+#: single-portfolio.php:111
+msgid "&lt; Team Members &gt;"
+msgstr ""
+
+#: single-portfolio.php:125
+msgid "&lt; Tracks &gt;"
+msgstr ""
+
+#: single-portfolio.php:138
+msgid "&lt; Go to the App &gt;"
+msgstr ""
+
+#: single-portfolio.php:149
+msgid "&lt; Go to code repository &gt;"
+msgstr ""
+
+#: single-portfolio.php:169
+msgid "Social Problem"
+msgstr ""
+
+#: single-portfolio.php:171
+msgid "Proposed solution"
+msgstr ""
+
+#: single-portfolio.php:173
+msgid "Screencast"
+msgstr ""
+
+#: single-portfolio.php:176
+msgid "Datasets used"
+msgstr ""
+
+#: single-portfolio.php:192
+msgid "About the Team"
+msgstr ""
+
+#: content-dal_country.php:7
+msgid "Participate in"
+msgstr ""
+
+#: content-dal_country.php:29
+msgid "Social topics"
+msgstr ""
+
+#: content-dal_country.php:32
+msgid "Data for your application "
+msgstr ""
+
+#: content-dal_country.php:54
+msgid "More about the event in "
+msgstr ""
+
+#: content-dal_inscribete.php:7
+msgid "Participate in "
+msgstr ""
+
+#: local-organizers.php:1
+msgid "Organized by:"
 msgstr ""
 
 #: page-ideas.php:48
