@@ -99,9 +99,16 @@ box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.43);
     }
 
 
-.dal-meta-item{float: right; margin: 8px 0px 5px 5px}
+.dal-meta-item{
+   float: right;
+   margin: 3px 0px 5px 0px;
+}
+
 .dal-fila-premios{}
-.dal-portfolio-tracks{float: right;}
+.dal-portfolio-tracks{
+    float: left;
+    max-width: 118px;
+}
 .dal-portfolio-tracks div{
     font-size: 0.83em;
     display: inline-block;
@@ -115,12 +122,13 @@ box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.43);
 }
 .dal-portf-premio{ 
     width: 30px;
-    height: 28px;
+    height: 38px;
     display: block;
     background-position: 0 0;
     background-repeat: no-repeat;
-    float: left;
+    float: right;
     margin-right: 6px;
+    position: relative;
 }
 .dal-portf-1er-lugar{
     background-image: url(../images/medal-32.png);
@@ -130,8 +138,45 @@ box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.43);
 .dal-portf-3er-lugar{ background-image: url(../images/medal-bronze-32.png);
 }
 
+.awardName{
+    font-size: 7px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -9px;
+    font-weight: bold;
+
+}
+
 .premioNac{}
-.premioReg{background: url(../images/trophy-dal.png) no-repeat 0 0 transparent;}
+.premioReg {
+    background: url(../images/mencion.png) no-repeat 0 0 #fff;
+    width: 41px;
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    height: 41px;
+    border-radius: 24px;
+    box-shadow: 2px 2px 6px rgba(90, 90, 90, 0.79);
+    border: 3px solid rgb(247, 247, 247);
+
+}
+
+.premioReg.dal-portf-3er{background: url(../images/regional3.png) no-repeat 0 0 #fff;}
+.premioReg.dal-portf-2do{background: url(../images/regional2.png) no-repeat 0 0 #fff;}
+.premioReg.dal-portf-1er{background: url(../images/regional1.png) no-repeat 0 0 #fff;}
+.premioReg .awardName{
+
+    font-size: 7px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -3px;
+    font-weight: bold;
+    border-radius: 3px;
+    background-color: #fff;
+    line-height: 7px;
+    padding: 1px 3px;
+
+}
 
 .dal-portf-ano{
     position: absolute;
